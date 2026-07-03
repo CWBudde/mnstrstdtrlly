@@ -1,0 +1,400 @@
+/* Die verlorene Depesche – historisch angehauchtes, mobiles Design */
+
+:root {
+  --ink: #2b2118;
+  --ink-soft: #5a4a3a;
+  --paper: #f5edD9;
+  --paper-card: #fdf8ec;
+  --accent: #8b2e2e;
+  --accent-dark: #6d2222;
+  --gold: #b98a2f;
+  --ok: #3e6b3a;
+  --line: #d9c9a8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.primary {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.primary:active {
+  background: var(--accent-dark);
+}
+
+.primary:disabled {
+  opacity: 0.6;
+}
+
+.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  border-radius: 8px;
+  padding: 10px 18px;
+}
+
+.linklike {
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  padding: 8px 0;
+  font-size: 0.92rem;
+}
+
+.iconbtn {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+}
+
+/* ---- Startbildschirm ---- */
+
+.start {
+  padding-top: 24px;
+}
+
+.start-card {
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px 22px;
+  box-shadow: 0 2px 12px rgba(43, 33, 24, 0.12);
+}
+
+.start-seal {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.start-card h1 {
+  text-align: center;
+  margin: 8px 0 4px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-top: 0;
+}
+
+.practical {
+  background: #efe4c8;
+  border-left: 4px solid var(--gold);
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin: 18px 0;
+}
+
+.practical p {
+  margin: 6px 0 0;
+}
+
+.start-card .primary {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* ---- Kopfzeile & Fortschritt ---- */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--ink);
+  color: #fff;
+  margin: 0 -16px;
+  padding: 12px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topbar-title {
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  font-size: 1.05rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  padding: 12px 0 4px;
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--line);
+  border: 1.5px solid var(--ink-soft);
+}
+
+.dot.done {
+  background: var(--ok);
+  border-color: var(--ok);
+}
+
+.dot.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(139, 46, 46, 0.28);
+}
+
+.fragments {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+.fragments-label {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.fragment {
+  background: var(--gold);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 0.95rem;
+}
+
+/* ---- Station ---- */
+
+.station-head {
+  margin-top: 10px;
+}
+
+.station-label {
+  color: var(--accent);
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+}
+
+.station-head h2 {
+  margin: 2px 0 12px;
+  line-height: 1.25;
+}
+
+.directions {
+  background: #e8eef0;
+  border-left: 4px solid #4a6d7c;
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+
+.story {
+  white-space: pre-line;
+}
+
+.task,
+.hints {
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 18px 0;
+}
+
+.task h3,
+.hints h3 {
+  margin-top: 0;
+}
+
+.answer-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.answer-form input {
+  flex: 1 1 180px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 11px 12px;
+  border: 1.5px solid var(--ink-soft);
+  border-radius: 8px;
+  background: #fff;
+  min-width: 0;
+}
+
+.answer-form input:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.wrong {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.fallback-hint {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.hints ol {
+  padding-left: 22px;
+  margin: 8px 0;
+}
+
+.hints li {
+  margin-bottom: 6px;
+}
+
+.hints-empty {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+/* ---- GPS ---- */
+
+.geo-status {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.geo-distance {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.geo-warmth {
+  color: var(--ink-soft);
+}
+
+/* ---- Auflösung & Finale ---- */
+
+.resolution {
+  background: #ecf3ea;
+  border: 1px solid #bcd2b8;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 18px 0;
+}
+
+.resolution .primary {
+  margin-top: 8px;
+}
+
+.fragment-found {
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.finale {
+  background: #f7efdc;
+  border-color: var(--gold);
+}
+
+.finale-seal {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ---- Karte ---- */
+
+.map-wrap {
+  margin-top: 14px;
+}
+
+.map {
+  height: 62vh;
+  min-height: 340px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.map-note {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.map-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.map-marker.done {
+  background: var(--ok);
+}
+
+.map-marker.current {
+  background: var(--accent);
+}
