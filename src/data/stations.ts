@@ -20,6 +20,13 @@ export interface GeoTask {
   fallbackHint: string;
 }
 
+export interface StationImage {
+  /** Wikimedia-Commons-Dateiname ohne "File:"-Präfix. */
+  file: string;
+  alt: string;
+  credit: string;
+}
+
 export interface Station {
   id: string;
   /** Nummer im Spiel (1-basiert), Finale hat keine. */
@@ -36,7 +43,11 @@ export interface Station {
   resolution: string;
   /** Optional: Fragment der Losung, das diese Station preisgibt. */
   fragment?: string;
+  /** Optional: Foto der Station (Wikimedia Commons, wird zur Laufzeit geladen). */
+  image?: StationImage;
 }
+
+const RABICH = 'Foto: Dietmar Rabich / Wikimedia Commons / CC BY-SA 4.0';
 
 /**
  * DIE VERLORENE DEPESCHE – Stadtrallye Münster
@@ -62,16 +73,21 @@ Was niemand weiß: Der junge Kanzleischreiber Johann Vlemynck hat sie selbst bei
 370 Jahre später stößt die Stadtarchivarin Dr. Lene Cording in einem vergessenen Bestand auf Vlemyncks Tagebuch – und auf die Spur, die eine geheimnisvolle „Bruderschaft der Friedensboten“ über die Jahrhunderte gepflegt hat.
 
 Sie bittet euch: Folgt der Spur. Löst die Rätsel, die nur vor Ort zu knacken sind. Findet die verlorene Depesche – und die drei Worte, die sie enthält.`,
-  practical: `Was ihr braucht: bequeme Schuhe, ein aufgeladenes Smartphone und offene Augen. Alle Antworten findet ihr direkt an den Stationen – Wissen aus dem Internet hilft euch nicht weiter. Wenn ihr feststeckt, gibt es zu jedem Rätsel gestaffelte Hinweise. Startpunkt ist das Historische Rathaus am Prinzipalmarkt.`,
+  practical: `Was ihr braucht: bequeme Schuhe, ein aufgeladenes Smartphone und offene Augen. Alle Antworten findet ihr direkt an den Stationen – Wissen aus dem Internet hilft euch nicht weiter. Wenn ihr feststeckt, gibt es zu jedem Rätsel gestaffelte Hinweise. Startpunkt ist das Historische Rathaus am Prinzipalmarkt; das Ziel liegt am Aasee.`,
+  image: {
+    file: 'Münster, Prinzipalmarkt -- 2014 -- 4689-93.jpg',
+    alt: 'Der Prinzipalmarkt in Münster mit seinen Giebelhäusern',
+    credit: RABICH,
+  } as StationImage,
 };
 
 export const finaleText = `Dr. Cording strahlt: „Das ist sie. Die verlorene Depesche.“
 
-In einer Blechkassette, von der Bruderschaft zuletzt in den 1970er-Jahren erneuert, liegt eine Abschrift von Vlemyncks Schriftstück. Drei lateinische Worte stehen darauf – dieselben, die 1648 auf die Gedenkmünzen des Friedens geprägt wurden:
+In einer Blechkassette, von der Bruderschaft zuletzt in den 1970er-Jahren erneuert, liegt eine Abschrift von Vlemyncks Schriftstück. Drei lateinische Worte stehen darauf – die Devise des Westfälischen Friedens, zu lesen auf Stichen und Friedensmünzen jener Zeit, entlehnt dem römischen Dichter Silius Italicus:
 
 **PAX OPTIMA RERUM** – „Der Friede ist das beste der Dinge.“
 
-Vlemyncks letzter Tagebucheintrag, 25. Oktober 1648: „Heute ward der Friede von der Treppe des Rathauses verkündet. Die Glocken läuteten bis in die Nacht. Die Herren mit den schwarzen Siegeln sind abgereist, ihr Werk ist gescheitert. Was ich versteckte, gehört nun keinem Fürsten und keinem Kaufmann – es gehört der Stadt und allen, die nach uns kommen. Wer meine Spur bis hierher gelesen hat, der weiß: Der Friede ist das beste der Dinge. Man muss ihn nur suchen.“
+Vlemyncks letzter Tagebucheintrag, 24. Oktober 1648: „Heute ward der Friede zu Münster unterzeichnet. Die Glocken läuteten bis in die Nacht. Die Herren mit den schwarzen Siegeln sind abgereist, ihr Werk ist gescheitert. Was ich versteckte, gehört nun keinem Fürsten und keinem Kaufmann – es gehört der Stadt und allen, die nach uns kommen. Wer meine Spur bis hierher gelesen hat, der weiß: Der Friede ist das beste der Dinge. Man muss ihn nur suchen.“
 
 Ihr habt die Spur gelesen. Die Rallye ist geschafft – Glückwunsch!
 
@@ -100,6 +116,11 @@ Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde am 15. Mai 1648 der
       'Der Dreißigjährige Krieg dauerte von 1618 bis … ? Das Ende ist die gesuchte Zahl.',
       'Die Zahl beginnt mit 16 und endet mit 48.',
     ],
+    image: {
+      file: 'Münster, Prinzipalmarkt, Historisches Rathaus -- 2017 -- 6875.jpg',
+      alt: 'Das Historische Rathaus mit gotischem Giebel am Prinzipalmarkt',
+      credit: RABICH,
+    },
     resolution: `Richtig: 1648. In Vlemyncks Tagebuch steht unter der Zahl ein kleiner Pfeil nach Norden und die Worte: „Folge dem Markt der Kaufleute zu der Kirche, an der die Körbe des Schreckens hängen.“ – Werft im Vorbeigehen einen Blick auf die Bogengänge des Prinzipalmarkts: Unter diesen Arkaden wurde 1648 gefeilscht, verhandelt und spioniert.`,
   },
   {
@@ -109,25 +130,32 @@ Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde am 15. Mai 1648 der
     coords: { lat: 51.9619, lng: 7.6285 },
     directions:
       'Nur ein paar Schritte: Das Stadtweinhaus ist das prächtige Giebelhaus direkt links neben dem Rathaus.',
-    story: `Aus dem Tagebuch: „Im Weinhause der Stadt lagerte der Wein für die hohen Herren. Manch ein Geheimnis wurde bei einem Kruge verraten. Ich habe dort gezählt, was das Haus zur Straße hin trägt – merke dir die Zahl, du wirst sie brauchen.“
+    story: `Aus dem Tagebuch: „Im Weinhause der Stadt, errichtet Anno 1615, lagerte der Wein für die hohen Herren. Manch ein Geheimnis wurde bei einem Kruge verraten – darum schreibe ich das Wichtigste fortan in Geheimschrift. Zur Übung, Leser: Ich rückte jeden Buchstaben um einen Platz weiter im Alphabet, so wie der Kellermeister die Fässer rückt. Lies nun, was in diesem Hause lagert:“
 
-1648 wurden im Stadtweinhaus die Weinvorräte der Stadt verwahrt – und mancher Gesandtendiener plauderte hier mehr aus, als seinem Herrn lieb war.`,
+**X F J O**
+
+Stellt euch beim Knobeln ruhig unter die Bögen des Stadtweinhauses – hier standen schon 1648 Gesandtendiener und tauschten Neuigkeiten.`,
     task: {
       kind: 'quiz',
       question:
-        'Stellt euch vor das Stadtweinhaus: Wie viele Rundbögen hat die Bogenhalle (Arkade) im Erdgeschoss zur Straße hin?',
-      placeholder: 'Zahl',
+        'Entschlüsselt Vlemyncks Geheimschrift: Welches Wort verbirgt sich hinter „XFJO“?',
+      placeholder: 'Ein Wort',
       answerHashes: [
-        'ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d',
-        'fe534ca1a40bb873c3d3ada3ce564af791c6e5c15f62d3fa6713ee45ab1c1100',
+        '32b85c6ab5000619f7360cf6ba3df610b80c3245c994937a3fd6c8403b689584',
+        'd310dc8fa66df7136de40b556b8d64f03b98afd989893b901492ed900e5b7444',
       ],
     },
     hints: [
-      'Zählt nur die Bögen im Erdgeschoss des Stadtweinhauses selbst, nicht die der Nachbarhäuser.',
-      'Es sind weniger als sieben.',
-      'Mehr als vier, weniger als sechs.',
+      'Vlemynck hat jeden Buchstaben um einen Platz nach vorn verschoben – geht also einen Schritt im Alphabet zurück.',
+      'Aus X wird W, aus F wird E …',
+      'Das Lösungswort lagerte im Keller dieses Hauses – und gab ihm seinen Namen.',
     ],
-    resolution: `Gut gezählt! Vlemynck notiert: „So viele Bögen, so viele treue Freunde hatte ich in der Stadt. Einer von ihnen war der Türmer. Geh nun zu St. Lamberti und sieh hinauf, wo die Körbe hängen.“`,
+    resolution: `Wein – richtig entschlüsselt! Vlemynck notiert: „Wer meine Schrift lesen kann, dem vertraue ich auch den Rest. Einer meiner treuesten Freunde war der Türmer. Geh nun zu St. Lamberti und sieh hinauf, wo die Körbe hängen.“`,
+    image: {
+      file: 'Münster, Stadtweinhaus und historisches Rathaus -- 2020 -- 4113.jpg',
+      alt: 'Stadtweinhaus und Historisches Rathaus am Prinzipalmarkt',
+      credit: RABICH,
+    },
   },
   {
     id: 'lamberti',
@@ -153,8 +181,13 @@ Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde am 15. Mai 1648 der
       'Die Körbe hängen übereinander/nebeneinander an der Turmseite oberhalb des Zifferblatts.',
       'Es sind so viele wie die Anführer des Täuferreichs: Jan van Leiden, Bernd Knipperdolling und Bernd Krechting.',
     ],
-    resolution: `Drei Körbe – für drei Anführer. Unter Vlemyncks Eintrag steht, dreifach unterstrichen, das erste Wort der Losung: **PAX**. Und weiter: „Geh nun dorthin, wo der Händler mit der Kiepe steht, und sieh ihm auf den Rücken.“`,
+    resolution: `Drei Körbe – für die drei Anführer Jan van Leiden, Bernd Knipperdolling und Bernd Krechting, hingerichtet 1536 vor dem Rathaus. Unter Vlemyncks Eintrag steht, dreifach unterstrichen, das erste Wort der Losung: **PAX**. Und weiter: „Geh nun dorthin, wo der Händler mit der Kiepe steht, und sieh ihm auf den Rücken.“`,
     fragment: 'PAX',
+    image: {
+      file: 'Münster, St.-Lamberti-Kirche -- 2014 -- 6860.jpg',
+      alt: 'St. Lamberti mit ihrem durchbrochenen Turmhelm',
+      credit: RABICH,
+    },
   },
   {
     id: 'kiepenkerl',
@@ -185,7 +218,12 @@ Der Kiepenkerl ist das Denkmal der westfälischen Wanderhändler. Das Original v
       '„…kerl“ ist der Mann. Wie heißt der erste Teil seines Namens?',
       'Das Wort beginnt mit K und reimt sich auf „Wiege“ – fast jedenfalls.',
     ],
-    resolution: `Die Kiepe! Vlemynck schreibt: „Folge nun den Freunden aus dem Westen. Sie wohnten im Hause der Krämer, gleich um die Ecke – ihre Herren schlossen als Erste Frieden mit Spanien.“`,
+    resolution: `Die Kiepe! Vlemynck schreibt: „Folge nun den Freunden aus dem Westen. Sie wohnten im Hause der Krämer, gleich um die Ecke – und in ebenjenem Hause ward ihr Friede mit Spanien unterzeichnet, im Januar des großen Jahres.“`,
+    image: {
+      file: 'Kiepenkerl-Denkmal, Münster.jpg',
+      alt: 'Das Kiepenkerl-Denkmal am Spiekerhof',
+      credit: 'Foto: Wikimedia Commons (Lizenz siehe verlinkte Dateiseite)',
+    },
   },
   {
     id: 'krameramtshaus',
@@ -194,9 +232,9 @@ Der Kiepenkerl ist das Denkmal der westfälischen Wanderhändler. Das Original v
     coords: { lat: 51.965, lng: 7.6277 },
     directions:
       'Vom Kiepenkerl sind es nur wenige Schritte in den Alten Steinweg. Sucht das alte Giebelhaus mit den Flaggen (Hausnummer 6/7).',
-    story: `Aus dem Tagebuch: „Die Gesandten der Generalstaaten wohnten im Hause des Krämeramtes. Ehrliche Leute; ihr Friede mit Spanien war der erste Stein im Gewölbe. Bei ihnen ließ ich die Abschrift meiner Depesche zurück – doch die Spur führt weiter.“
+    story: `Aus dem Tagebuch: „Die Gesandten der Generalstaaten wohnten im Hause des Krämeramtes. Ehrliche Leute; am 30. Tage des Januars ward in ihrem Hause der Friede mit Spanien unterzeichnet – der erste Stein im Gewölbe des großen Friedens. Bei ihnen ließ ich die Abschrift meiner Depesche zurück – doch die Spur führt weiter.“
 
-Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters. Während des Friedenskongresses wohnte hier die Gesandtschaft der Niederlande – und heute erinnert die Nutzung des Hauses genau daran.`,
+Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters und eines der wenigen Gebäude der Altstadt, die den Zweiten Weltkrieg überstanden. Von 1646 bis 1648 wohnte hier die niederländische Gesandtschaft; am 30. Januar 1648 wurde in diesem Haus der spanisch-niederländische Friede unterzeichnet. Die heutige Nutzung des Hauses erinnert genau daran.`,
     task: {
       kind: 'quiz',
       question:
@@ -221,7 +259,7 @@ Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters. Während des F
     name: 'St.-Paulus-Dom – die astronomische Uhr',
     coords: { lat: 51.9629, lng: 7.6257 },
     directions:
-      'Geht zurück Richtung Süden und haltet euch rechts, über die Gassen zum weiten Domplatz. Betretet den Dom durch das Hauptportal (Eintritt frei; bitte Gottesdienstzeiten respektieren). Die astronomische Uhr findet ihr im Chorumgang, rechts hinter dem Hochaltar.',
+      'Geht zurück Richtung Süden und haltet euch rechts, über die Gassen zum weiten Domplatz. Betretet den Dom durch das Hauptportal (Eintritt frei; bitte Gottesdienstzeiten respektieren). Die astronomische Uhr findet ihr im südlichen Chorumgang, rechts hinter dem Hochaltar.',
     story: `Aus dem Tagebuch: „Im Dome steht die große Uhr, die Sonne, Mond und Sterne weist. Als Knabe stand ich staunend davor. Der Meister, der sie schuf, versteckte darin eine Eigenheit, die nur sieht, wer wirklich schaut. Wer sie kennt, kennt die Richtung meiner Spur.“
 
 Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeigt Planetenstände, Tierkreiszeichen und den Kalender bis weit in die Zukunft. Und sie hat eine berühmte Besonderheit.`,
@@ -246,6 +284,11 @@ Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeig
       'Die Uhr folgt dem scheinbaren Lauf der Sonne von Ost nach West – aus Sicht des Betrachters „falsch“ herum.',
       'Sie läuft entgegen dem Uhrzeigersinn – also nach links.',
     ],
+    image: {
+      file: 'Münster, St.-Paulus-Dom, Astronomische Uhr -- 2019 -- 3822.jpg',
+      alt: 'Die astronomische Uhr im St.-Paulus-Dom',
+      credit: RABICH,
+    },
     resolution: `Genau: Die Zeiger laufen linksherum, gegen den Uhrzeigersinn! Unter dem Eintrag steht Vlemyncks zweites Wort, in Spiegelschrift geschrieben: **OPTIMA**. Und weiter: „Geh nun über das Wasser – zu Unserer Lieben Frau, deren Turm sein Haupt verlor.“`,
     fragment: 'OPTIMA',
   },
@@ -256,7 +299,9 @@ Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeig
     coords: { lat: 51.9636, lng: 7.6231 },
     directions:
       'Verlasst den Dom, überquert den Domplatz nach Westen und geht über die kleine Aa-Brücke. Vor euch steht die Überwasserkirche (Liebfrauenkirche).',
-    story: `Aus dem Tagebuch: „Die Kirche über dem Wasser trägt ihre Wunde mit Würde. Als die Wiedertäufer die Stadt hielten, brachen sie dem Turme sein Haupt ab, um Geschütze hinaufzuschaffen. So blieb er bis heute – ein Mahnmal wider den Krieg, wie kein Baumeister es hätte ersinnen können.“
+    story: `Aus dem Tagebuch: „Die Kirche über dem Wasser hat viel erlitten. Als die Wiedertäufer die Stadt hielten, brachen sie dem Turme sein Haupt ab, um Geschütze hinaufzuschaffen. Man hat ihm später ein neues Haupt gegeben – doch die Narbe jener Jahre vergisst die Stadt nicht.“
+
+Dazu ein Nachtrag der Bruderschaft aus dem Jahr 1705: „Der große Orkan des vergangenen Herbstes hat dem Turme das Haupt abermals genommen. Die Herren der Stadt wollen es nicht erneuern. So bleibe er, wie der Krieg und der Sturm ihn hinterließen – ein Mahnmal, wie kein Baumeister es hätte ersinnen können.“
 
 Vergleicht den Turm der Überwasserkirche mit dem Turm von St. Lamberti, den ihr vorhin gesehen habt. Was fällt auf?`,
     task: {
@@ -282,7 +327,12 @@ Vergleicht den Turm der Überwasserkirche mit dem Turm von St. Lamberti, den ihr
       'Der Turm endet flach, wo andere Türme spitz zulaufen.',
       'Gesucht ist das spitze „Dach“ eines Kirchturms.',
     ],
-    resolution: `Richtig – dem Turm fehlt die Spitze (der Turmhelm). Vlemynck: „Von hier wandte ich mich gen Westen, hinaus aus der alten Stadt. Die Bruderschaft hat meine Spur später dorthin verlängert, wo der Fürstbischof sein neues Schloss errichten ließ.“ – Dr. Cording bestätigt: Der nächste Hinweis der Bruderschaft stammt aus der Zeit um 1780 und führt zum Schloss.`,
+    resolution: `Richtig – dem Turm fehlt die Spitze (der Turmhelm). Die Täufer nahmen sie 1534 ab, um Geschütze aufzustellen; der wiederaufgebaute Helm wurde 1704 von einem Orkan zerstört und nie erneuert. Vlemynck: „Von hier wandte ich mich gen Westen, hinaus aus der alten Stadt.“ – Dr. Cording ergänzt: Der nächste Hinweis der Bruderschaft stammt aus der Zeit um 1780 und führt zum Schloss des Fürstbischofs.`,
+    image: {
+      file: 'Münster 20210319 085322.jpg',
+      alt: 'Die Überwasserkirche mit ihrem flach endenden Turm',
+      credit: 'Foto: Wikimedia Commons (Lizenz siehe verlinkte Dateiseite)',
+    },
   },
   {
     id: 'schloss',
@@ -314,6 +364,11 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
       'Das Schloss ist der Hauptsitz der … Münster.',
     ],
     resolution: `Richtig: die Universität Münster residiert heute im Schloss. Der letzte Eintrag der Bruderschaft lautet: „Hinter dem Schlosse liegt der Garten. Dort, wo unsere Zeichen dich hinführen, haben wir den toten Briefkasten angelegt. Kein Rätsel mehr – nun zählt allein der Ort.“ – Jetzt kommt euer GPS ins Spiel!`,
+    image: {
+      file: 'Münster, Fürstbischöfliches Schloss -- 2018 -- 1925-27-28.jpg',
+      alt: 'Das Fürstbischöfliche Schloss, heute Sitz der Universität',
+      credit: RABICH,
+    },
   },
   {
     id: 'briefkasten',
@@ -348,7 +403,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
     id: 'aasee',
     label: 'Station 10',
     name: 'Aasee – die drei Kugeln',
-    coords: { lat: 51.9557, lng: 7.6118 },
+    coords: { lat: 51.95711, lng: 7.61819 },
     directions:
       'Verlasst den Schlossgarten nach Süden und folgt der Promenade bzw. den Wegen Richtung Aasee (ca. 15 Minuten). Haltet am Nordostufer Ausschau nach den riesigen Betonkugeln an der Wiese (Nähe Aaseeterrassen/Annette-Allee).',
     story: `Dr. Cording: „Die ‚Giant Pool Balls‘ des Künstlers Claes Oldenburg stehen seit 1977 am Aasee – anfangs heftig umstritten, heute ein Wahrzeichen. Als die Bruderschaft ihr Versteck zum letzten Mal erneuerte, wählte sie diesen Ort: Kugeln wie überdimensionale Siegel, gut sichtbar und doch voller Geheimnis.“`,
@@ -372,10 +427,10 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
     id: 'finale',
     label: 'Finale',
     name: 'Die verlorene Depesche',
-    coords: { lat: 51.9557, lng: 7.6118 },
+    coords: { lat: 51.95711, lng: 7.61819 },
     directions:
       'Bleibt bei den Kugeln am Aasee – hier endet die Spur.',
-    story: `Dr. Cording nimmt euch beiseite: „Vlemyncks Depesche trug drei lateinische Worte – dieselben, die 1648 auf die Gedenkmünzen des Friedens geprägt wurden. Ihr habt auf eurem Weg alle drei Fragmente gefunden. Setzt sie in der richtigen Reihenfolge zusammen: Das erste fandet ihr bei den Körben, das zweite bei der Uhr, das dritte im toten Briefkasten.“`,
+    story: `Dr. Cording nimmt euch beiseite: „Vlemyncks Depesche trug drei lateinische Worte – die Devise des Westfälischen Friedens. Ihr habt auf eurem Weg alle drei Fragmente gefunden. Setzt sie in der richtigen Reihenfolge zusammen: Das erste fandet ihr bei den Körben, das zweite bei der Uhr, das dritte im toten Briefkasten.“`,
     task: {
       kind: 'quiz',
       question: 'Wie lautet die Losung der verlorenen Depesche? (drei Worte)',
@@ -388,5 +443,10 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
       'PAX … – jetzt nur noch die richtige Reihenfolge.',
     ],
     resolution: finaleText,
+    image: {
+      file: 'Münster, Skulptur -Giant Pool Balls- -- 2016 -- 2379.jpg',
+      alt: 'Die Giant Pool Balls von Claes Oldenburg am Aasee',
+      credit: RABICH,
+    },
   },
 ];

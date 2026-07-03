@@ -2,6 +2,7 @@ import type { Station } from '../data/stations';
 import QuizTask from './QuizTask';
 import GeoTask from './GeoTask';
 import Hints from './Hints';
+import StationImage from './StationImage';
 
 interface Props {
   station: Station;
@@ -33,10 +34,10 @@ export default function StationScreen({
         <strong>🧭 Der Weg:</strong> {station.directions}
       </section>
 
+      {station.image && <StationImage image={station.image} />}
+
       {station.story.split('\n\n').map((para, i) => (
-        <p key={i} className="story">
-          {para}
-        </p>
+        <p key={i} className="story" dangerouslySetInnerHTML={{ __html: mdBold(para) }} />
       ))}
 
       {!solved ? (

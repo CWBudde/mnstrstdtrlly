@@ -13,8 +13,11 @@ Kriegsgewinnlern in Sicherheit gebracht und eine Spur aus Rätseln durch die Sta
 - **Route:** Historisches Rathaus → Stadtweinhaus → St. Lamberti → Kiepenkerl →
   Krameramtshaus → St.-Paulus-Dom → Überwasserkirche → Schloss → Schlossgarten (GPS-Suche) →
   Aasee-Kugeln (Finale)
-- **Rätsel:** 9 Vor-Ort-Rätsel + 1 GPS-Suche + Finalrätsel; alle Antworten sind nur direkt an
-  den Stationen ablesbar (Inschriften, Zählaufgaben, Beobachtung)
+- **Rätsel:** 8 Vor-Ort-Rätsel + 1 Chiffre + 1 GPS-Suche + Finalrätsel; die Antworten sind
+  direkt an den Stationen ablesbar (Inschriften, Zählaufgaben, Beobachtung) oder aus der
+  Story heraus lösbar
+- **Bilder:** Stationsfotos werden zur Laufzeit von Wikimedia Commons geladen (überwiegend
+  Dietmar Rabich, CC BY-SA 4.0; Bildnachweis in der App verlinkt)
 - **Mechanik:** richtige Antwort schaltet die nächste Station frei; je Rätsel bis zu 3 gestaffelte
   Hinweise; Fortschritt wird im Browser gespeichert (localStorage); Karte (OpenStreetMap) zeigt
   nur bereits erreichte Stationen

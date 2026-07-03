@@ -1,4 +1,5 @@
 import { intro } from '../data/stations';
+import StationImage from './StationImage';
 
 interface Props {
   onStart: () => void;
@@ -11,6 +12,7 @@ export default function StartScreen({ onStart }: Props) {
         <div className="start-seal">✉</div>
         <h1>{intro.title}</h1>
         <p className="subtitle">{intro.subtitle}</p>
+        <StationImage image={intro.image} />
         {intro.text.split('\n\n').map((para, i) => (
           <p key={i}>{para}</p>
         ))}
