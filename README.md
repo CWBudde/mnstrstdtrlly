@@ -11,16 +11,17 @@ Kriegsgewinnlern in Sicherheit gebracht und eine Spur aus Rätseln durch die Sta
 
 - **Dauer:** ca. 2–3 Stunden, ca. 5 km zu Fuß
 - **Route:** Historisches Rathaus → Stadtweinhaus → St. Lamberti → Kiepenkerl →
-  Krameramtshaus → St.-Paulus-Dom → Überwasserkirche → Schloss → Schlossgarten (GPS-Suche) →
-  Aasee-Kugeln (Finale)
-- **Rätsel:** 8 Vor-Ort-Rätsel + 1 Chiffre + 1 GPS-Suche + Finalrätsel; die Antworten sind
+  Krameramtshaus → Erbdrostenhof → Clemenskirche → St.-Paulus-Dom → Überwasserkirche →
+  Schloss → Schlossgarten (GPS-Suche) → Aasee-Kugeln (Finale)
+- **Rätsel:** 10 Vor-Ort-Rätsel + 1 Chiffre + 1 GPS-Suche + Finalrätsel; die Antworten sind
   direkt an den Stationen ablesbar (Inschriften, Zählaufgaben, Beobachtung) oder aus der
   Story heraus lösbar
 - **Bilder:** Stationsfotos werden zur Laufzeit von Wikimedia Commons geladen (überwiegend
   Dietmar Rabich, CC BY-SA 4.0; Bildnachweis in der App verlinkt)
 - **Mechanik:** richtige Antwort schaltet die nächste Station frei; je Rätsel bis zu 3 gestaffelte
-  Hinweise; Fortschritt wird im Browser gespeichert (localStorage); Karte (OpenStreetMap) zeigt
-  nur bereits erreichte Stationen
+  Hinweise; Fortschritt wird im Browser gespeichert (localStorage) und bleibt auch nach einem
+  Neuladen der Seite erhalten; Karte (OpenStreetMap) zeigt nur bereits erreichte Stationen, den
+  bisher zurückgelegten Weg als Linie sowie den eigenen Live-Standort
 - **Öffnungszeiten beachten:** Station 6 führt in den Dom (astronomische Uhr im Chorumgang,
   Eintritt frei). Außerhalb der Öffnungszeiten bzw. während Gottesdiensten hilft Hinweis 3
   quasi zur Lösung.
