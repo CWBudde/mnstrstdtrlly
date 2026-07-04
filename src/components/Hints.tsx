@@ -14,7 +14,7 @@ export default function Hints({ hints, used, onReveal }: Props) {
       {revealed.length === 0 && (
         <p className="hints-empty">
           Ihr steckt fest? Deckt nach und nach bis zu {hints.length} Hinweise auf – vom sanften
-          Schubs bis fast zur Lösung.
+          Schubs bis zu einem deutlichen Wink. Die Lösung selbst verraten sie nicht.
         </p>
       )}
       <ol>

@@ -101,27 +101,27 @@ export const stations: Station[] = [
     coords: { lat: 51.9617, lng: 7.6286 },
     directions:
       'Startpunkt: Stellt euch vor das Historische Rathaus mit dem hohen gotischen Giebel, Prinzipalmarkt 10.',
-    story: `Aus Vlemyncks Tagebuch: „Im Saale des Rathauses haben die Gesandten einander die Hände gereicht. Ich stand hinten an der Tür und hielt die Feder. Hier beginnt meine Spur – bei der Jahreszahl, die bald ganz Europa kennen wird. Wer sie am Hause findet, mag mir weiter folgen.“
+    story: `Aus Vlemyncks Tagebuch: „Im Saale des Rathauses haben die Gesandten einander die Hände gereicht. Ich stand hinten an der Tür und hielt die Feder. Hier beginnt meine Spur – bei der Jahreszahl, die bald ganz Europa kennen wird. Wer sie am Hause findet, mag mir weiter folgen. Doch Vorsicht: Dies Haus trägt mehr als eine Zahl an seinem Leibe, und nicht jede meint den Frieden.“
 
-Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde ein erster Teilfriede zwischen zwei kriegsmüden Mächten beschworen – der erste Baustein eines viel größeren Friedens, der die Stadt für immer berühmt machen sollte. Am und im Rathaus erinnert vieles an dieses eine, große Jahr – ihr müsst es nur finden.`,
+Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde ein erster Teilfriede zwischen zwei kriegsmüden Mächten beschworen – der erste Baustein eines viel größeren Friedens, der die Stadt für immer berühmt machen sollte. Am und im Rathaus erinnert vieles an dieses eine, große Jahr – ihr müsst es nur finden. Aber das Haus ist alt und mehrfach verändert worden, also seht genau hin, welche Jahreszahl wirklich zum Frieden gehört.`,
     task: {
       kind: 'quiz',
       question:
-        'Sucht am Rathaus (Fassade, Tafeln am Eingang oder im Durchgang) die Jahreszahl des großen Friedens, an den hier alles erinnert. Welche Jahreszahl ist es?',
+        'Sucht am Rathaus (Fassade, Tafeln am Eingang oder im Durchgang) die Jahreszahl des großen Friedens, an den hier alles erinnert. Achtung: Am Haus findet ihr mindestens eine weitere Jahreszahl aus einer ganz anderen Epoche (einer späteren Erneuerung des Gebäudes) – die hat mit diesem Frieden nichts zu tun. Welche Jahreszahl ist die des Friedens?',
       placeholder: 'Jahreszahl (4 Ziffern)',
       answerHashes: ['a16c0ab260e30b22cd06fadf9a6a30c454ddc845925cc831796b2988874d6a5a'],
     },
     hints: [
-      'Schaut euch die Beschilderung und Gedenktafeln rund um den Eingang zum Friedenssaal genau an.',
+      'Es gibt mehr als eine Jahreszahl am Haus. Die falsche Fährte sitzt eher oben, im Zierwerk des Giebels, aus einer viel älteren Zeit – die richtige eher auf Augenhöhe, näher am Eingang oder im Durchgang zum Friedenssaal.',
       'Gesucht ist das Jahr, in dem in Münster und Osnabrück der Westfälische Friede geschlossen wurde – er beendete einen der längsten Kriege der deutschen Geschichte.',
-      'Der Krieg, den der Friede beendete, wird nach seiner Dauer benannt: der Dreißigjährige Krieg, begonnen 1618.',
+      'Der Krieg, den der Friede beendete, ist als „Dreißigjähriger Krieg“ bekannt – das mag euch helfen, die richtige Zahl von der falschen zu unterscheiden, auch wenn beide auf den ersten Blick „alt“ wirken.',
     ],
     image: {
       file: 'Münster, Prinzipalmarkt, Historisches Rathaus -- 2017 -- 6875.jpg',
       alt: 'Das Historische Rathaus mit gotischem Giebel am Prinzipalmarkt',
       credit: RABICH,
     },
-    resolution: `Richtig: 1648. In Vlemyncks Tagebuch steht unter der Zahl ein kleiner Pfeil nach Norden und die Worte: „Folge dem Markt der Kaufleute zu der Kirche, an der die Körbe des Schreckens hängen.“ – Werft im Vorbeigehen einen Blick auf die Bogengänge des Prinzipalmarkts: Unter diesen Arkaden wurde 1648 gefeilscht, verhandelt und spioniert.`,
+    resolution: `Richtig: 1648. Vlemynck notiert schmunzelnd: „Wer sich von der älteren Zahl im Zierwerk des Giebels hat täuschen lassen, dem sei verziehen – dies Haus trägt die Spuren vieler Jahrhunderte, nicht nur des unseren.“ Unter der Zahl steht ein kleiner Pfeil nach Norden und die Worte: „Folge dem Markt der Kaufleute zu der Kirche, an der die Körbe des Schreckens hängen.“ – Werft im Vorbeigehen einen Blick auf die Bogengänge des Prinzipalmarkts: Unter diesen Arkaden wurde 1648 gefeilscht, verhandelt und spioniert.`,
   },
   {
     id: 'stadtweinhaus',
@@ -146,9 +146,9 @@ Stellt euch beim Knobeln ruhig unter die Bögen des Stadtweinhauses – hier sta
       ],
     },
     hints: [
-      'Vlemynck hat jeden Buchstaben um einen Platz nach vorn verschoben – geht also einen Schritt im Alphabet zurück.',
-      'Aus X wird W, aus F wird E …',
-      'Das Lösungswort lagerte im Keller dieses Hauses – und gab ihm seinen Namen.',
+      'Vlemynck hat jeden Buchstaben um einen Platz nach vorn verschoben – geht also einen Schritt im Alphabet zurück, für jeden der vier Buchstaben.',
+      'Schreibt euch das Alphabet auf und schiebt jeden Buchstaben von „XFJO“ genau eine Stelle zurück. Probiert es am ersten Buchstaben aus, dann macht ihr mit den restlichen dreien weiter.',
+      'Das Lösungswort ist ein Getränk, das in Fässern reift, nicht in Flaschen.',
     ],
     resolution: `Wein – richtig entschlüsselt! Vlemynck notiert: „Wer meine Schrift lesen kann, dem vertraue ich auch den Rest. Einer meiner treuesten Freunde war der Türmer. Geh nun zu St. Lamberti und sieh hinauf, wo die Körbe hängen.“`,
     image: {
@@ -179,7 +179,7 @@ Stellt euch beim Knobeln ruhig unter die Bögen des Stadtweinhauses – hier sta
     hints: [
       'Tretet ein Stück zurück (Richtung Prinzipalmarkt), dann seht ihr die Turmseite mit den Körben besser.',
       'Die Körbe hängen übereinander/nebeneinander an der Turmseite oberhalb des Zifferblatts.',
-      'Es sind so viele wie die Anführer des Täuferreichs: Jan van Leiden, Bernd Knipperdolling und Bernd Krechting.',
+      'Es war eine kleine Führungsriege des Täuferreichs, die hier zur Schau gestellt wurde – mehr als einer, aber keine Handvoll. Zählt am Turm noch einmal ganz genau nach.',
     ],
     resolution: `Drei Körbe – für die drei Anführer Jan van Leiden, Bernd Knipperdolling und Bernd Krechting, hingerichtet 1536 vor dem Rathaus. Unter Vlemyncks Eintrag steht, dreifach unterstrichen, das erste Wort der Losung: **PAX**. Und weiter: „Geh nun dorthin, wo der Händler mit der Kiepe steht, und sieh ihm auf den Rücken.“`,
     fragment: 'PAX',
@@ -214,8 +214,8 @@ Der Kiepenkerl ist das Denkmal der westfälischen Wanderhändler. Das Original v
       ],
     },
     hints: [
-      'Der Name des Händlers verrät den Namen des Korbs.',
-      '„…kerl“ ist der Mann. Wie heißt der erste Teil seines Namens?',
+      'Schaut genau auf den Rücken der Statue: Dort trägt er ein geflochtenes Behältnis aus Weidenruten.',
+      'Solche geflochtenen Rückentraggestelle nutzten Wanderhändler und Bauern jahrhundertelang, um Waren zu transportieren.',
       'Das Wort beginnt mit K und reimt sich auf „Wiege“ – fast jedenfalls.',
     ],
     resolution: `Die Kiepe! Vlemynck schreibt: „Folge nun den Freunden aus dem Westen. Sie wohnten im Hause der Krämer, gleich um die Ecke – und in ebenjenem Hause ward ihr Friede mit Spanien unterzeichnet, im Januar des großen Jahres.“`,
@@ -248,8 +248,8 @@ Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters und eines der w
     },
     hints: [
       'Achtet auf Schilder und Flaggen am Eingang.',
-      'Die Gesandten, die hier 1648 wohnten, kamen aus diesem Land.',
-      'Das Land liegt westlich von Deutschland, seine Farbe ist Oranje.',
+      'Die Gesandten, die hier 1648 wohnten, kamen aus diesem Land – die offizielle Bezeichnung des Hauses steht direkt über oder neben dem Haupteingang.',
+      'Prüft auch Fahne oder Wappen am Gebäude – sie gehören zum selben Land wie die Beschriftung.',
     ],
     resolution: `Haus der Niederlande – richtig. Vlemyncks nächster Eintrag: „Nun hinab zur Salzstraße. Dort, wo ein Herr vom Adel sein Haus auf ein winziges Grundstück zwängen ließ, liegt der nächste Nachtrag meiner Freunde.“`,
   },
@@ -280,7 +280,7 @@ Der Erbdrostenhof (1753–1757) wurde von Johann Conrad Schlaun für den Erbdros
     hints: [
       'Schaut auf das ganze Gebäude, nicht nur auf den Mitteleingang – geht dafür auf die andere Straßenseite.',
       'Das Grundstück war zu klein und zu spitz für eine gerade Fassade. Der Baumeister ließ sie deshalb in einem großen Bogen schwingen.',
-      'Sie wölbt sich zur Straße hin nach innen, wie eine Schale – das nennt man in der Baukunst „konkav“.',
+      'Stellt euch vor, die Fassade wäre eine Schüssel: Würde Regenwasser von ihrer Mitte weg- oder zu ihr hinlaufen? Das verrät euch die Wölbungsrichtung.',
     ],
     resolution: `Richtig: Die Fassade ist konkav gewölbt – nach innen, wie eine Schale. So gewann Schlaun trotz des winzigen Eckgrundstücks eine große, prächtige Schauseite. Die Bruderschaft schreibt weiter: „Nur wenige Schritte weiter, versteckt zwischen zwei Straßen, steht eine kleine Kirche desselben Baumeisters. Auch sie hat eine Besonderheit, die man erst sieht, wenn man einmal um sie herumgeht.“`,
   },
@@ -309,7 +309,7 @@ Die Clemenskirche (1745–1753) ist als überkuppelter Zentralbau über kreisfö
     hints: [
       'Aus der Nähe wirkt die Wand fast rund – tretet zurück und schaut auf die einzelnen geraden Abschnitte zwischen den Fenstern.',
       'Es ist mehr als ein Achteck (8 Seiten), aber kein perfekter Kreis.',
-      'Es ist ein Zwölfeck – zwölf gerade Seiten tragen die runde Kuppel.',
+      'Denkt an das Zifferblatt einer Uhr: Die Kirche hat für jede Stunde genau eine gerade Seite.',
     ],
     resolution: `Zwölf Seiten – ein Zwölfeck, das sich von Weitem rund anfühlt. Die Bruderschaft notiert: „Zurück auf den Hauptweg, zum Dom, wo die große Uhr steht.“`,
   },
@@ -340,9 +340,9 @@ Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeig
       ],
     },
     hints: [
-      'Vergleicht die Zeigerstellung mit einer normalen Armbanduhr.',
-      'Die Uhr folgt dem scheinbaren Lauf der Sonne von Ost nach West – aus Sicht des Betrachters „falsch“ herum.',
-      'Sie läuft entgegen dem Uhrzeigersinn – also nach links.',
+      'Vergleicht die Zeigerstellung mit einer normalen Armbanduhr – läuft sie genauso oder andersherum?',
+      'Die Uhr folgt dem scheinbaren Lauf der Sonne über den Himmel: von Ost über Süd nach West.',
+      'Wartet ein, zwei Minuten und beobachtet einen der Zeiger ganz genau: Bewegt er sich auf der 12-Uhr-Position in Richtung der 1 oder in Richtung der 11?',
     ],
     image: {
       file: 'Münster, St.-Paulus-Dom, Astronomische Uhr -- 2019 -- 3822.jpg',
@@ -385,7 +385,7 @@ Vergleicht den Turm der Überwasserkirche mit dem Turm von St. Lamberti, den ihr
     hints: [
       'Schaut ganz nach oben und vergleicht die Silhouette mit der von St. Lamberti.',
       'Der Turm endet flach, wo andere Türme spitz zulaufen.',
-      'Gesucht ist das spitze „Dach“ eines Kirchturms.',
+      'Vergleicht die Turmspitze mit einem angespitzten Bleistift gegenüber einem abgebrochenen – wie nennt man das fehlende Stück ganz oben an einem Kirchturm?',
     ],
     resolution: `Richtig – dem Turm fehlt die Spitze (der Turmhelm). Die Täufer nahmen sie 1534 ab, um Geschütze aufzustellen; der wiederaufgebaute Helm wurde 1704 von einem Orkan zerstört und nie erneuert. Vlemynck: „Von hier wandte ich mich gen Westen, hinaus aus der alten Stadt.“ – Dr. Cording ergänzt: Der nächste Hinweis der Bruderschaft stammt aus der Zeit um 1780 und führt zum Schloss des Fürstbischofs.`,
     image: {
@@ -421,7 +421,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
     hints: [
       'Achtet auf die offiziellen Schilder neben den Eingängen.',
       'Rund 45.000 junge Menschen „wohnen“ heute tagsüber in dieser Einrichtung – verteilt über die ganze Stadt.',
-      'Das Schloss ist der Hauptsitz der … Münster.',
+      'Achtet auf ein Kürzel auf den Schildern, das mit zwei großen W beginnt – es steht für den vollen Namen der Einrichtung.',
     ],
     resolution: `Richtig: die Universität Münster residiert heute im Schloss. Der letzte Eintrag der Bruderschaft lautet: „Hinter dem Schlosse liegt der Garten. Dort, wo unsere Zeichen dich hinführen, haben wir den toten Briefkasten angelegt. Kein Rätsel mehr – nun zählt allein der Ort.“ – Jetzt kommt euer GPS ins Spiel!`,
     image: {
