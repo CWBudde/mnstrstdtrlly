@@ -17,12 +17,14 @@ Position von der Kunsthalle Münster übernommen wurde.
 | 3 | St. Lamberti | Anzahl eiserner Körbe am Turm | **3** | verifiziert (Stadtarchiv Münster, LWL) |
 | 4 | Kiepenkerl | Traggestell auf dem Rücken | **Kiepe** (auch: Korb, Tragekorb) | sicher |
 | 5 | Krameramtshaus | „Haus der …“ | **Niederlande** | verifiziert (Haus der Niederlande seit 1995); [PRÜFEN]: Beschilderung sichtbar? |
-| 6 | Dom, astronomische Uhr | Laufrichtung der Zeiger | **links / gegen den Uhrzeigersinn** | verifiziert (paulusdom.de); [PRÜFEN]: Öffnungszeiten/Zugang südl. Chorumgang |
-| 7 | Überwasserkirche | Was fehlt dem Turm? | **(Turm-)Spitze / Turmhelm** | verifiziert (Täufer 1534; Orkan 1704, nie erneuert) |
-| 8 | Schloss | Heutige Einrichtung | **Universität (Münster)** (auch: Uni, WWU) | sicher; [PRÜFEN]: Beschilderung |
-| 9 | Schlossgarten | GPS-Punkt erreichen | 51.9650 N, 7.6110 O, Radius 40 m | **[PRÜFEN]** – Punkt ablaufen: frei zugänglich? GPS-Empfang? |
-| 9 | – Fallback | Codewort ohne GPS | **SCHLAUN** (Baumeister des Schlosses) | – |
-| 10 | Aasee | Anzahl der Betonkugeln | **3** | verifiziert (Kunsthalle Münster, Skulptur Projekte 1977) |
+| 6 | Erbdrostenhof | Wölbung der Fassade | **konkav / nach innen** | verifiziert (Schlaun baute auf winziges Eckgrundstück, konkav geschwungene Fassade); [PRÜFEN]: Von der Straße aus gut erkennbar? |
+| 7 | Clemenskirche | Anzahl der Ecken/Seiten des Außenbaus | **12 (Zwölfeck)** | verifiziert (überkuppelter, im Außenbau zwölfeckig ummantelter Zentralbau); [PRÜFEN]: Ecken vor Ort tatsächlich zählbar (nicht durch Bewuchs/Gerüst verdeckt)? |
+| 8 | Dom, astronomische Uhr | Laufrichtung der Zeiger | **links / gegen den Uhrzeigersinn** | verifiziert (paulusdom.de); [PRÜFEN]: Öffnungszeiten/Zugang südl. Chorumgang |
+| 9 | Überwasserkirche | Was fehlt dem Turm? | **(Turm-)Spitze / Turmhelm** | verifiziert (Täufer 1534; Orkan 1704, nie erneuert) |
+| 10 | Schloss | Heutige Einrichtung | **Universität (Münster)** (auch: Uni, WWU) | sicher; [PRÜFEN]: Beschilderung |
+| 11 | Schlossgarten | GPS-Punkt erreichen | 51.9650 N, 7.6110 O, Radius 40 m | **[PRÜFEN]** – Punkt ablaufen: frei zugänglich? GPS-Empfang? |
+| 11 | – Fallback | Codewort ohne GPS | **SCHLAUN** (Baumeister des Schlosses) | – |
+| 12 | Aasee | Anzahl der Betonkugeln | **3** | verifiziert (Kunsthalle Münster, Skulptur Projekte 1977) |
 | F | Finale | Losung der Depesche | **PAX OPTIMA RERUM** | verifiziert (Devise des Westfälischen Friedens, Silius Italicus) |
 
 ## Verifizierte Fakten und Quellen
@@ -35,6 +37,16 @@ Position von der Kunsthalle Münster übernommen wurde.
   hingerichtet am 22. Januar 1536 vor dem Rathaus (stadt-muenster.de/Stadtarchiv, LWL).
 - **Krameramtshaus:** Erbaut 1589, ältestes Gildehaus, 1646–1648 Quartier der niederländischen
   Gesandtschaft, seit 1995 „Haus der Niederlande“ (stadt-muenster.de, uni-muenster.de).
+- **Erbdrostenhof:** 1753–1757 von Johann Conrad Schlaun für den Erbdrosten Adolf Heidenreich
+  Freiherr Droste zu Vischering auf einem kleinen, spitz zulaufenden Eckgrundstück an der
+  Salzstraße 38 errichtet; die Fassade wurde deshalb konkav (nach innen gewölbt) ausgeführt, um
+  trotzdem eine repräsentative Schauseite zu erhalten (denkmalschutz.de, muensterwiki.de,
+  stadt-muenster.de). Im Zweiten Weltkrieg bis auf die Fassade zerstört, 1953–1970 vom LWL
+  wiederaufgebaut.
+- **Clemenskirche:** 1745–1753 ebenfalls von Schlaun für die Barmherzigen Brüder erbaut, liegt
+  zwischen Salz- und Clemensstraße, nur wenige Schritte vom Erbdrostenhof entfernt. Überkuppelter
+  Zentralbau über kreisförmigem Grundriss, im Außenbau aber zwölfeckig ummantelt (baukunst-nrw.de,
+  de.wikipedia.org).
 - **Astronomische Uhr:** 1540–1542, südlicher Chorumgang; die Zeiger laufen **gegen** den
   Uhrzeigersinn, dem Sonnenlauf folgend (paulusdom.de, MünsterWiki).
 - **Überwasserkirche:** Täufer nahmen 1534/35 den Turmhelm ab (Geschützplattform); der
@@ -54,9 +66,15 @@ Position von der Kunsthalle Münster übernommen wurde.
       zum Friedenssaal ablesbar? Falls nicht eindeutig: Fragetext in `src/data/stations.ts`
       anpassen. (Hinweise 2/3 führen notfalls zur Lösung.)
 - [ ] **Station 4, Kiepenkerl:** Steht die Statue frei zugänglich (kein Umbau/Markt)?
-- [ ] **Station 6, Dom:** Öffnungszeiten prüfen; astronomische Uhr im südlichen Chorumgang
+- [ ] **Station 6, Erbdrostenhof:** Ist die konkave Fassadenwölbung von der Salzstraße aus gut
+      erkennbar (genug Abstand zum Gebäude möglich, keine Baustelle/Zaun im Weg)? Wegbeschreibung
+      vom Krameramtshaus ablaufen und Gehzeit prüfen.
+- [ ] **Station 7, Clemenskirche:** Sind die zwölf Seiten des Außenbaus tatsächlich zählbar
+      (Sichtachsen, Bewuchs, Gerüst)? Die Kirche liegt „ein wenig verborgen“ – Zugang zur
+      Vorderseite prüfen.
+- [ ] **Station 8, Dom:** Öffnungszeiten prüfen; astronomische Uhr im südlichen Chorumgang
       zugänglich? Gottesdienstzeiten in die Tourplanung einbeziehen.
-- [ ] **Station 9, Schlossgarten:** Zielpunkt (51.9650, 7.6110) ablaufen – liegt er auf einem
+- [ ] **Station 11, Schlossgarten:** Zielpunkt (51.9650, 7.6110) ablaufen – liegt er auf einem
       frei zugänglichen Weg/einer Wiese? Ggf. Koordinate in `src/data/stations.ts` anpassen.
       GPS-Genauigkeit unter Bäumen testen; notfalls `radiusMeters` erhöhen.
 - [ ] **Alle Stationen:** Marker-Positionen auf der Karte stichprobenartig mit der Realität

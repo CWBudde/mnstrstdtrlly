@@ -103,7 +103,7 @@ export const stations: Station[] = [
       'Startpunkt: Stellt euch vor das Historische Rathaus mit dem hohen gotischen Giebel, Prinzipalmarkt 10.',
     story: `Aus Vlemyncks Tagebuch: „Im Saale des Rathauses haben die Gesandten einander die Hände gereicht. Ich stand hinten an der Tür und hielt die Feder. Hier beginnt meine Spur – bei der Jahreszahl, die bald ganz Europa kennen wird. Wer sie am Hause findet, mag mir weiter folgen.“
 
-Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde am 15. Mai 1648 der Friede zwischen Spanien und den Niederlanden beschworen – der erste Baustein des Westfälischen Friedens. Am und im Rathaus erinnert vieles an das große Jahr.`,
+Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde ein erster Teilfriede zwischen zwei kriegsmüden Mächten beschworen – der erste Baustein eines viel größeren Friedens, der die Stadt für immer berühmt machen sollte. Am und im Rathaus erinnert vieles an dieses eine, große Jahr – ihr müsst es nur finden.`,
     task: {
       kind: 'quiz',
       question:
@@ -113,8 +113,8 @@ Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde am 15. Mai 1648 der
     },
     hints: [
       'Schaut euch die Beschilderung und Gedenktafeln rund um den Eingang zum Friedenssaal genau an.',
-      'Der Dreißigjährige Krieg dauerte von 1618 bis … ? Das Ende ist die gesuchte Zahl.',
-      'Die Zahl beginnt mit 16 und endet mit 48.',
+      'Gesucht ist das Jahr, in dem in Münster und Osnabrück der Westfälische Friede geschlossen wurde – er beendete einen der längsten Kriege der deutschen Geschichte.',
+      'Der Krieg, den der Friede beendete, wird nach seiner Dauer benannt: der Dreißigjährige Krieg, begonnen 1618.',
     ],
     image: {
       file: 'Münster, Prinzipalmarkt, Historisches Rathaus -- 2017 -- 6875.jpg',
@@ -251,15 +251,75 @@ Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters und eines der w
       'Die Gesandten, die hier 1648 wohnten, kamen aus diesem Land.',
       'Das Land liegt westlich von Deutschland, seine Farbe ist Oranje.',
     ],
-    resolution: `Haus der Niederlande – richtig. Vlemyncks nächster Eintrag: „Nun zum Herzen des Bistums. In der großen Kirche steht eine Uhr, die klüger ist als wir alle. Doch sieh genau hin: Sie geht ihren eigenen Weg.“`,
+    resolution: `Haus der Niederlande – richtig. Vlemyncks nächster Eintrag: „Nun hinab zur Salzstraße. Dort, wo ein Herr vom Adel sein Haus auf ein winziges Grundstück zwängen ließ, liegt der nächste Nachtrag meiner Freunde.“`,
+  },
+  {
+    id: 'erbdrostenhof',
+    label: 'Station 6',
+    name: 'Erbdrostenhof – das schräge Palais',
+    coords: { lat: 51.9609, lng: 7.6322 },
+    directions:
+      'Vom Krameramtshaus zurück zum Prinzipalmarkt und weiter über den Roggenmarkt in die Salzstraße hinein (ca. 10 Minuten). Auf halber Strecke, hinter einem schmiedeeisernen Tor, liegt linker Hand das barocke Adelspalais mit der Hausnummer 38.',
+    story: `Nachtrag der Bruderschaft, um 1760 den Papieren beigelegt: „Ein Jahrhundert nach Vlemynck bauten wir unsere Spur weiter, denn die Stadt wuchs, und mit ihr wuchsen die Verstecke. Hier, an der Salzstraße, ließ sich der Erbdrost der Fürstbischöfe ein Stadtpalais errichten – vom selben Baumeister, der später auch dem Fürstbischof selbst ein Schloss bauen sollte. Das Grundstück aber war winzig und spitz zulaufend wie ein Keil. Der Baumeister behalf sich mit einem Kniff, den nur sieht, wer vor dem ganzen Hause steht und nicht nur auf die Tür starrt.“
+
+Der Erbdrostenhof (1753–1757) wurde von Johann Conrad Schlaun für den Erbdrosten Adolf Heidenreich Freiherr Droste zu Vischering auf ein kleines, schmales Eckgrundstück gebaut. Um trotzdem eine prächtige, repräsentative Schauseite zu bekommen, schwingt die gesamte Fassade in einer durchgehenden Kurve.`,
+    task: {
+      kind: 'quiz',
+      question:
+        'Tretet ein paar Schritte zurück und betrachtet die gesamte Fassade zur Salzstraße als Ganzes: Schwingt sie sich nach innen (wie eine Schale) oder nach außen (wie ein Bauch)?',
+      placeholder: 'nach innen / nach außen',
+      answerHashes: [
+        '4132600988b436c919c7869e00a66b42ed30738a977e7904347fdbec8e6b71a4',
+        '850dcd69d9020ae02acfe1bf33c31ba39236398a92944cd08f898013b97dbeb7',
+        'a658c22493b4378c2dc826af6c606c711a53ca2321635cba23c016aa41576bc5',
+        '760d80fd003ad247b2567750cb3b37f0b7a4ab6e6199b3fca5a737771d6076f2',
+        'a14d9671a502fc762f8c1b25cbd506d63bd49ea3cdf0cb55599f3736e5020517',
+        'b753d6644e0e6e11e5b6e11d2289c230cc90308b59864e9cd3c2333099c3db28',
+      ],
+    },
+    hints: [
+      'Schaut auf das ganze Gebäude, nicht nur auf den Mitteleingang – geht dafür auf die andere Straßenseite.',
+      'Das Grundstück war zu klein und zu spitz für eine gerade Fassade. Der Baumeister ließ sie deshalb in einem großen Bogen schwingen.',
+      'Sie wölbt sich zur Straße hin nach innen, wie eine Schale – das nennt man in der Baukunst „konkav“.',
+    ],
+    resolution: `Richtig: Die Fassade ist konkav gewölbt – nach innen, wie eine Schale. So gewann Schlaun trotz des winzigen Eckgrundstücks eine große, prächtige Schauseite. Die Bruderschaft schreibt weiter: „Nur wenige Schritte weiter, versteckt zwischen zwei Straßen, steht eine kleine Kirche desselben Baumeisters. Auch sie hat eine Besonderheit, die man erst sieht, wenn man einmal um sie herumgeht.“`,
+  },
+  {
+    id: 'clemenskirche',
+    label: 'Station 7',
+    name: 'Clemenskirche – die vielen Ecken',
+    coords: { lat: 51.9606, lng: 7.6319 },
+    directions:
+      'Vom Erbdrostenhof nur wenige Schritte weiter: Zwischen Salzstraße und Clemensstraße liegt, ein wenig verborgen, die kleine Klosterkirche mit der auffälligen Kuppel.',
+    story: `Nachtrag der Bruderschaft: „Auch dieses Gotteshaus schuf der Baumeister des Erbdrostenhofs, für die Barmherzigen Brüder, die hier Kranke pflegten. Von außen scheint sie fast rund – doch ein Rund ist sie nicht. Geht einmal um sie herum und zählt, was zu zählen ist.“
+
+Die Clemenskirche (1745–1753) ist als überkuppelter Zentralbau über kreisförmigem Grundriss entworfen, im Außenbau aber vielflächig ummantelt – ein Vieleck, das sich rund anfühlt, aber gerade Kanten hat.`,
+    task: {
+      kind: 'quiz',
+      question:
+        'Geht einmal um den Außenbau der Kirche herum und zählt die geraden Seiten (Ecken) der Außenmauer, auf der die kuppelbekrönte Rundung ruht. Wie viele sind es?',
+      placeholder: 'Zahl',
+      answerHashes: [
+        'fb70ba265872a7640649f628ae57a3dae87c2cb21b49f078558379a232e50968',
+        '6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918',
+        '09eb02cfa39a99681e145965ceac64e71a429dc4af90fbaaae4c427448cdd857',
+        '260c23161116c88dee0b022a6ac2072fb4c41e08930216d2117996571198cde3',
+      ],
+    },
+    hints: [
+      'Aus der Nähe wirkt die Wand fast rund – tretet zurück und schaut auf die einzelnen geraden Abschnitte zwischen den Fenstern.',
+      'Es ist mehr als ein Achteck (8 Seiten), aber kein perfekter Kreis.',
+      'Es ist ein Zwölfeck – zwölf gerade Seiten tragen die runde Kuppel.',
+    ],
+    resolution: `Zwölf Seiten – ein Zwölfeck, das sich von Weitem rund anfühlt. Die Bruderschaft notiert: „Zurück auf den Hauptweg, zum Dom, wo die große Uhr steht.“`,
   },
   {
     id: 'dom',
-    label: 'Station 6',
+    label: 'Station 8',
     name: 'St.-Paulus-Dom – die astronomische Uhr',
     coords: { lat: 51.9629, lng: 7.6257 },
     directions:
-      'Geht zurück Richtung Süden und haltet euch rechts, über die Gassen zum weiten Domplatz. Betretet den Dom durch das Hauptportal (Eintritt frei; bitte Gottesdienstzeiten respektieren). Die astronomische Uhr findet ihr im südlichen Chorumgang, rechts hinter dem Hochaltar.',
+      'Von der Clemenskirche zurück Richtung Prinzipalmarkt und dann über die Gassen zum weiten Domplatz (ca. 10 Minuten). Betretet den Dom durch das Hauptportal (Eintritt frei; bitte Gottesdienstzeiten respektieren). Die astronomische Uhr findet ihr im südlichen Chorumgang, rechts hinter dem Hochaltar.',
     story: `Aus dem Tagebuch: „Im Dome steht die große Uhr, die Sonne, Mond und Sterne weist. Als Knabe stand ich staunend davor. Der Meister, der sie schuf, versteckte darin eine Eigenheit, die nur sieht, wer wirklich schaut. Wer sie kennt, kennt die Richtung meiner Spur.“
 
 Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeigt Planetenstände, Tierkreiszeichen und den Kalender bis weit in die Zukunft. Und sie hat eine berühmte Besonderheit.`,
@@ -294,7 +354,7 @@ Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeig
   },
   {
     id: 'ueberwasser',
-    label: 'Station 7',
+    label: 'Station 9',
     name: 'Überwasserkirche – der Turm ohne Haupt',
     coords: { lat: 51.9636, lng: 7.6231 },
     directions:
@@ -336,7 +396,7 @@ Vergleicht den Turm der Überwasserkirche mit dem Turm von St. Lamberti, den ihr
   },
   {
     id: 'schloss',
-    label: 'Station 8',
+    label: 'Station 10',
     name: 'Fürstbischöfliches Schloss',
     coords: { lat: 51.9636, lng: 7.6134 },
     directions:
@@ -372,7 +432,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
   },
   {
     id: 'briefkasten',
-    label: 'Station 9',
+    label: 'Station 11',
     name: 'Schlossgarten – der tote Briefkasten',
     coords: { lat: 51.965, lng: 7.611 },
     directions:
@@ -401,7 +461,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
   },
   {
     id: 'aasee',
-    label: 'Station 10',
+    label: 'Station 12',
     name: 'Aasee – die drei Kugeln',
     coords: { lat: 51.95711, lng: 7.61819 },
     directions:
@@ -438,7 +498,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
       answerHashes: ['e3a810988017e402bc930a4b02bc6b2d3341e5c4d9dc2137a6518322780aeaeb'],
     },
     hints: [
-      'Die drei Fragmente wurden euch nach den Stationen 3, 6 und 9 angezeigt – ihr findet sie auch oben in der Fragmentleiste.',
+      'Die drei Fragmente wurden euch nach den Stationen 3, 8 und 11 angezeigt – ihr findet sie auch oben in der Fragmentleiste.',
       'Es ist Latein und bedeutet: „Der Friede ist das beste der Dinge.“',
       'PAX … – jetzt nur noch die richtige Reihenfolge.',
     ],
