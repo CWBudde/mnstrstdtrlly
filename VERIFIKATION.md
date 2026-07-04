@@ -12,7 +12,7 @@ Position von der Kunsthalle Münster übernommen wurde.
 
 | # | Station | Frage | Lösung | Status |
 |---|---------|-------|--------|--------|
-| 1 | Historisches Rathaus | Jahreszahl des Friedens | **1648** | Fakt sicher; [PRÜFEN]: Zahl an Fassade/Tafel gut auffindbar? |
+| 1 | Historisches Rathaus | Jahreszahl des Friedens | **1648** | Fakt sicher; am Giebel steht zusätzlich eine ältere Jahreszahl (Fassaden­erneuerung), die Frage warnt jetzt explizit vor dieser Falle; [PRÜFEN]: 1648 an Tafel/Durchgang gut auffindbar? |
 | 2 | Stadtweinhaus | Chiffre „XFJO“ (jeder Buchstabe +1) | **WEIN** | sicher (reines Story-Rätsel, kein Vor-Ort-Fakt nötig) |
 | 3 | St. Lamberti | Anzahl eiserner Körbe am Turm | **3** | verifiziert (Stadtarchiv Münster, LWL) |
 | 4 | Kiepenkerl | Traggestell auf dem Rücken | **Kiepe** (auch: Korb, Tragekorb) | sicher |
@@ -63,8 +63,11 @@ Position von der Kunsthalle Münster übernommen wurde.
 ## Vor-Ort-Checkliste
 
 - [ ] **Station 1, Rathaus:** Ist „1648“ an einer Tafel/Beschriftung am oder neben dem Eingang
-      zum Friedenssaal ablesbar? Falls nicht eindeutig: Fragetext in `src/data/stations.ts`
-      anpassen. (Hinweise 2/3 führen notfalls zur Lösung.)
+      zum Friedenssaal ablesbar? Am Giebel selbst ist eine ältere Jahreszahl (aus einer
+      Fassadenerneuerung) zu sehen, die *nicht* die gesuchte ist – die Frage weist inzwischen
+      ausdrücklich darauf hin, damit Teams nicht die falsche Zahl eintippen. Falls „1648“ vor Ort
+      nicht eindeutig auffindbar ist: Fragetext in `src/data/stations.ts` anpassen. (Hinweise 2/3
+      führen notfalls zur Lösung.)
 - [ ] **Station 4, Kiepenkerl:** Steht die Statue frei zugänglich (kein Umbau/Markt)?
 - [ ] **Station 6, Erbdrostenhof:** Ist die konkave Fassadenwölbung von der Salzstraße aus gut
       erkennbar (genug Abstand zum Gebäude möglich, keine Baustelle/Zaun im Weg)? Wegbeschreibung
