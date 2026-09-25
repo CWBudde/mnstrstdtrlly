@@ -123,7 +123,7 @@ Nachgeprüft und korrekt:
 | # | Station | Zeitschicht |
 |---|---|---|
 | 1 | Aasee, Giant Pool Balls: Start, die Kassette ist leer, die Spur führt zurück | 1977 |
-| 2 | Schlossgarten (GPS, toter Briefkasten) | Bruderschaft |
+| 2 | GPS-Punkt auf dem Weg Aasee → Schloss (toter Briefkasten) | Bruderschaft |
 | 3 | Fürstbischöfliches Schloss | 1767–87 |
 | 4 | Überwasserkirche | Nachtrag 1705 |
 | 5 | Kiepenkerl (Spiekerhof) | Nachtrag 19./20. Jh., Anachronismus auflösen |
@@ -136,8 +136,14 @@ Nachgeprüft und korrekt:
 
 Laufweg:
 
-- Der Weg geht Aasee → Schlossgarten → Schloss → Frauenstraße → Überwasser → Spiekerhof →
+- Der Weg geht Aasee → GPS-Punkt → Schloss → Frauenstraße → Überwasser → Spiekerhof →
   Domplatz → Lamberti/Krameramtshaus.
+- **GPS-Punkt verlegen:** Der bisherige Punkt (51.965, 7.611) liegt nordwestlich hinter dem
+  Schloss. Aasee → Schlossgarten (1006 m) ist länger als Aasee → Schloss (ca. 793 m), danach
+  ginge es 226 m zurück nach Südost. Der neue Punkt liegt deshalb auf dem direkten, öffentlich
+  zugänglichen Weg vom Aasee zum Schloss (Südrand Schlossgarten/Schlossgraben, nicht im
+  Botanischen Garten). Er muss den Routen-Test aus 2.5 bestehen; die genaue Lage wird aus
+  OSM erhoben und **[VOR ORT]** bestätigt.
 - Danach geht es über die Kirchherrngasse zur Salzstraße und über die Salzstraße zurück zum
   Prinzipalmarkt → Stadtweinhaus → Rathaus.
 - Die Schleife Krameramtshaus → Salzstraße → Prinzipalmarkt ist **[VOR ORT]** zu bestätigen.
@@ -248,7 +254,15 @@ und fotografiert werden. Hier wird nichts mehr am Schreibtisch erfunden.
   `answerHash` entspricht. Das hätte „Kiepe“, „drei Kugeln“ und „SCHLAUN“ gefunden.
 - **Routen-Test:** Die Stationsfolge darf sich auf der Karte nicht selbst kreuzen, und keine
   Station darf näher an einer übernächsten liegen als an der nächsten.
-- **Headless-Durchlauf** (Playwright) in CI wie bisher, ergänzt um Wartezeit und Punkte.
+- **Headless-Durchlauf** (Playwright) **neu aufsetzen**. Bisher gibt es weder Playwright
+  noch ein Testskript, und `deploy.yml` führt nur `npm ci` und `npm run build` aus. Nötig sind:
+  - `@playwright/test` als devDependency und eine `playwright.config.ts`, die gegen
+    `vite preview` läuft,
+  - `npm test` (Vitest) und `npm run test:e2e` (Playwright) in `package.json`,
+  - ein E2E-Test, der die Rallye einmal komplett durchspielt, inklusive Wartezeit nach
+    Fehlversuchen, Punkten und GPS-Fallback (Geolocation gemockt),
+  - einen CI-Schritt vor dem Deploy: `npx playwright install --with-deps chromium`, dann
+    `npm test` und `npm run test:e2e`. Schlägt ein Test fehl, wird nicht deployt.
 - **Begehung vor dem Merge:** eine Person läuft die Route komplett ab mit Stoppuhr, Fotos und
   GPS-Test. Die Checkliste in `VERIFIKATION.md` wird dabei abgehakt.
 - **Blindtest:** Ein Team, das den Inhalt nicht kennt, spielt die Rallye. Zielwerte:
@@ -277,7 +291,8 @@ und fotografiert werden. Hier wird nichts mehr am Schreibtisch erfunden.
    Zugänglichkeit, Öffnungszeiten). Die Kandidaten aus 2.2 dienen als Suchliste.
 5. **Rätsel neu schreiben** nach den Regeln aus 2.2, Meta-Rätsel nach 2.3. Story auf
    Rückwärts-Erzählung umbauen (Bruderschafts-Schichten).
-6. **App-Mechanik** aus 2.4 und Tests aus 2.5 umsetzen.
+6. **App-Mechanik** aus 2.4 und Tests aus 2.5 umsetzen, inklusive Vitest-/Playwright-Setup
+   und Testschritt in CI.
 7. **`VERIFIKATION.md`** neu schreiben: pro Station Lösung, Quelle, Begehungsfoto und Datum.
 8. **Begehung Nr. 2 und Blindtest**, danach Feinschliff und Merge.
 
