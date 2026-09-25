@@ -262,7 +262,8 @@ und fotografiert werden. Hier wird nichts mehr am Schreibtisch erfunden.
 
 1. **Entscheidung Richtung:** Start am Aasee und Finale im Rathaus (empfohlen) oder
    umgekehrt.
-2. **Sofortkorrekturen der Fakten** (unabhängig vom Umbau, kleine PR):
+2. **Sofortkorrekturen der Fakten** – ✅ erledigt (PR #3), zusätzlich Titel-Spoiler
+   „Aasee – die drei Kugeln“ und Kiepenkerl-Anachronismus behoben; Speicherschlüssel auf `v2`:
    - Rathausfrage entschärfen: keine erfundene zweite Jahreszahl.
    - Dom-Frage und -Hinweise auf den einen Sonnenzeiger und das 24-h-Zifferblatt umstellen.
    - Hinweis „WW“ entfernen.

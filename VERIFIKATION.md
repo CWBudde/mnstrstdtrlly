@@ -12,19 +12,18 @@ Position von der Kunsthalle Münster übernommen wurde.
 
 | # | Station | Frage | Lösung | Status |
 |---|---------|-------|--------|--------|
-| 1 | Historisches Rathaus | Jahreszahl des Friedens | **1648** | Fakt sicher; am Giebel steht zusätzlich eine ältere Jahreszahl (Fassaden­erneuerung), die Frage warnt jetzt explizit vor dieser Falle; [PRÜFEN]: 1648 an Tafel/Durchgang gut auffindbar? |
+| 1 | Historisches Rathaus | Jahreszahl des Friedens | **1648** | Fakt sicher; die frühere Behauptung einer zweiten „falschen“ Jahreszahl am Giebel war unbelegt und wurde entfernt; [PRÜFEN]: 1648 an Tafel/Zugang Friedenssaal von außen auffindbar? |
 | 2 | Stadtweinhaus | Chiffre „XFJO“ (jeder Buchstabe +1) | **WEIN** | sicher (reines Story-Rätsel, kein Vor-Ort-Fakt nötig) |
 | 3 | St. Lamberti | Anzahl eiserner Körbe am Turm | **3** | verifiziert (Stadtarchiv Münster, LWL) |
 | 4 | Kiepenkerl | Traggestell auf dem Rücken | **Kiepe** (auch: Korb, Tragekorb) | sicher |
 | 5 | Krameramtshaus | „Haus der …“ | **Niederlande** | verifiziert (Haus der Niederlande seit 1995); [PRÜFEN]: Beschilderung sichtbar? |
 | 6 | Erbdrostenhof | Wölbung der Fassade | **konkav / nach innen** | verifiziert (Schlaun baute auf winziges Eckgrundstück, konkav geschwungene Fassade); [PRÜFEN]: Von der Straße aus gut erkennbar? |
-| 7 | Clemenskirche | Anzahl der Ecken/Seiten des Außenbaus | **12 (Zwölfeck)** | verifiziert (überkuppelter, im Außenbau zwölfeckig ummantelter Zentralbau); [PRÜFEN]: Ecken vor Ort tatsächlich zählbar (nicht durch Bewuchs/Gerüst verdeckt)? |
-| 8 | Dom, astronomische Uhr | Laufrichtung der Zeiger | **links / gegen den Uhrzeigersinn** | verifiziert (paulusdom.de); [PRÜFEN]: Öffnungszeiten/Zugang südl. Chorumgang |
-| 9 | Überwasserkirche | Was fehlt dem Turm? | **(Turm-)Spitze / Turmhelm** | verifiziert (Täufer 1534; Orkan 1704, nie erneuert) |
-| 10 | Schloss | Heutige Einrichtung | **Universität (Münster)** (auch: Uni, WWU) | sicher; [PRÜFEN]: Beschilderung |
-| 11 | Schlossgarten | GPS-Punkt erreichen | 51.9650 N, 7.6110 O, Radius 40 m | **[PRÜFEN]** – Punkt ablaufen: frei zugänglich? GPS-Empfang? |
-| 11 | – Fallback | Codewort ohne GPS | **SCHLAUN** (Baumeister des Schlosses) | – |
-| 12 | Aasee | Anzahl der Betonkugeln | **3** | verifiziert (Kunsthalle Münster, Skulptur Projekte 1977) |
+| 7 | Dom, astronomische Uhr | Laufrichtung des (einzigen) Sonnenzeigers, abzulesen an der Anordnung der Stundenziffern des 24-h-Zifferblatts | **links / gegen den Uhrzeigersinn** | verifiziert (paulusdom.de, MünsterWiki); [PRÜFEN]: Vormittagsstunden rechts? Öffnungszeiten/Zugang südl. Chorumgang |
+| 8 | Überwasserkirche | Was fehlt dem Turm? | **(Turm-)Spitze / Turmhelm** | verifiziert (Täufer 1534; Orkan 1704, nie erneuert) |
+| 9 | Schloss | Heutige Einrichtung | **Universität (Münster)** (auch: Uni, WWU) | sicher (seit 01.10.2023 „Universität Münster“, vorher WWU); [PRÜFEN]: Beschilderung |
+| 10 | Schlossgarten | GPS-Punkt erreichen | 51.9650 N, 7.6110 O, Radius 40 m | **[PRÜFEN]** – Punkt ablaufen: frei zugänglich, nicht im Botanischen Garten (schließt 16/19 Uhr)? GPS-Empfang? |
+| 10 | – Fallback | Codewort ohne GPS | **SIEGELBRUCH** (nur von der Spielleitung auszugeben; steht nirgends im Spieltext) | – |
+| 11 | Aasee | Anzahl der Betonkugeln | **3** | verifiziert (Kunsthalle Münster, Skulptur Projekte 1977) |
 | F | Finale | Losung der Depesche | **PAX OPTIMA RERUM** | verifiziert (Devise des Westfälischen Friedens, Silius Italicus) |
 
 ## Verifizierte Fakten und Quellen
@@ -43,11 +42,13 @@ Position von der Kunsthalle Münster übernommen wurde.
   trotzdem eine repräsentative Schauseite zu erhalten (denkmalschutz.de, muensterwiki.de,
   stadt-muenster.de). Im Zweiten Weltkrieg bis auf die Fassade zerstört, 1953–1970 vom LWL
   wiederaufgebaut.
-- **Clemenskirche:** 1745–1753 ebenfalls von Schlaun für die Barmherzigen Brüder erbaut, liegt
-  zwischen Salz- und Clemensstraße, nur wenige Schritte vom Erbdrostenhof entfernt. Überkuppelter
-  Zentralbau über kreisförmigem Grundriss, im Außenbau aber zwölfeckig ummantelt (baukunst-nrw.de,
-  de.wikipedia.org).
-- **Astronomische Uhr:** 1540–1542, südlicher Chorumgang; die Zeiger laufen **gegen** den
+- **Clemenskirche:** als Station entfernt – die Quellen widersprechen sich zur Form des Außenbaus
+  (zwölfeckig vs. unregelmäßiges Sechseck), und ein Umrunden ist fraglich (siehe PLAN.md).
+- **Krameramtshaus-Lage:** Alter Steinweg 6/7, direkt am Chor von St. Lamberti,
+  51°57′46.6″N 7°37′47.4″E. Die Salzstraße beginnt am Nordende des Prinzipalmarkts an
+  der Lambertikirche und führt nach Osten zum Erbdrostenhof.
+- **Astronomische Uhr:** 1540–1542, südlicher Chorumgang; 24-Stunden-Zifferblatt mit nur einem
+  Zeiger (Sonnenzeiger, kein Minutenzeiger), XII Mittag oben; der Zeiger läuft **gegen** den
   Uhrzeigersinn, dem Sonnenlauf folgend (paulusdom.de, MünsterWiki).
 - **Überwasserkirche:** Täufer nahmen 1534/35 den Turmhelm ab (Geschützplattform); der
   wiederaufgebaute Helm wurde 1704 durch einen Orkan zerstört und nie erneuert
@@ -56,28 +57,22 @@ Position von der Kunsthalle Münster übernommen wurde.
 - **Schloss:** 1767–1787 nach Plänen von Johann Conrad Schlaun, heute Sitz der Universität.
 - **Giant Pool Balls:** Claes Oldenburg, 1977 (Skulptur Projekte), drei Betonkugeln mit 3,5 m
   Durchmesser; Standort 51°57′25.6″N 7°37′05.5″E (kunsthallemuenster.de) – als Koordinate
-  der Stationen 10/Finale übernommen.
+  der Stationen 11/Finale übernommen.
 - **Pax optima rerum:** Devise des Westfälischen Friedens nach Silius Italicus, u.a. auf
   Friedensmünzen und dem Stich nach Gerard ter Borchs Friedensbild (Wikipedia/LWL).
 
 ## Vor-Ort-Checkliste
 
 - [ ] **Station 1, Rathaus:** Ist „1648“ an einer Tafel/Beschriftung am oder neben dem Eingang
-      zum Friedenssaal ablesbar? Am Giebel selbst ist eine ältere Jahreszahl (aus einer
-      Fassadenerneuerung) zu sehen, die *nicht* die gesuchte ist – die Frage weist inzwischen
-      ausdrücklich darauf hin, damit Teams nicht die falsche Zahl eintippen. Falls „1648“ vor Ort
-      nicht eindeutig auffindbar ist: Fragetext in `src/data/stations.ts` anpassen. (Hinweise 2/3
-      führen notfalls zur Lösung.)
+      zum Friedenssaal ablesbar? Falls nicht: Fragetext in `src/data/stations.ts` anpassen.
+      (Hinweis 2 führt notfalls zur Lösung.)
 - [ ] **Station 4, Kiepenkerl:** Steht die Statue frei zugänglich (kein Umbau/Markt)?
 - [ ] **Station 6, Erbdrostenhof:** Ist die konkave Fassadenwölbung von der Salzstraße aus gut
       erkennbar (genug Abstand zum Gebäude möglich, keine Baustelle/Zaun im Weg)? Wegbeschreibung
       vom Krameramtshaus ablaufen und Gehzeit prüfen.
-- [ ] **Station 7, Clemenskirche:** Sind die zwölf Seiten des Außenbaus tatsächlich zählbar
-      (Sichtachsen, Bewuchs, Gerüst)? Die Kirche liegt „ein wenig verborgen“ – Zugang zur
-      Vorderseite prüfen.
-- [ ] **Station 8, Dom:** Öffnungszeiten prüfen; astronomische Uhr im südlichen Chorumgang
+- [ ] **Station 7, Dom:** Stehen die Vormittagsstunden rechts (Hinweise 2/3 bauen darauf auf)? Öffnungszeiten prüfen; astronomische Uhr im südlichen Chorumgang
       zugänglich? Gottesdienstzeiten in die Tourplanung einbeziehen.
-- [ ] **Station 11, Schlossgarten:** Zielpunkt (51.9650, 7.6110) ablaufen – liegt er auf einem
+- [ ] **Station 10, Schlossgarten:** Zielpunkt (51.9650, 7.6110) ablaufen – liegt er auf einem
       frei zugänglichen Weg/einer Wiese? Ggf. Koordinate in `src/data/stations.ts` anpassen.
       GPS-Genauigkeit unter Bäumen testen; notfalls `radiusMeters` erhöhen.
 - [ ] **Alle Stationen:** Marker-Positionen auf der Karte stichprobenartig mit der Realität
