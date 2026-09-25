@@ -70,7 +70,7 @@ export const intro = {
 
 Was niemand weiß: Der junge Kanzleischreiber Johann Vlemynck hat sie selbst beiseitegeschafft. Männer mit schwarzen Siegelringen – Kriegsgewinnler, die am Elend verdienten – wollten sie vernichten. Vlemynck versteckte die Depesche und hinterließ für die Nachwelt eine Spur aus Rätseln quer durch die Stadt.
 
-370 Jahre später stößt die Stadtarchivarin Dr. Lene Cording in einem vergessenen Bestand auf Vlemyncks Tagebuch – und auf die Spur, die eine geheimnisvolle „Bruderschaft der Friedensboten“ über die Jahrhunderte gepflegt hat.
+Fast vier Jahrhunderte später stößt die Stadtarchivarin Dr. Lene Cording in einem vergessenen Bestand auf Vlemyncks Tagebuch – und auf die Spur, die eine geheimnisvolle „Bruderschaft der Friedensboten“ über die Jahrhunderte gepflegt hat.
 
 Sie bittet euch: Folgt der Spur. Löst die Rätsel, die nur vor Ort zu knacken sind. Findet die verlorene Depesche – und die drei Worte, die sie enthält.`,
   practical: `Was ihr braucht: bequeme Schuhe, ein aufgeladenes Smartphone und offene Augen. Alle Antworten findet ihr direkt an den Stationen – Wissen aus dem Internet hilft euch nicht weiter. Wenn ihr feststeckt, gibt es zu jedem Rätsel gestaffelte Hinweise. Startpunkt ist das Historische Rathaus am Prinzipalmarkt; das Ziel liegt am Aasee.`,
@@ -101,27 +101,27 @@ export const stations: Station[] = [
     coords: { lat: 51.9617, lng: 7.6286 },
     directions:
       'Startpunkt: Stellt euch vor das Historische Rathaus mit dem hohen gotischen Giebel, Prinzipalmarkt 10.',
-    story: `Aus Vlemyncks Tagebuch: „Im Saale des Rathauses haben die Gesandten einander die Hände gereicht. Ich stand hinten an der Tür und hielt die Feder. Hier beginnt meine Spur – bei der Jahreszahl, die bald ganz Europa kennen wird. Wer sie am Hause findet, mag mir weiter folgen. Doch Vorsicht: Dies Haus trägt mehr als eine Zahl an seinem Leibe, und nicht jede meint den Frieden.“
+    story: `Aus Vlemyncks Tagebuch: „Im Saale des Rathauses haben die Gesandten einander die Hände gereicht. Ich stand hinten an der Tür und hielt die Feder. Hier beginnt meine Spur – bei der Jahreszahl, die bald ganz Europa kennen wird. Wer sie am Hause findet, mag mir weiter folgen.“
 
-Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde ein erster Teilfriede zwischen zwei kriegsmüden Mächten beschworen – der erste Baustein eines viel größeren Friedens, der die Stadt für immer berühmt machen sollte. Am und im Rathaus erinnert vieles an dieses eine, große Jahr – ihr müsst es nur finden. Aber das Haus ist alt und mehrfach verändert worden, also seht genau hin, welche Jahreszahl wirklich zum Frieden gehört.`,
+Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde ein erster Teilfriede zwischen zwei kriegsmüden Mächten beschworen – der erste Baustein eines viel größeren Friedens, der die Stadt für immer berühmt machen sollte. Am und im Rathaus erinnert vieles an dieses eine, große Jahr – ihr müsst es nur finden.`,
     task: {
       kind: 'quiz',
       question:
-        'Sucht am Rathaus (Fassade, Tafeln am Eingang oder im Durchgang) die Jahreszahl des großen Friedens, an den hier alles erinnert. Achtung: Am Haus findet ihr mindestens eine weitere Jahreszahl aus einer ganz anderen Epoche (einer späteren Erneuerung des Gebäudes) – die hat mit diesem Frieden nichts zu tun. Welche Jahreszahl ist die des Friedens?',
+        'Sucht am Rathaus (Tafeln und Beschriftungen am Eingang bzw. am Zugang zum Friedenssaal) die Jahreszahl des großen Friedens, an den hier alles erinnert. Welche Jahreszahl ist es?',
       placeholder: 'Jahreszahl (4 Ziffern)',
       answerHashes: ['a16c0ab260e30b22cd06fadf9a6a30c454ddc845925cc831796b2988874d6a5a'],
     },
     hints: [
-      'Es gibt mehr als eine Jahreszahl am Haus. Die falsche Fährte sitzt eher oben, im Zierwerk des Giebels, aus einer viel älteren Zeit – die richtige eher auf Augenhöhe, näher am Eingang oder im Durchgang zum Friedenssaal.',
+      'Schaut auf Augenhöhe: an Tafeln und Beschriftungen am Eingang und am Zugang zum Friedenssaal.',
       'Gesucht ist das Jahr, in dem in Münster und Osnabrück der Westfälische Friede geschlossen wurde – er beendete einen der längsten Kriege der deutschen Geschichte.',
-      'Der Krieg, den der Friede beendete, ist als „Dreißigjähriger Krieg“ bekannt – das mag euch helfen, die richtige Zahl von der falschen zu unterscheiden, auch wenn beide auf den ersten Blick „alt“ wirken.',
+      'Der Krieg, den der Friede beendete, ist als „Dreißigjähriger Krieg“ bekannt und begann 1618.',
     ],
     image: {
       file: 'Münster, Prinzipalmarkt, Historisches Rathaus -- 2017 -- 6875.jpg',
       alt: 'Das Historische Rathaus mit gotischem Giebel am Prinzipalmarkt',
       credit: RABICH,
     },
-    resolution: `Richtig: 1648. Vlemynck notiert schmunzelnd: „Wer sich von der älteren Zahl im Zierwerk des Giebels hat täuschen lassen, dem sei verziehen – dies Haus trägt die Spuren vieler Jahrhunderte, nicht nur des unseren.“ Unter der Zahl steht ein kleiner Pfeil nach Norden und die Worte: „Folge dem Markt der Kaufleute zu der Kirche, an der die Körbe des Schreckens hängen.“ – Werft im Vorbeigehen einen Blick auf die Bogengänge des Prinzipalmarkts: Unter diesen Arkaden wurde 1648 gefeilscht, verhandelt und spioniert.`,
+    resolution: `Richtig: 1648. Unter der Zahl steht ein kleiner Pfeil nach Norden und die Worte: „Folge dem Markt der Kaufleute zu der Kirche, an der die Körbe des Schreckens hängen.“ – Werft im Vorbeigehen einen Blick auf die Bogengänge des Prinzipalmarkts: Unter diesen Arkaden wurde 1648 gefeilscht, verhandelt und spioniert.`,
   },
   {
     id: 'stadtweinhaus',
@@ -196,7 +196,9 @@ Stellt euch beim Knobeln ruhig unter die Bögen des Stadtweinhauses – hier sta
     coords: { lat: 51.9645, lng: 7.627 },
     directions:
       'Von St. Lamberti haltet euch links an der Kirche vorbei über den Drubbel, dann rechts zum Spiekerhof. Auf dem kleinen Platz steht das Denkmal des Kiepenkerls.',
-    story: `Aus dem Tagebuch: „Die Wanderhändler tragen Nachrichten schneller übers Land als jeder Kurier des Kaisers. Manche Botschaft, die den Frieden rettete, reiste in einem Rückenkorb unter Eiern und Leinen. Dem Manne, der hier steht, verdanke ich mein Leben – die Herren mit den schwarzen Siegeln suchten mich, und er trug mich als ‚Ware‘ aus dem Tore.“
+    story: `Aus dem Tagebuch: „Die Wanderhändler tragen Nachrichten schneller übers Land als jeder Kurier des Kaisers. Manche Botschaft, die den Frieden rettete, reiste in einem Rückenkorb unter Eiern und Leinen. Einem solchen Händler verdanke ich mein Leben – die Herren mit den schwarzen Siegeln suchten mich, und er trug mich als ‚Ware‘ aus dem Tore.“
+
+Nachtrag der Bruderschaft, um 1900: „Seit die Stadt dem Kiepenkerl ein Denkmal gesetzt hat, legen wir unseren Hinweis zu seinen Füßen – zum Dank an Vlemyncks unbekannten Retter.“
 
 Der Kiepenkerl ist das Denkmal der westfälischen Wanderhändler. Das Original von 1896 wurde im Krieg zerstört, seit 1953 steht hier eine Neufassung.`,
     task: {
@@ -218,7 +220,7 @@ Der Kiepenkerl ist das Denkmal der westfälischen Wanderhändler. Das Original v
       'Solche geflochtenen Rückentraggestelle nutzten Wanderhändler und Bauern jahrhundertelang, um Waren zu transportieren.',
       'Das Wort beginnt mit K und reimt sich auf „Wiege“ – fast jedenfalls.',
     ],
-    resolution: `Die Kiepe! Vlemynck schreibt: „Folge nun den Freunden aus dem Westen. Sie wohnten im Hause der Krämer, gleich um die Ecke – und in ebenjenem Hause ward ihr Friede mit Spanien unterzeichnet, im Januar des großen Jahres.“`,
+    resolution: `Die Kiepe! Vlemynck schreibt: „Folge nun den Freunden aus dem Westen. Sie wohnten im Hause der Krämer, hinter dem Chor von St. Lamberti – und in ebenjenem Hause ward ihr Friede mit Spanien unterzeichnet, im Januar des großen Jahres.“`,
     image: {
       file: 'Kiepenkerl-Denkmal, Münster.jpg',
       alt: 'Das Kiepenkerl-Denkmal am Spiekerhof',
@@ -229,9 +231,9 @@ Der Kiepenkerl ist das Denkmal der westfälischen Wanderhändler. Das Original v
     id: 'krameramtshaus',
     label: 'Station 5',
     name: 'Krameramtshaus – die Gäste aus dem Westen',
-    coords: { lat: 51.965, lng: 7.6277 },
+    coords: { lat: 51.96294, lng: 7.62983 },
     directions:
-      'Vom Kiepenkerl sind es nur wenige Schritte in den Alten Steinweg. Sucht das alte Giebelhaus mit den Flaggen (Hausnummer 6/7).',
+      'Geht vom Kiepenkerl zurück zur Lambertikirche und an ihr vorbei bis hinter den Chor (Ostseite). Dort, am Beginn des Alten Steinwegs, steht das alte Giebelhaus mit den Flaggen (Alter Steinweg 6/7).',
     story: `Aus dem Tagebuch: „Die Gesandten der Generalstaaten wohnten im Hause des Krämeramtes. Ehrliche Leute; am 30. Tage des Januars ward in ihrem Hause der Friede mit Spanien unterzeichnet – der erste Stein im Gewölbe des großen Friedens. Bei ihnen ließ ich die Abschrift meiner Depesche zurück – doch die Spur führt weiter.“
 
 Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters und eines der wenigen Gebäude der Altstadt, die den Zweiten Weltkrieg überstanden. Von 1646 bis 1648 wohnte hier die niederländische Gesandtschaft; am 30. Januar 1648 wurde in diesem Haus der spanisch-niederländische Friede unterzeichnet. Die heutige Nutzung des Hauses erinnert genau daran.`,
@@ -251,7 +253,7 @@ Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters und eines der w
       'Die Gesandten, die hier 1648 wohnten, kamen aus diesem Land – die offizielle Bezeichnung des Hauses steht direkt über oder neben dem Haupteingang.',
       'Prüft auch Fahne oder Wappen am Gebäude – sie gehören zum selben Land wie die Beschriftung.',
     ],
-    resolution: `Haus der Niederlande – richtig. Vlemyncks nächster Eintrag: „Nun hinab zur Salzstraße. Dort, wo ein Herr vom Adel sein Haus auf ein winziges Grundstück zwängen ließ, liegt der nächste Nachtrag meiner Freunde.“`,
+    resolution: `Haus der Niederlande – richtig. Vlemyncks nächster Eintrag: „Nun hinüber zur Salzstraße. Dort, wo ein Herr vom Adel sein Haus auf ein winziges Grundstück zwängen ließ, liegt der nächste Nachtrag meiner Freunde.“`,
   },
   {
     id: 'erbdrostenhof',
@@ -259,10 +261,10 @@ Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters und eines der w
     name: 'Erbdrostenhof – das schräge Palais',
     coords: { lat: 51.9609, lng: 7.6322 },
     directions:
-      'Vom Krameramtshaus zurück zum Prinzipalmarkt und weiter über den Roggenmarkt in die Salzstraße hinein (ca. 10 Minuten). Auf halber Strecke, hinter einem schmiedeeisernen Tor, liegt linker Hand das barocke Adelspalais mit der Hausnummer 38.',
-    story: `Nachtrag der Bruderschaft, um 1760 den Papieren beigelegt: „Ein Jahrhundert nach Vlemynck bauten wir unsere Spur weiter, denn die Stadt wuchs, und mit ihr wuchsen die Verstecke. Hier, an der Salzstraße, ließ sich der Erbdrost der Fürstbischöfe ein Stadtpalais errichten – vom selben Baumeister, der später auch dem Fürstbischof selbst ein Schloss bauen sollte. Das Grundstück aber war winzig und spitz zulaufend wie ein Keil. Der Baumeister behalf sich mit einem Kniff, den nur sieht, wer vor dem ganzen Hause steht und nicht nur auf die Tür starrt.“
+      'Vom Krameramtshaus zurück an die Südseite der Lambertikirche: Dort beginnt die Salzstraße. Folgt ihr nach Osten (ca. 5–7 Minuten). Hinter einem geschwungenen schmiedeeisernen Gitter mit dreieckigem Ehrenhof liegt das barocke Adelspalais, Salzstraße 38.',
+    story: `Nachtrag der Bruderschaft, um 1760 den Papieren beigelegt: „Ein Jahrhundert nach Vlemynck bauten wir unsere Spur weiter, denn die Stadt wuchs, und mit ihr wuchsen die Verstecke. Hier, an der Salzstraße, ließ sich der Erbdrost der Fürstbischöfe ein Stadtpalais errichten – vom selben Baumeister, der später auch dem Fürstbischof selbst ein Schloss bauen sollte. Das Grundstück aber war eine enge Ecke. Der Baumeister behalf sich mit einem Kniff, den nur sieht, wer vor dem ganzen Hause steht und nicht nur auf die Tür starrt.“
 
-Der Erbdrostenhof (1753–1757) wurde von Johann Conrad Schlaun für den Erbdrosten Adolf Heidenreich Freiherr Droste zu Vischering auf ein kleines, schmales Eckgrundstück gebaut. Um trotzdem eine prächtige, repräsentative Schauseite zu bekommen, schwingt die gesamte Fassade in einer durchgehenden Kurve.`,
+Der Erbdrostenhof (1753–1757) wurde von Johann Conrad Schlaun für den Erbdrosten Adolf Heidenreich Freiherr Droste zu Vischering diagonal auf ein kleines Eckgrundstück gestellt. Um trotzdem eine prächtige, repräsentative Schauseite zu bekommen, schwingt die Fassade hinter einem dreieckigen Ehrenhof in einer Kurve.`,
     task: {
       kind: 'quiz',
       question:
@@ -279,54 +281,25 @@ Der Erbdrostenhof (1753–1757) wurde von Johann Conrad Schlaun für den Erbdros
     },
     hints: [
       'Schaut auf das ganze Gebäude, nicht nur auf den Mitteleingang – geht dafür auf die andere Straßenseite.',
-      'Das Grundstück war zu klein und zu spitz für eine gerade Fassade. Der Baumeister ließ sie deshalb in einem großen Bogen schwingen.',
+      'Das Eckgrundstück war zu klein für eine gerade Fassade. Der Baumeister stellte das Haus schräg und ließ die Front in einem Bogen schwingen.',
       'Stellt euch vor, die Fassade wäre eine Schüssel: Würde Regenwasser von ihrer Mitte weg- oder zu ihr hinlaufen? Das verrät euch die Wölbungsrichtung.',
     ],
-    resolution: `Richtig: Die Fassade ist konkav gewölbt – nach innen, wie eine Schale. So gewann Schlaun trotz des winzigen Eckgrundstücks eine große, prächtige Schauseite. Die Bruderschaft schreibt weiter: „Nur wenige Schritte weiter, versteckt zwischen zwei Straßen, steht eine kleine Kirche desselben Baumeisters. Auch sie hat eine Besonderheit, die man erst sieht, wenn man einmal um sie herumgeht.“`,
-  },
-  {
-    id: 'clemenskirche',
-    label: 'Station 7',
-    name: 'Clemenskirche – die vielen Ecken',
-    coords: { lat: 51.9606, lng: 7.6319 },
-    directions:
-      'Vom Erbdrostenhof nur wenige Schritte weiter: Zwischen Salzstraße und Clemensstraße liegt, ein wenig verborgen, die kleine Klosterkirche mit der auffälligen Kuppel.',
-    story: `Nachtrag der Bruderschaft: „Auch dieses Gotteshaus schuf der Baumeister des Erbdrostenhofs, für die Barmherzigen Brüder, die hier Kranke pflegten. Von außen scheint sie fast rund – doch ein Rund ist sie nicht. Geht einmal um sie herum und zählt, was zu zählen ist.“
-
-Die Clemenskirche (1745–1753) ist als überkuppelter Zentralbau über kreisförmigem Grundriss entworfen, im Außenbau aber vielflächig ummantelt – ein Vieleck, das sich rund anfühlt, aber gerade Kanten hat.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Geht einmal um den Außenbau der Kirche herum und zählt die geraden Seiten (Ecken) der Außenmauer, auf der die kuppelbekrönte Rundung ruht. Wie viele sind es?',
-      placeholder: 'Zahl',
-      answerHashes: [
-        'fb70ba265872a7640649f628ae57a3dae87c2cb21b49f078558379a232e50968',
-        '6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918',
-        '09eb02cfa39a99681e145965ceac64e71a429dc4af90fbaaae4c427448cdd857',
-        '260c23161116c88dee0b022a6ac2072fb4c41e08930216d2117996571198cde3',
-      ],
-    },
-    hints: [
-      'Aus der Nähe wirkt die Wand fast rund – tretet zurück und schaut auf die einzelnen geraden Abschnitte zwischen den Fenstern.',
-      'Es ist mehr als ein Achteck (8 Seiten), aber kein perfekter Kreis.',
-      'Denkt an das Zifferblatt einer Uhr: Die Kirche hat für jede Stunde genau eine gerade Seite.',
-    ],
-    resolution: `Zwölf Seiten – ein Zwölfeck, das sich von Weitem rund anfühlt. Die Bruderschaft notiert: „Zurück auf den Hauptweg, zum Dom, wo die große Uhr steht.“`,
+    resolution: `Richtig: Die Fassade ist konkav gewölbt – nach innen, wie eine Schale. So gewann Schlaun trotz des winzigen Eckgrundstücks eine große, prächtige Schauseite. Die Bruderschaft schreibt weiter: „Nun zurück ins Herz der Stadt, zum Dom, wo die große Uhr steht.“`,
   },
   {
     id: 'dom',
-    label: 'Station 8',
+    label: 'Station 7',
     name: 'St.-Paulus-Dom – die astronomische Uhr',
     coords: { lat: 51.9629, lng: 7.6257 },
     directions:
-      'Von der Clemenskirche zurück Richtung Prinzipalmarkt und dann über die Gassen zum weiten Domplatz (ca. 10 Minuten). Betretet den Dom durch das Hauptportal (Eintritt frei; bitte Gottesdienstzeiten respektieren). Die astronomische Uhr findet ihr im südlichen Chorumgang, rechts hinter dem Hochaltar.',
+      'Die Salzstraße zurück nach Westen bis zur Lambertikirche, über den Prinzipalmarkt und durch eine der Gassen (z.B. über den Michaelisplatz) zum weiten Domplatz (ca. 10 Minuten). Betretet den Dom (Eintritt frei; bitte Gottesdienstzeiten respektieren). Die astronomische Uhr findet ihr im südlichen Chorumgang.',
     story: `Aus dem Tagebuch: „Im Dome steht die große Uhr, die Sonne, Mond und Sterne weist. Als Knabe stand ich staunend davor. Der Meister, der sie schuf, versteckte darin eine Eigenheit, die nur sieht, wer wirklich schaut. Wer sie kennt, kennt die Richtung meiner Spur.“
 
-Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeigt Planetenstände, Tierkreiszeichen und den Kalender bis weit in die Zukunft. Und sie hat eine berühmte Besonderheit.`,
+Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeigt Planetenstände, Tierkreiszeichen und den Kalender bis weit in die Zukunft. Ihr großes Zifferblatt zählt 24 Stunden – und hat nur einen einzigen Zeiger, den Sonnenzeiger.`,
     task: {
       kind: 'quiz',
       question:
-        'Beobachtet das große Zifferblatt der astronomischen Uhr (notfalls ein paar Minuten): In welche Richtung wandern die Zeiger?',
+        'Der Sonnenzeiger bewegt sich viel zu langsam, um ihm zuzusehen – aber die Stundenziffern auf dem 24-Stunden-Zifferblatt verraten seinen Weg. Folgt ihnen in der Reihenfolge des Tages: In welche Richtung läuft der Sonnenzeiger?',
       placeholder: 'z.B. „nach links“ / „nach rechts“',
       answerHashes: [
         'eef8b9fd5d437dd991ce2695fcce6c416ea3068e5b448963f0a7c3cbd9ad98eb',
@@ -340,21 +313,21 @@ Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeig
       ],
     },
     hints: [
-      'Vergleicht die Zeigerstellung mit einer normalen Armbanduhr – läuft sie genauso oder andersherum?',
-      'Die Uhr folgt dem scheinbaren Lauf der Sonne über den Himmel: von Ost über Süd nach West.',
-      'Wartet ein, zwei Minuten und beobachtet einen der Zeiger ganz genau: Bewegt er sich auf der 12-Uhr-Position in Richtung der 1 oder in Richtung der 11?',
+      'Sucht die römischen Ziffern: Mittag (XII) steht ganz oben, Mitternacht ganz unten. Die Stunden I–XII kommen zweimal vor.',
+      'Auf der einen Seite stehen die Vormittagsstunden, auf der anderen die Nachmittagsstunden. Findet heraus, auf welcher Seite die Vormittagsstunden stehen.',
+      'Fahrt mit dem Finger die Vormittagsstunden von unten (Nacht) nach oben (Mittag) entlang: Dreht sich euer Finger dabei wie ein gewöhnlicher Uhrzeiger oder andersherum?',
     ],
     image: {
       file: 'Münster, St.-Paulus-Dom, Astronomische Uhr -- 2019 -- 3822.jpg',
       alt: 'Die astronomische Uhr im St.-Paulus-Dom',
       credit: RABICH,
     },
-    resolution: `Genau: Die Zeiger laufen linksherum, gegen den Uhrzeigersinn! Unter dem Eintrag steht Vlemyncks zweites Wort, in Spiegelschrift geschrieben: **OPTIMA**. Und weiter: „Geh nun über das Wasser – zu Unserer Lieben Frau, deren Turm sein Haupt verlor.“`,
+    resolution: `Genau: Der Sonnenzeiger läuft linksherum, gegen den Uhrzeigersinn – dem Lauf der Sonne am Himmel folgend! Unter dem Eintrag steht Vlemyncks zweites Wort, in Spiegelschrift geschrieben: **OPTIMA**. Und weiter: „Geh nun über das Wasser – zu Unserer Lieben Frau, deren Turm sein Haupt verlor.“`,
     fragment: 'OPTIMA',
   },
   {
     id: 'ueberwasser',
-    label: 'Station 9',
+    label: 'Station 8',
     name: 'Überwasserkirche – der Turm ohne Haupt',
     coords: { lat: 51.9636, lng: 7.6231 },
     directions:
@@ -396,7 +369,7 @@ Vergleicht den Turm der Überwasserkirche mit dem Turm von St. Lamberti, den ihr
   },
   {
     id: 'schloss',
-    label: 'Station 10',
+    label: 'Station 9',
     name: 'Fürstbischöfliches Schloss',
     coords: { lat: 51.9636, lng: 7.6134 },
     directions:
@@ -420,8 +393,8 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
     },
     hints: [
       'Achtet auf die offiziellen Schilder neben den Eingängen.',
-      'Rund 45.000 junge Menschen „wohnen“ heute tagsüber in dieser Einrichtung – verteilt über die ganze Stadt.',
-      'Achtet auf ein Kürzel auf den Schildern, das mit zwei großen W beginnt – es steht für den vollen Namen der Einrichtung.',
+      'Zehntausende junge Menschen gehören heute zu dieser Einrichtung – verteilt über die ganze Stadt.',
+      'Seit 2023 trägt die Einrichtung schlicht den Namen der Stadt im Titel: „… Münster“.',
     ],
     resolution: `Richtig: die Universität Münster residiert heute im Schloss. Der letzte Eintrag der Bruderschaft lautet: „Hinter dem Schlosse liegt der Garten. Dort, wo unsere Zeichen dich hinführen, haben wir den toten Briefkasten angelegt. Kein Rätsel mehr – nun zählt allein der Ort.“ – Jetzt kommt euer GPS ins Spiel!`,
     image: {
@@ -432,7 +405,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
   },
   {
     id: 'briefkasten',
-    label: 'Station 11',
+    label: 'Station 10',
     name: 'Schlossgarten – der tote Briefkasten',
     coords: { lat: 51.965, lng: 7.611 },
     directions:
@@ -444,25 +417,21 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
         'Findet den toten Briefkasten im Schlossgarten. Lauft los und beobachtet die Entfernungsanzeige – sie führt euch zum Ziel. Ihr müsst auf etwa 40 Meter herankommen.',
       target: { lat: 51.965, lng: 7.611 },
       radiusMeters: 40,
-      fallbackHashes: [
-        'ed9bf4c44601e28f37ea1ce3256264a2a7717899467d99d6d5587fd4d4efd0af',
-        '69d61fe0b98d364c234d5f12eb704d3b24aca5e4286ed7f31bc09f4c0c4059c0',
-      ],
-      fallbackHint:
-        'Kein GPS? Der Spielleiter kennt das Codewort (der Name des Baumeisters des Schlosses – siehe Begleitheft).',
+      fallbackHashes: ['953a05696ba67a93f6c4da2e8ec1f3293de90bc6f4971072e1dbfa347b25550a'],
+      fallbackHint: 'Kein GPS? Fragt eure Spielleitung nach dem Codewort.',
     },
     hints: [
       'Erlaubt der Seite den Zugriff auf euren Standort (Browser-Abfrage bestätigen).',
       'Die Entfernung wird in Metern angezeigt – wird die Zahl kleiner, seid ihr richtig.',
       'Der Punkt liegt im Schlossgarten hinter (westlich) dem Schloss, etwas nördlich der Mittelachse.',
     ],
-    resolution: `Ihr habt den toten Briefkasten gefunden! Im (fiktiven) Versteck: Vlemyncks drittes Wort – **RERUM** – und sein vorletzter Eintrag: „Die Depesche selbst brachte ich ans Wasser. Die Bruderschaft hat ihr Versteck zuletzt dorthin verlegt, wo drei steinerne Kugeln am Ufer des Sees ruhen. Zähle sie, und du bist am Ziel.“`,
+    resolution: `Ihr habt den toten Briefkasten gefunden! Im (fiktiven) Versteck: Vlemyncks drittes Wort – **RERUM** – und sein vorletzter Eintrag: „Die Depesche selbst brachte ich ans Wasser. Die Bruderschaft hat ihr Versteck zuletzt dorthin verlegt, wo riesige Kugeln aus Beton am Ufer des Sees ruhen. Zähle sie, und du bist am Ziel.“`,
     fragment: 'RERUM',
   },
   {
     id: 'aasee',
-    label: 'Station 12',
-    name: 'Aasee – die drei Kugeln',
+    label: 'Station 11',
+    name: 'Aasee – die Riesenkugeln',
     coords: { lat: 51.95711, lng: 7.61819 },
     directions:
       'Verlasst den Schlossgarten nach Süden und folgt der Promenade bzw. den Wegen Richtung Aasee (ca. 15 Minuten). Haltet am Nordostufer Ausschau nach den riesigen Betonkugeln an der Wiese (Nähe Aaseeterrassen/Annette-Allee).',
@@ -479,7 +448,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
     hints: [
       'Die Kugeln stehen als Gruppe auf der Wiese am Nordostufer.',
       'Jede Kugel hat etwa 3,5 Meter Durchmesser – zu übersehen sind sie nicht.',
-      'Es sind genauso viele wie die Körbe am Lambertiturm.',
+      'Geht einmal um die Gruppe herum – aus manchen Blickwinkeln verdeckt eine Kugel eine andere.',
     ],
     resolution: `Drei Kugeln – wie drei Siegel, wie drei Körbe, wie drei Worte. Ihr habt alle Fragmente gesammelt. Setzt nun die Losung der verlorenen Depesche zusammen und sprecht sie aus!`,
   },
@@ -498,7 +467,7 @@ Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – 
       answerHashes: ['e3a810988017e402bc930a4b02bc6b2d3341e5c4d9dc2137a6518322780aeaeb'],
     },
     hints: [
-      'Die drei Fragmente wurden euch nach den Stationen 3, 8 und 11 angezeigt – ihr findet sie auch oben in der Fragmentleiste.',
+      'Die drei Fragmente wurden euch nach den Stationen 3, 7 und 10 angezeigt – ihr findet sie auch oben in der Fragmentleiste.',
       'Es ist Latein und bedeutet: „Der Friede ist das beste der Dinge.“',
       'PAX … – jetzt nur noch die richtige Reihenfolge.',
     ],

@@ -9,7 +9,7 @@ export interface Progress {
   finishedAt: number | null;
 }
 
-const STORAGE_KEY = 'mnstrstdtrlly:progress:v1';
+const STORAGE_KEY = 'mnstrstdtrlly:progress:v2';
 
 export const emptyProgress: Progress = {
   current: 0,
