@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { QuizTask as QuizTaskData } from '../data/stations';
 import { normalizeAnswer } from '../lib/answers';
+import Glyph from './Glyph';
 
 interface Props {
   task: QuizTaskData;
@@ -39,7 +40,7 @@ export default function QuizTask({ task, blockedUntil, pending, onAttempt }: Pro
 
   return (
     <section className="task">
-      <h3>❓ Eure Aufgabe</h3>
+      <h3><Glyph kind="key" /> Eure Aufgabe</h3>
       <p>{task.question}</p>
       <form onSubmit={submit} className="answer-form">
         <label className="input-label" htmlFor="quiz-answer">Eure Antwort</label>

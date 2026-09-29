@@ -5,6 +5,7 @@ import QuizTask from './QuizTask';
 import GeoTask from './GeoTask';
 import Hints from './Hints';
 import StationImage from './StationImage';
+import Glyph from './Glyph';
 
 interface Props {
   station: Station;
@@ -55,7 +56,7 @@ export default function StationScreen({
       </div>
 
       <section className="directions">
-        <strong>🧭 Der Weg:</strong> {station.directions}
+        <strong><Glyph kind="compass" /> Der Weg:</strong> {station.directions}
       </section>
 
       {station.image && <StationImage image={station.image} />}

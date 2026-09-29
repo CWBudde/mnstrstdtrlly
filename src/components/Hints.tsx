@@ -1,3 +1,5 @@
+import Glyph from './Glyph';
+
 interface Props {
   hints: string[];
   used: number;
@@ -11,7 +13,7 @@ export default function Hints({ hints, used, onReveal }: Props) {
 
   return (
     <section className="hints">
-      <h3>💡 Hinweise</h3>
+      <h3><Glyph kind="light" /> Hinweise</h3>
       {revealed.length === 0 && (
         <p className="hints-empty">
           Ihr steckt fest? Deckt nach und nach bis zu {hints.length} Hinweise auf – vom sanften

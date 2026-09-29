@@ -5,6 +5,7 @@ import { calculateScore, createAnswerSession, revealHint, solveStation, type Sol
 import StartScreen from './components/StartScreen';
 import StationScreen from './components/StationScreen';
 import MapView from './components/MapView';
+import Glyph from './components/Glyph';
 
 export default function App() {
   const [progress, setProgress] = useState<Progress>(() => loadProgress(stations.map((s) => s.id), Object.fromEntries(stations.map((s) => [s.id, s.hints.length]))));
@@ -92,7 +93,7 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="topbar-title">
-          <span className="topbar-emblem">✉</span> Die verlorene Depesche
+          <span className="topbar-emblem"><Glyph kind="letter" /></span> Die verlorene Depesche
         </div>
         <div className="topbar-actions">
           <button className="iconbtn" onClick={() => setShowMap((v) => !v)}>
