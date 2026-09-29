@@ -1,13 +1,14 @@
 name: Deploy to GitHub Pages
 
-# Veröffentlicht den Vite-Build auf dem gh-pages-Branch. GitHub aktiviert
-# Pages für diesen Branch automatisch - es ist kein manueller Eingriff in
-# den Repo-Einstellungen nötig. (Der "GitHub Actions"-Source-Modus würde
-# ein einmaliges Anlegen der Pages-Site über die Settings-UI erfordern.)
+# Prüft Builds auf main, dem Entwicklungsbranch und Pull Requests.
+# Veröffentlicht nur freigegebene main-Builds auf dem gh-pages-Branch.
+# In Settings → Pages einmalig „Deploy from a branch“, gh-pages / root auswählen.
 
 on:
   push:
     branches: [main, 'claude/munster-city-rally-r2i9xd']
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -27,9 +28,17 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm test
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - name: Begehungsnachweise und Blindtest prüfen
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: npm run verify:release
       - run: touch dist/.nojekyll
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
       - uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist

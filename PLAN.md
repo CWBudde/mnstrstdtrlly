@@ -1,6 +1,7 @@
 # Korrekturplan: „Die verlorene Depesche“
 
-Stand: Review des `main`-Stands (inkl. PR #1 und Commit 4078064), September 2026.
+Historischer Review: `main` inkl. PR #1 und Commit 4078064, September 2026.
+Aktueller Umsetzungsstand und begründete Zurückstellungen stehen in Abschnitten 3/4.
 
 **Fazit des Reviews:** Die Kritik ist berechtigt. Die App-Technik funktioniert. Inhaltlich trägt
 die Rallye aber nicht:
@@ -274,27 +275,111 @@ und fotografiert werden. Hier wird nichts mehr am Schreibtisch erfunden.
 
 ## 3. Umsetzungsschritte
 
-1. **Entscheidung Richtung:** Start am Aasee und Finale im Rathaus (empfohlen) oder
-   umgekehrt.
-2. **Sofortkorrekturen der Fakten** – ✅ erledigt (PR #3), zusätzlich Titel-Spoiler
-   „Aasee – die drei Kugeln“ und Kiepenkerl-Anachronismus behoben; Speicherschlüssel auf `v2`:
-   - Rathausfrage entschärfen: keine erfundene zweite Jahreszahl.
-   - Dom-Frage und -Hinweise auf den einen Sonnenzeiger und das 24-h-Zifferblatt umstellen.
-   - Hinweis „WW“ entfernen.
-   - Wegbeschreibung und Koordinate des Krameramtshauses korrigieren.
-   - „steinerne“ → „Beton-“.
-   - Spoiler „drei Kugeln“ und das Codewort SCHLAUN aus dem Spieltext entfernen.
-   - Clemenskirche entfernen.
-   - „370 Jahre“ korrigieren.
-3. **Koordinaten** aller Stationen aus OSM neu erheben.
-4. **Begehung Nr. 1:** Details für die neuen Rätsel sammeln (Fotos, Inschriften, Zählwerte,
-   Zugänglichkeit, Öffnungszeiten). Die Kandidaten aus 2.2 dienen als Suchliste.
-5. **Rätsel neu schreiben** nach den Regeln aus 2.2, Meta-Rätsel nach 2.3. Story auf
-   Rückwärts-Erzählung umbauen (Bruderschafts-Schichten).
-6. **App-Mechanik** aus 2.4 und Tests aus 2.5 umsetzen, inklusive Vitest-/Playwright-Setup
-   und Testschritt in CI.
-7. **`VERIFIKATION.md`** neu schreiben: pro Station Lösung, Quelle, Begehungsfoto und Datum.
-8. **Begehung Nr. 2 und Blindtest**, danach Feinschliff und Merge.
+Stand der Umsetzung: **29.09.2026**. `[x]` bedeutet **behandelt**: entweder umgesetzt oder
+explizit **ZURÜCKGESTELLT** mit Grund. Zurückgestellte Feldprüfungen gelten nicht als erfolgreich
+durchgeführt. Die Freigabeprüfung blockiert Veröffentlichung, bis echte Nachweise vorliegen.
+
+- [x] **Entscheidung Richtung:** Start am Aasee, Finale außen am Historischen Rathaus.
+  Der Friedenssaal bleibt optional; keine Innenraumfrage oder Eintrittskarte ist erforderlich.
+- [x] **Sofortkorrekturen der Fakten** – erledigt (PR #3); in der neuen Fassung berücksichtigt:
+  - [x] Rathausfrage ohne erfundene Jahreszahl: durch das Meta-Rätsel ersetzt.
+  - [x] Dom: Ableseaufgabe statt Zeigerbeobachtung oder binärer Richtungsfrage.
+  - [x] Veralteten WW-Hinweis entfernt; Nutzung des Schlosses ist keine Rätsellösung mehr.
+  - [x] Lage und Weg zum Krameramtshaus korrigiert.
+  - [x] Betonkugeln korrekt bezeichnet.
+  - [x] Titel-Spoiler und GPS-Codewort aus dem Spieltext entfernt.
+  - [x] Clemenskirche entfernt.
+  - [x] Veraltete Jahresabstände und Kiepenkerl-Anachronismus korrigiert.
+- [x] **Koordinaten** aller verwendeten Stationen aus OSM neu erhoben.
+  - [x] Koordinaten und Herkunft in `docs/evidence/osm-stations.json` dokumentiert.
+  - [x] GPS-Ziel auf dem kartierten Fußweg der Promenade südlich der Gerichtsstraße,
+    außerhalb des Botanischen Gartens gewählt: 51.9612679, 7.6146837.
+  - [x] Markerlinie ohne Kreuzung; nächste Station jeweils nicht weiter als übernächste.
+    Automatische Routen-Tests und `docs/evidence/route.svg` dokumentieren die Prüfung.
+- [x] **Begehung Nr. 1 – ZURÜCKGESTELLT:** Eine reale Begehung in Münster ist aus dieser
+  Arbeitsumgebung nicht möglich. Quellen- und Fotorecherche dient als Vorbereitung;
+  historische Referenzfotos werden ausdrücklich nicht als Begehungsfotos ausgegeben.
+  - [x] Rätseldetails recherchiert und Referenzfotos mit Aufnahmedaten in `VERIFIKATION.md`
+    verlinkt. **ZURÜCKGESTELLT:** aktuelle Detailfotos durch eine Person vor Ort.
+  - [x] GPS-Koordinaten und kartierte Weglage geprüft. **ZURÜCKGESTELLT:** realer Zugang,
+    Koordinatenvergleich am Handy, Empfang und Baustellen; Browser-GPS ist nur ein Funktionstest.
+  - [x] Erbdrostenhof entfällt: vom Krameramtshaus ist das Stadtweinhaus deutlich näher als
+    der Erbdrostenhof. Die zusätzliche Station widerspricht dem Routen-Test und erzeugt
+    einen Rückweg. Eine Begehung der entfallenen Schleife ist deshalb nicht erforderlich.
+  - [x] Offizielle Dom-Öffnungszeiten recherchiert; Außenfinale eingerichtet.
+    **ZURÜCKGESTELLT:** tagesaktuelle Gottesdienst-/Baustellenlage und örtliche Erreichbarkeit.
+- [x] **Rätsel neu geschrieben**, Meta-Rätsel und Erzählung der Bruderschaft umgesetzt.
+  - [x] Stationsfolge, Labels und Wegbeschreibungen auf Aasee → Rathaus umgestellt.
+  - [x] Intro, Geschichten und Übergänge an die Rückverfolgung der Schichten angepasst;
+    die fiktive Rahmenhandlung wird ausdrücklich gekennzeichnet.
+  - [x] Nicht-binäre Beobachtungs-/Umformungsrätsel anhand überprüfter Referenzdetails
+    vorbereitet. **ZURÜCKGESTELLT:** aktuelle Sichtbarkeit, Lesbarkeit und Schwierigkeit
+    am Ort validieren; ohne Feldfoto gelangt die Fassung nicht in die Veröffentlichung.
+  - [x] Aasee verbessert: umlaufende Fugen zählen statt eine im Text vorgegebene Teilung
+    auswerten. **ZURÜCKGESTELLT / FREIGABEBLOCKER:** Das Detail ist auf leicht auffindbaren
+    Fotos erkennbar; Ortsbindung und Schwierigkeit bleiben schwach. Im Blindtest prüfen
+    und bei leichter Fernlösbarkeit vor Freigabe durch ein weniger exponiertes Detail
+    ersetzen. Ohne Begehung lässt sich eine solche aktuelle Beobachtung nicht belegen.
+  - [x] Pro Station drei Hinweise ohne Klartextlösung; separater kostenpflichtiger Notfall-Button.
+  - [x] Zahlen-Siegelcodes statt lateinischer Klartextfragmente; Chiffre und Zeitlinien-Reihenfolge
+    durch Tests auf Entschlüsselbarkeit geprüft.
+  - [x] Außenfinale am Rathaus funktioniert unabhängig vom kostenpflichtigen Friedenssaal.
+- [x] **App-Mechanik und Qualitätssicherung** implementiert.
+  - [x] Nach drei Fehlversuchen 30 Sekunden Denkpause, danach 60/120/240/maximal 300 Sekunden;
+    Quiz und GPS-Codewort teilen die gespeicherte Sperre je Station.
+  - [x] Startwert 1000; minus 25 je Hinweis, 10 je Fehlversuch, 100 je Notfall-Auflösung;
+    Punkte fallen nicht unter null. Erfolgreicher GPS-Fallback zählt als Notfall-Auflösung.
+  - [x] Notfall-Auflösen mit ausdrücklicher Bestätigung, eigener Speicherung und Fokusführung.
+  - [x] Finale zeigt Punkte, Dauer, Hinweise, Fehlversuche und benannte Notfall-Stationen.
+  - [x] Speicherschlüssel auf `v3` erhöht, weil `v2` schon mit den Sofortkorrekturen eingeführt
+    wurde. Ungültige gespeicherte Werte werden geprüft; alte Routenstände nicht übernommen.
+  - [x] Vitest und `npm test` eingerichtet.
+  - [x] Spoiler-Test prüft gesamten bis zur Lösung sichtbaren Text einschließlich früherer
+    Resolutions, Bildbeschriftungen und gesammelter Codes; erkennt auch Zahlwörter.
+  - [x] Routen-Test prüft Kreuzungen, überlappende Etappen, Umwege und Konsistenz der OSM-Koordinaten.
+  - [x] Playwright gegen den Produktionsbuild über `vite preview`, `npm run test:e2e` eingerichtet.
+  - [x] Vollständiger Durchlauf mit Denkpause, Reload, Punkten und GPS-Fallback; weitere
+    Browserfälle prüfen echte Geolocation-Ankunft, Notfall-Auflösen und asynchrone Eingaben.
+  - [x] Unit-Tests, Build und Browser-Tests vor dem Deploy in CI; Fehler verhindern Veröffentlichung.
+  - [x] Zusätzliche Feldfreigabe durch `npm run verify:release`; Entwicklungsbranch/PRs publizieren
+    keine ungeprüfte Rallye. Leere Feldnachweise blockieren den main-Deploy ausdrücklich.
+- [x] **`VERIFIKATION.md`** für die neue Route neu geschrieben.
+  - [x] Lösungen, Normalisierung, schriftliche Quellen und Referenzfotos je Station dokumentiert.
+  - [x] **ZURÜCKGESTELLT:** Begehungsfotos und zugehörige Daten fehlen; getrennt von historischen
+    Fotodaten ausgewiesen. Eine leere `field-verification.json` macht diesen Zustand prüfbar.
+  - [x] Neue Route, GPS-Fallback, Zugangshinweise und Vor-Ort-Checkliste aktualisiert.
+- [x] **Begehung Nr. 2 und Blindtest – ZURÜCKGESTELLT**, technische Vorarbeiten abgeschlossen.
+  - [x] **ZURÜCKGESTELLT:** Route mit Stoppuhr, Fotos und echtem GPS ablaufen; nur dadurch lassen
+    sich Weglänge, sichere Querungen und Alltagstauglichkeit bestätigen.
+  - [x] **ZURÜCKGESTELLT:** unabhängiges Team für einen Blindtest ist hier nicht verfügbar.
+    Ein automatisierter Durchlauf mit bekannten Lösungen ersetzt keinen solchen Test.
+  - [x] **ZURÜCKGESTELLT:** 2–3 Stunden, höchstens 1–2 Notfall-Auflösungen und Ortsbindung im
+    Blindtest messen. Aktuelle Zeitangaben sind Planungsziele, keine gemessenen Ergebnisse.
+  - [x] Technischen Feinschliff nach Review umgesetzt und Prüfungen eingerichtet.
+    **ZURÜCKGESTELLT:** Feinschliff aus noch nicht erhobenen Feld-/Blindtestbefunden.
+  - [x] **ZURÜCKGESTELLT:** Merge auf main und Veröffentlichung bis vollständige Feldnachweise
+    und erfolgreicher Blindtest vorliegen. Dies erfüllt die Vorgabe „ohne Begehungsfoto keine
+    Station in main“; es wurde weder gemergt noch veröffentlicht.
+
+## 4. Nachweise und verbleibende Freigabearbeit
+
+Lokaler Abschlusscheck am 29.09.2026: **62 Unit-Tests**, **5 Browser-Tests** (Chromium,
+mobiles Profil, ein Worker) und der Produktionsbuild erfolgreich. Der vollständige
+Browserdurchlauf prüft auch alle zehn Marker und die Gesamtlinie in `MapView`.
+`git diff --check` ohne Befund. Die Prüfung `npm run verify:release` endet erwartungsgemäß
+mit Fehlerstatus wegen der fehlenden Feldnachweise. Änderungen liegen im Entwicklungsbranch;
+kein Merge und keine Veröffentlichung wurden durchgeführt.
+
+Die technischen Prüfungen sind reproduzierbar mit `npm test`, `npm run build` und
+`npm run test:e2e` (nach Browserinstallation oder Angabe eines vorhandenen Chromium-Pfads).
+`npm run verify:release` muss mit dem aktuellen leeren Feldprotokoll scheitern: das ist der
+beabsichtigte Freigabestatus, kein grüner Begehungsnachweis. Das [Spielleiter-Dokument](VERIFIKATION.md)
+erklärt das Protokoll und alle vor Ort zu prüfenden Details.
+
+Abweichungen vom ursprünglichen Vorschlag sind begründet: Erbdrostenhof entfernt, GPS auf
+Promenade verlegt, Außenfinale als regulärer Abschluss, Quellenfotos als Vorbereitung statt
+behaupteter Begehung, Speicherversion `v3` und eine automatische Feldfreigabe. Die alten Befunde
+und Entwurfsvorschläge in Abschnitten 1/2 bleiben als Review-Historie erhalten.
 
 ## Quellen des Reviews
 

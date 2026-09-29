@@ -5,8 +5,9 @@ interface Props {
 }
 
 export default function Hints({ hints, used, onReveal }: Props) {
-  const revealed = hints.slice(0, used);
-  const remaining = hints.length - used;
+  const count = Math.max(0, Math.min(used, hints.length));
+  const revealed = hints.slice(0, count);
+  const remaining = hints.length - count;
 
   return (
     <section className="hints">
@@ -24,7 +25,7 @@ export default function Hints({ hints, used, onReveal }: Props) {
       </ol>
       {remaining > 0 && (
         <button className="secondary" onClick={onReveal}>
-          Hinweis {used + 1} von {hints.length} aufdecken
+          Hinweis {count + 1} von {hints.length} aufdecken (−25 Punkte)
         </button>
       )}
     </section>

@@ -47,435 +47,279 @@ export interface Station {
   image?: StationImage;
 }
 
-const RABICH = 'Foto: Dietmar Rabich / Wikimedia Commons / CC BY-SA 4.0';
+// Coordinates: docs/evidence/osm-stations.json. Field confirmation remains a release gate.
 
-/**
- * DIE VERLORENE DEPESCHE – Stadtrallye Münster
- *
- * Hintergrund: Oktober 1648. Wenige Tage bevor der Westfälische Frieden
- * von der Rathaustreppe verkündet wird, verschwindet eine Depesche aus der
- * Kanzlei der Gesandten. Der junge Schreiber Johann Vlemynck hat sie in
- * Sicherheit gebracht – vor Leuten, die am Krieg verdienten und den
- * Frieden in letzter Minute hintertreiben wollten. Er hinterließ eine
- * Spur aus Zeichen und Rätseln. Die fiktive „Bruderschaft der Friedensboten“
- * hat diese Spur über die Jahrhunderte gepflegt und an die wachsende Stadt
- * angepasst – deshalb führt sie heute auch zu Orten, die es 1648 noch
- * nicht gab. Die Stadtarchivarin Dr. Lene Cording hat Vlemyncks Tagebuch
- * wiederentdeckt. Ihr folgt seiner Spur.
- */
 export const intro = {
-  title: 'Die verlorene Depesche',
-  subtitle: 'Eine Stadtrallye durch Münster · ca. 2–3 Stunden · ca. 5 km zu Fuß',
-  text: `Münster, im Oktober 1648. Fünf Jahre lang haben Gesandte aus halb Europa in dieser Stadt verhandelt, um den Dreißigjährigen Krieg zu beenden. Nun, wenige Tage vor der feierlichen Verkündung des Friedens, verschwindet eine Depesche aus der Kanzlei – ein Schriftstück, das den Frieden besiegeln soll.
-
-Was niemand weiß: Der junge Kanzleischreiber Johann Vlemynck hat sie selbst beiseitegeschafft. Männer mit schwarzen Siegelringen – Kriegsgewinnler, die am Elend verdienten – wollten sie vernichten. Vlemynck versteckte die Depesche und hinterließ für die Nachwelt eine Spur aus Rätseln quer durch die Stadt.
-
-Fast vier Jahrhunderte später stößt die Stadtarchivarin Dr. Lene Cording in einem vergessenen Bestand auf Vlemyncks Tagebuch – und auf die Spur, die eine geheimnisvolle „Bruderschaft der Friedensboten“ über die Jahrhunderte gepflegt hat.
-
-Sie bittet euch: Folgt der Spur. Löst die Rätsel, die nur vor Ort zu knacken sind. Findet die verlorene Depesche – und die drei Worte, die sie enthält.`,
-  practical: `Was ihr braucht: bequeme Schuhe, ein aufgeladenes Smartphone und offene Augen. Alle Antworten findet ihr direkt an den Stationen – Wissen aus dem Internet hilft euch nicht weiter. Wenn ihr feststeckt, gibt es zu jedem Rätsel gestaffelte Hinweise. Startpunkt ist das Historische Rathaus am Prinzipalmarkt; das Ziel liegt am Aasee.`,
-  image: {
-    file: 'Münster, Prinzipalmarkt -- 2014 -- 4689-93.jpg',
-    alt: 'Der Prinzipalmarkt in Münster mit seinen Giebelhäusern',
-    credit: RABICH,
-  } as StationImage,
+  "title": "Die verlorene Depesche",
+  "subtitle": "Eine Stadtrallye durch Münster · plant 2–3 Stunden mit Rätselpausen ein",
+  "text": "Münster, Oktober 1648. Ein Kanzleischreiber namens Johann Vlemynck bringt eine Depesche vor Männern mit schwarzen Siegelringen in Sicherheit. Seine fiktive Bruderschaft der Friedensboten trägt das Versteck über die Jahrhunderte an neue Orte.\n\nHeute entdeckt die Stadtarchivarin Dr. Lene Cording die letzten Aufzeichnungen. Am Aasee liegt eine leere Kassette. Ihr verfolgt die Spur von dort zurück zu ihren älteren Schichten, bis zum Historischen Rathaus. Welche Teile stammen von Vlemynck, welche von seinen Nachfolgern?\n\nLest die Stadt: kleine Fassadendetails, Gegenstände und Inschriften liefern eure Schlüssel. Einige Stationen hinterlassen einen Siegelcode mit der Datierung des zugehörigen Blattes. Hebt diese Codes für die verschlüsselte Depesche auf. Historische Orte und Kunstwerke sind real; die Figuren und ihre Geschichte sind erfunden.",
+  "practical": "Start ist an den Giant Pool Balls am Nordostufer des Aasees. Ihr endet außen am Historischen Rathaus am Prinzipalmarkt. Bequeme Schuhe, ein geladenes Smartphone, ein Stift und Papier helfen. Für hoch angebrachte Details könnt ihr die Kamera vergrößern. Der Dom ist laut Besucherinformation täglich von 6:30 bis 19:00 Uhr geöffnet; während Gottesdiensten wartet bitte oder nutzt Notfall-Auflösen. Ein Besuch im Friedenssaal ist optional und eintrittspflichtig. Ihr startet mit 1000 Punkten: ein Hinweis kostet 25, eine falsche Antwort 10, eine Notfall-Auflösung 100 Punkte. Nach mehreren Fehlversuchen gibt es eine Denkpause. GPS-Codewort und Notfall-Auflösen werden in der Wertung vermerkt.",
+  "image": {
+    "file": "Münster, Prinzipalmarkt -- 2014 -- 4689-93.jpg",
+    "alt": "Der Prinzipalmarkt in Münster",
+    "credit": "Foto: Dietmar Rabich / Wikimedia Commons / CC BY-SA 4.0"
+  }
 };
 
-export const finaleText = `Dr. Cording strahlt: „Das ist sie. Die verlorene Depesche.“
-
-In einer Blechkassette, von der Bruderschaft zuletzt in den 1970er-Jahren erneuert, liegt eine Abschrift von Vlemyncks Schriftstück. Drei lateinische Worte stehen darauf – die Devise des Westfälischen Friedens, zu lesen auf Stichen und Friedensmünzen jener Zeit, entlehnt dem römischen Dichter Silius Italicus:
-
-**PAX OPTIMA RERUM** – „Der Friede ist das beste der Dinge.“
-
-Vlemyncks letzter Tagebucheintrag, 24. Oktober 1648: „Heute ward der Friede zu Münster unterzeichnet. Die Glocken läuteten bis in die Nacht. Die Herren mit den schwarzen Siegeln sind abgereist, ihr Werk ist gescheitert. Was ich versteckte, gehört nun keinem Fürsten und keinem Kaufmann – es gehört der Stadt und allen, die nach uns kommen. Wer meine Spur bis hierher gelesen hat, der weiß: Der Friede ist das beste der Dinge. Man muss ihn nur suchen.“
-
-Ihr habt die Spur gelesen. Die Rallye ist geschafft – Glückwunsch!
-
-Wenn ihr mögt: Die Aaseeterrassen und das Kuhviertel sind nicht weit, und auf ein kaltes Getränk habt ihr euch jetzt redlich verdient.`;
+export const finaleText = "Dr. Cording öffnet die Kassette: „Ihr habt die Schichten der Bruderschaft gelesen und die Depesche entschlüsselt.“\n\n**PAX OPTIMA RERUM** – „Der Friede ist das beste der Dinge.“\n\nDie Losung erinnert an die Friedensdevise nach Silius Italicus. Hier am Rathaus wurde 1648 der spanisch-niederländische Friede beschworen. In unserer erfundenen Geschichte bewahrte Vlemynck die Worte vor den Männern mit den schwarzen Siegelringen. Ihr habt sie der Stadt zurückgebracht.\n\nDie Spur ist vollständig. Wenn ihr den Friedenssaal besuchen möchtet, prüft bitte seine heutigen Öffnungszeiten und den Eintritt. Eure Wertung folgt unten.";
 
 export const stations: Station[] = [
   {
-    id: 'rathaus',
-    label: 'Station 1',
-    name: 'Historisches Rathaus – Friedenssaal',
-    coords: { lat: 51.9617, lng: 7.6286 },
-    directions:
-      'Startpunkt: Stellt euch vor das Historische Rathaus mit dem hohen gotischen Giebel, Prinzipalmarkt 10.',
-    story: `Aus Vlemyncks Tagebuch: „Im Saale des Rathauses haben die Gesandten einander die Hände gereicht. Ich stand hinten an der Tür und hielt die Feder. Hier beginnt meine Spur – bei der Jahreszahl, die bald ganz Europa kennen wird. Wer sie am Hause findet, mag mir weiter folgen.“
-
-Dr. Cording ergänzt: Im Friedenssaal dieses Rathauses wurde ein erster Teilfriede zwischen zwei kriegsmüden Mächten beschworen – der erste Baustein eines viel größeren Friedens, der die Stadt für immer berühmt machen sollte. Am und im Rathaus erinnert vieles an dieses eine, große Jahr – ihr müsst es nur finden.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Sucht am Rathaus (Tafeln und Beschriftungen am Eingang bzw. am Zugang zum Friedenssaal) die Jahreszahl des großen Friedens, an den hier alles erinnert. Welche Jahreszahl ist es?',
-      placeholder: 'Jahreszahl (4 Ziffern)',
-      answerHashes: ['a16c0ab260e30b22cd06fadf9a6a30c454ddc845925cc831796b2988874d6a5a'],
+    "id": "aasee",
+    "label": "Station 1",
+    "name": "Aasee – die leere Kassette",
+    "coords": {
+      "lat": 51.9570094,
+      "lng": 7.6182738
     },
-    hints: [
-      'Schaut auf Augenhöhe: an Tafeln und Beschriftungen am Eingang und am Zugang zum Friedenssaal.',
-      'Gesucht ist das Jahr, in dem in Münster und Osnabrück der Westfälische Friede geschlossen wurde – er beendete einen der längsten Kriege der deutschen Geschichte.',
-      'Der Krieg, den der Friede beendete, ist als „Dreißigjähriger Krieg“ bekannt und begann 1618.',
+    "directions": "Beginnt bei den Giant Pool Balls auf der Wiese am Nordostufer des Aasees, nahe der Promenade. Geht einmal um die Gruppe, ohne auf die Kunstwerke zu klettern.",
+    "story": "Letztes Blatt der Bruderschaft, 1977: „Wir legten die Kassette ans Wasser, doch ihr Siegel wandert nicht mit dem Versteck. Die Spur muss nun rückwärts gelesen werden.“\n\nDr. Cording zeigt euch die leere Kassette. Auf ihrem Deckel ist eine Rechenvorschrift eingeritzt. Die Betonkugeln liefern die Größen; die Fugen gehören zum Kunstwerk, Graffiti und Kratzer zählen nicht.",
+    "task": {
+      "kind": "quiz",
+      "question": "Zählt die Kugeln der Gruppe: B. Geht um eine Kugel und zählt ihre durchgehend umlaufenden waagerechten Fugen: F. Kurze senkrechte Fugen, Kratzer und Graffiti ignoriert ihr. Multipliziert B mit F, quadriert das Produkt und addiert B. Gebt das Ergebnis ein.",
+      "placeholder": "Ergebnis als Zahl",
+      "answerHashes": [
+        "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918"
+      ]
+    },
+    "hints": [
+      "Verfolgt die waagerechten Fugen rund um eine Kugel. Eine Fuge zählt nur, wenn sie durchgehend umläuft.",
+      "Zählt die durchgehenden waagerechten Fugen, nicht die Flächenbereiche zwischen ihnen.",
+      "Schreibt eure Beobachtungen als B und F auf. Rechnet zuerst B × F, dann dieses Ergebnis mal sich selbst und zum Schluss plus B."
     ],
-    image: {
-      file: 'Münster, Prinzipalmarkt, Historisches Rathaus -- 2017 -- 6875.jpg',
-      alt: 'Das Historische Rathaus mit gotischem Giebel am Prinzipalmarkt',
-      credit: RABICH,
-    },
-    resolution: `Richtig: 1648. Unter der Zahl steht ein kleiner Pfeil nach Norden und die Worte: „Folge dem Markt der Kaufleute zu der Kirche, an der die Körbe des Schreckens hängen.“ – Werft im Vorbeigehen einen Blick auf die Bogengänge des Prinzipalmarkts: Unter diesen Arkaden wurde 1648 gefeilscht, verhandelt und spioniert.`,
+    "resolution": "Die Kassette gibt ihren ersten Siegelcode frei. Die Datierung gehört zum Blatt der Bruderschaft, nicht zur Rätsellösung. Der nächste Übergabeort liegt auf dem Weg zum Schloss; folgt der Promenade.",
+    "fragment": "1977 · 21"
   },
   {
-    id: 'stadtweinhaus',
-    label: 'Station 2',
-    name: 'Stadtweinhaus',
-    coords: { lat: 51.9619, lng: 7.6285 },
-    directions:
-      'Nur ein paar Schritte: Das Stadtweinhaus ist das prächtige Giebelhaus direkt links neben dem Rathaus.',
-    story: `Aus dem Tagebuch: „Im Weinhause der Stadt, errichtet Anno 1615, lagerte der Wein für die hohen Herren. Manch ein Geheimnis wurde bei einem Kruge verraten – darum schreibe ich das Wichtigste fortan in Geheimschrift. Zur Übung, Leser: Ich rückte jeden Buchstaben um einen Platz weiter im Alphabet, so wie der Kellermeister die Fässer rückt. Lies nun, was in diesem Hause lagert:“
-
-**X F J O**
-
-Stellt euch beim Knobeln ruhig unter die Bögen des Stadtweinhauses – hier standen schon 1648 Gesandtendiener und tauschten Neuigkeiten.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Entschlüsselt Vlemyncks Geheimschrift: Welches Wort verbirgt sich hinter „XFJO“?',
-      placeholder: 'Ein Wort',
-      answerHashes: [
-        '32b85c6ab5000619f7360cf6ba3df610b80c3245c994937a3fd6c8403b689584',
-        'd310dc8fa66df7136de40b556b8d64f03b98afd989893b901492ed900e5b7444',
+    "id": "briefkasten",
+    "label": "Station 2",
+    "name": "Promenade – der tote Briefkasten",
+    "coords": {
+      "lat": 51.9612679,
+      "lng": 7.6146837
+    },
+    "directions": "Folgt der Promenade vom Aasee nach Norden in Richtung Schloss. Das GPS-Ziel liegt auf dem Fußweg südlich der Gerichtsstraße, nahe der Kastellstraße. Bleibt auf dem öffentlichen Weg; ihr müsst weder den Schlossgarten noch den Botanischen Garten betreten.",
+    "story": "Dr. Cording: „Ein toter Briefkasten ist ein vereinbarter Übergabeort. Die Bruderschaft hinterließ hier keine echte Dose: Unsere Suche rekonstruiert nur den Ort aus den Papieren. Wenn ihr ankommt, erscheint ihr nächster Vermerk.“",
+    "task": {
+      "kind": "geo",
+      "description": "Aktiviert die Ortung und folgt der Entfernung zum Übergabepunkt auf der Promenade. Sobald ihr im Zielradius seid, öffnet sich der Vermerk. Überquert Straßen nur an sicheren Übergängen.",
+      "target": {
+        "lat": 51.9612679,
+        "lng": 7.6146837
+      },
+      "radiusMeters": 40,
+      "fallbackHashes": [
+        "953a05696ba67a93f6c4da2e8ec1f3293de90bc6f4971072e1dbfa347b25550a"
       ],
+      "fallbackHint": "Wenn GPS ausfällt, fragt die Spielleitung nach dem Codewort."
     },
-    hints: [
-      'Vlemynck hat jeden Buchstaben um einen Platz nach vorn verschoben – geht also einen Schritt im Alphabet zurück, für jeden der vier Buchstaben.',
-      'Schreibt euch das Alphabet auf und schiebt jeden Buchstaben von „XFJO“ genau eine Stelle zurück. Probiert es am ersten Buchstaben aus, dann macht ihr mit den restlichen dreien weiter.',
-      'Das Lösungswort ist ein Getränk, das in Fässern reift, nicht in Flaschen.',
+    "hints": [
+      "Erlaubt eurem Browser den Zugriff auf den Standort.",
+      "Sinkt die Entfernung, nähert ihr euch dem Übergabeort. Vergleicht auch die angezeigte Richtung.",
+      "Der Zielpunkt liegt auf dem Fußweg der Promenade südlich der Gerichtsstraße; bleibt außerhalb umzäunter Gärten."
     ],
-    resolution: `Wein – richtig entschlüsselt! Vlemynck notiert: „Wer meine Schrift lesen kann, dem vertraue ich auch den Rest. Einer meiner treuesten Freunde war der Türmer. Geh nun zu St. Lamberti und sieh hinauf, wo die Körbe hängen.“`,
-    image: {
-      file: 'Münster, Stadtweinhaus und historisches Rathaus -- 2020 -- 4113.jpg',
-      alt: 'Stadtweinhaus und Historisches Rathaus am Prinzipalmarkt',
-      credit: RABICH,
-    },
+    "resolution": "Der Vermerk enthält eine Skizze der Schlossfassade: „Sucht die Mitte, nicht die Flügel. Die kleinen Wächter und die senkrechten Lichtbahnen bewahren die nächste Zahl.“ Geht weiter zur Stadtseite des Schlosses."
   },
   {
-    id: 'lamberti',
-    label: 'Station 3',
-    name: 'St. Lamberti – die eisernen Körbe',
-    coords: { lat: 51.9634, lng: 7.6282 },
-    directions:
-      'Geht den Prinzipalmarkt nach Norden bis zu seinem Ende. Vor euch erhebt sich die Lambertikirche mit ihrem durchbrochenen Turmhelm.',
-    story: `Aus dem Tagebuch: „Über dem Markte hängen die Körbe, in denen man die Leiber der Wiedertäufer zur Schau stellte, hundert Jahre bevor ich schreibe. Sie mahnen: Wohin Fanatismus führt, das sieht man hier. Zähle die Körbe – ihre Zahl öffnet dir mein erstes Wort.“
-
-1534/35 errichteten radikale Wiedertäufer in Münster ihr „Königreich“. Nach der Eroberung der Stadt wurden ihre Anführer hingerichtet und ihre Leichname in eisernen Körben am Turm von St. Lamberti aufgehängt. Die Körbe hängen bis heute dort – schaut hinauf.`,
-    task: {
-      kind: 'quiz',
-      question: 'Wie viele eiserne Körbe (Käfige) hängen am Turm von St. Lamberti?',
-      placeholder: 'Zahl',
-      answerHashes: [
-        '4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce',
-        '6b70e2d592dd17196b7940574ee89f31c354435338179245457ad54064ba7f77',
-      ],
+    "id": "schloss",
+    "label": "Station 3",
+    "name": "Fürstbischöfliches Schloss – die Wächter",
+    "coords": {
+      "lat": 51.9634388,
+      "lng": 7.6132424
     },
-    hints: [
-      'Tretet ein Stück zurück (Richtung Prinzipalmarkt), dann seht ihr die Turmseite mit den Körben besser.',
-      'Die Körbe hängen übereinander/nebeneinander an der Turmseite oberhalb des Zifferblatts.',
-      'Es war eine kleine Führungsriege des Täuferreichs, die hier zur Schau gestellt wurde – mehr als einer, aber keine Handvoll. Zählt am Turm noch einmal ganz genau nach.',
+    "directions": "Geht auf der Promenade weiter zur Gerichtsstraße. Quert sie am sicheren Übergang und folgt dem Weg zum Schlossplatz. Betrachtet die mittlere, vorspringende Fassade von der Stadtseite; bleibt vor dem Gebäude.",
+    "story": "Blatt der Bruderschaft aus der Zeit des Schlossbaus: „Vlemynck hat dieses Haus nie gesehen. Wir haben seine Spur erneuert, als die Stadt über ihre alten Grenzen wuchs. Die Mitte der Fassade ist unser Schlüssel.“\n\nSucht das Gesims über dem Mittelteil. Die geflügelte erwachsene Figur in der Mitte und die Figur ganz oben gehören nicht zu den kleinen Wächtern.",
+    "task": {
+      "kind": "quiz",
+      "question": "Zählt nur die kindlichen Figuren auf dem Gesims des Mittelrisalits: C. Zählt dann die senkrechten Fensterachsen dieses vorspringenden Mittelteils: A. Eine Achse ist eine übereinanderliegende Reihe von Öffnungen, keine einzelne Scheibe. Bildet die Zahl 10 × C + A.",
+      "placeholder": "Zweistellige Zahl",
+      "answerHashes": [
+        "811786ad1ae74adfdd20dd0372abaaebc6246e343aebd01da0bfc4c02bf0106c"
+      ]
+    },
+    "hints": [
+      "Grenzt zuerst den vorspringenden Mittelteil ab. Figuren an den Enden der Schlossflügel zählen nicht.",
+      "Für C zählt ihr die kleinen Figuren neben der erwachsenen Mittelfigur. Für A schaut ihr entlang der senkrechten Reihen nach unten.",
+      "Nehmt C als Zehnerstelle und A als Einerstelle. Prüft dabei, dass ihr keine Fensterreihe doppelt gezählt habt."
     ],
-    resolution: `Drei Körbe – für die drei Anführer Jan van Leiden, Bernd Knipperdolling und Bernd Krechting, hingerichtet 1536 vor dem Rathaus. Unter Vlemyncks Eintrag steht, dreifach unterstrichen, das erste Wort der Losung: **PAX**. Und weiter: „Geh nun dorthin, wo der Händler mit der Kiepe steht, und sieh ihm auf den Rücken.“`,
-    fragment: 'PAX',
-    image: {
-      file: 'Münster, St.-Lamberti-Kirche -- 2014 -- 6860.jpg',
-      alt: 'St. Lamberti mit ihrem durchbrochenen Turmhelm',
-      credit: RABICH,
-    },
+    "resolution": "Die Wächter geben den Weg nach Osten frei. Ein älteres Blatt wartet bei der Kirche jenseits der Aa. Folgt der Frauenstraße in die Altstadt."
   },
   {
-    id: 'kiepenkerl',
-    label: 'Station 4',
-    name: 'Der Kiepenkerl',
-    coords: { lat: 51.9645, lng: 7.627 },
-    directions:
-      'Von St. Lamberti haltet euch links an der Kirche vorbei über den Drubbel, dann rechts zum Spiekerhof. Auf dem kleinen Platz steht das Denkmal des Kiepenkerls.',
-    story: `Aus dem Tagebuch: „Die Wanderhändler tragen Nachrichten schneller übers Land als jeder Kurier des Kaisers. Manche Botschaft, die den Frieden rettete, reiste in einem Rückenkorb unter Eiern und Leinen. Einem solchen Händler verdanke ich mein Leben – die Herren mit den schwarzen Siegeln suchten mich, und er trug mich als ‚Ware‘ aus dem Tore.“
-
-Nachtrag der Bruderschaft, um 1900: „Seit die Stadt dem Kiepenkerl ein Denkmal gesetzt hat, legen wir unseren Hinweis zu seinen Füßen – zum Dank an Vlemyncks unbekannten Retter.“
-
-Der Kiepenkerl ist das Denkmal der westfälischen Wanderhändler. Das Original von 1896 wurde im Krieg zerstört, seit 1953 steht hier eine Neufassung.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Seht euch die Statue genau an: Wie heißt das geflochtene Traggestell, das der Kiepenkerl auf dem Rücken trägt – und das ihm seinen Namen gibt?',
-      placeholder: 'Ein Wort',
-      answerHashes: [
-        '63bac65feb26c83bc6d7d2fe066f9ff0200bc604940c372d8d2b9890ba4e743e',
-        '4ac6b2ab86d9a50396f3f985255b777999868c2ffd62cd5827c231fac4f8d26c',
-        '2a522092835694bf9145b3f15123c5cbff31e075067a8ace1420d18523db3275',
-        '20c8396c5e55327220cacb2cfc2f988709286282c5e856ba03fe7b2d7e854f2a',
-        '8b5f2aaa977db4278f96a830230fc9849608c1d095475abc85a1760c55f47a05',
-        'f7dbd6e22e5288bc046f5d2e2d7814b1129774ca34a6364a3c2392b6261c232a',
-      ],
+    "id": "ueberwasser",
+    "label": "Station 4",
+    "name": "Überwasserkirche – das Bild über der Tür",
+    "coords": {
+      "lat": 51.964029,
+      "lng": 7.6229834
     },
-    hints: [
-      'Schaut genau auf den Rücken der Statue: Dort trägt er ein geflochtenes Behältnis aus Weidenruten.',
-      'Solche geflochtenen Rückentraggestelle nutzten Wanderhändler und Bauern jahrhundertelang, um Waren zu transportieren.',
-      'Das Wort beginnt mit K und reimt sich auf „Wiege“ – fast jedenfalls.',
+    "directions": "Geht vom Schlossplatz über den sicheren Übergang zur Frauenstraße und folgt ihr nach Osten bis zur Überwasserkirche. Sucht das südliche Seitenportal nahe dem Westende der Kirche, mit dem Relief über den Bronzetüren; nicht den großen Westzugang.",
+    "story": "Nachtrag der Bruderschaft, 1705: „Ein Sturm verändert die Stadt. Wir haben die Spur an Steinbilder gebunden, damit ein beschädigtes Dach sie nicht auslöscht. Lest den Kranz um die Gestalt über dieser Tür.“\n\nDr. Cording bittet euch, runde Embleme und seitliche Wappenschilde getrennt zu erfassen. Der Heiligenschein ist kein Emblem.",
+    "task": {
+      "kind": "quiz",
+      "question": "Zählt die runden Emblem-Medaillons um die mittlere Gestalt im Relief über dem Südportal: M. Zählt die davon getrennten Wappenschilde links und rechts des Reliefs: W. Quadriert M und zieht W ab.",
+      "placeholder": "Ergebnis als Zahl",
+      "answerHashes": [
+        "86e50149658661312a9e0b35558d84f6c6d3da797f552a9657fe0558ca40cdef"
+      ]
+    },
+    "hints": [
+      "Bleibt am südlichen Seitenportal. Die gesuchten Embleme liegen um das zentrale Relief; die Schilde stehen außerhalb davon.",
+      "Kreise mit einem eigenen Symbol zählen als Medaillons. Der Kreis direkt am Kopf zählt nicht.",
+      "Rechnet M × M und danach minus W. Beide Größen müsst ihr selbst am Relief zählen."
     ],
-    resolution: `Die Kiepe! Vlemynck schreibt: „Folge nun den Freunden aus dem Westen. Sie wohnten im Hause der Krämer, hinter dem Chor von St. Lamberti – und in ebenjenem Hause ward ihr Friede mit Spanien unterzeichnet, im Januar des großen Jahres.“`,
-    image: {
-      file: 'Kiepenkerl-Denkmal, Münster.jpg',
-      alt: 'Das Kiepenkerl-Denkmal am Spiekerhof',
-      credit: 'Foto: Wikimedia Commons (Lizenz siehe verlinkte Dateiseite)',
-    },
+    "resolution": "Das Relief bestätigt den Nachtrag. Die Bruderschaft führt euch zum Spiekerhof: Ein späterer Bote hält den nächsten Schlüssel in seinen Händen."
   },
   {
-    id: 'krameramtshaus',
-    label: 'Station 5',
-    name: 'Krameramtshaus – die Gäste aus dem Westen',
-    coords: { lat: 51.96294, lng: 7.62983 },
-    directions:
-      'Geht vom Kiepenkerl zurück zur Lambertikirche und an ihr vorbei bis hinter den Chor (Ostseite). Dort, am Beginn des Alten Steinwegs, steht das alte Giebelhaus mit den Flaggen (Alter Steinweg 6/7).',
-    story: `Aus dem Tagebuch: „Die Gesandten der Generalstaaten wohnten im Hause des Krämeramtes. Ehrliche Leute; am 30. Tage des Januars ward in ihrem Hause der Friede mit Spanien unterzeichnet – der erste Stein im Gewölbe des großen Friedens. Bei ihnen ließ ich die Abschrift meiner Depesche zurück – doch die Spur führt weiter.“
-
-Das Krameramtshaus von 1589 ist das älteste Gildehaus Münsters und eines der wenigen Gebäude der Altstadt, die den Zweiten Weltkrieg überstanden. Von 1646 bis 1648 wohnte hier die niederländische Gesandtschaft; am 30. Januar 1648 wurde in diesem Haus der spanisch-niederländische Friede unterzeichnet. Die heutige Nutzung des Hauses erinnert genau daran.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Lest die Beschilderung am Gebäude: Welchem Land ist dieses Haus heute gewidmet? (Es heißt „Haus der …“)',
-      placeholder: 'Land',
-      answerHashes: [
-        '98ede48e954aefc2e2ca1545e28636c63f9253e576cbc823c3740567557bc2ed',
-        '3330e99ff415001e9dd809429f22b39e516f938e3818f4b706267b8c4ce0f1e5',
-        '95b958182cd9e1e52153c85d6a85120e5a56b8a3ef2173902456abe029d32dfc',
-      ],
+    "id": "kiepenkerl",
+    "label": "Station 5",
+    "name": "Kiepenkerl – die Hände des Boten",
+    "coords": {
+      "lat": 51.964143,
+      "lng": 7.6261908
     },
-    hints: [
-      'Achtet auf Schilder und Flaggen am Eingang.',
-      'Die Gesandten, die hier 1648 wohnten, kamen aus diesem Land – die offizielle Bezeichnung des Hauses steht direkt über oder neben dem Haupteingang.',
-      'Prüft auch Fahne oder Wappen am Gebäude – sie gehören zum selben Land wie die Beschriftung.',
+    "directions": "Geht vom Überwasserkirchplatz über die Aa-Brücke am Spiekerhof nach Osten zum Kiepenkerl-Denkmal. Stellt euch frontal vor die Figur, sodass ihr ihr Gesicht seht.",
+    "story": "Spätes Blatt der Bruderschaft: „Vlemynck begegnete keinem Denkmal. Erst unsere Nachfolger wählten diesen Boten als Hüter der Spur. Seine Hände erzählen, wie man durch die Stadt zieht und eine Pause macht.“\n\nDie Reihenfolge richtet sich nach eurem Blick auf die Figur, nicht nach ihrer eigenen linken und rechten Seite.",
+    "task": {
+      "kind": "quiz",
+      "question": "Welche Gegenstände hält die Figur in den Händen? Nutzt diese Wortliste, damit die Begriffe eindeutig sind: STOCK, BUCH, PFEIFE, SCHLÜSSEL, BECHER, SEIL. Wählt erst den Gegenstand auf eurer linken, dann auf eurer rechten Seite. Nehmt jeweils den letzten Buchstaben und seine Position im Alphabet (A=1 bis Z=26). Schreibt beide Positionen zweistellig, getrennt durch einen Bindestrich.",
+      "placeholder": "Zahlenpaar, z. B. 02-24",
+      "answerHashes": [
+        "47c5fbf51c636da0b48309ad799e2e4d0443b9c25b055c6b762d6b6f6d95fc52"
+      ]
+    },
+    "hints": [
+      "Der Korb auf dem Boden und das Traggestell auf dem Rücken sind nicht gesucht. Schaut ausschließlich auf die Hände.",
+      "Ordnet die Gegenstände von links nach rechts aus eurer Sicht zu. Nehmt erst danach die Endbuchstaben ihrer Wörter aus der Liste.",
+      "Zählt die Position jedes Endbuchstabens im Alphabet ab. Einstellige Ergebnisse bekommen eine führende Null; vertauscht das Zahlenpaar nicht."
     ],
-    resolution: `Haus der Niederlande – richtig. Vlemyncks nächster Eintrag: „Nun hinüber zur Salzstraße. Dort, wo ein Herr vom Adel sein Haus auf ein winziges Grundstück zwängen ließ, liegt der nächste Nachtrag meiner Freunde.“`,
+    "resolution": "Der Bote weist euch zur großen Uhr im Dom. Ihr braucht nicht auf einen Zeigersprung zu warten: Die beschrifteten Plattformen und die Ziffern selbst tragen den Schlüssel."
   },
   {
-    id: 'erbdrostenhof',
-    label: 'Station 6',
-    name: 'Erbdrostenhof – das schräge Palais',
-    coords: { lat: 51.9609, lng: 7.6322 },
-    directions:
-      'Vom Krameramtshaus zurück an die Südseite der Lambertikirche: Dort beginnt die Salzstraße. Folgt ihr nach Osten (ca. 5–7 Minuten). Hinter einem geschwungenen schmiedeeisernen Gitter mit dreieckigem Ehrenhof liegt das barocke Adelspalais, Salzstraße 38.',
-    story: `Nachtrag der Bruderschaft, um 1760 den Papieren beigelegt: „Ein Jahrhundert nach Vlemynck bauten wir unsere Spur weiter, denn die Stadt wuchs, und mit ihr wuchsen die Verstecke. Hier, an der Salzstraße, ließ sich der Erbdrost der Fürstbischöfe ein Stadtpalais errichten – vom selben Baumeister, der später auch dem Fürstbischof selbst ein Schloss bauen sollte. Das Grundstück aber war eine enge Ecke. Der Baumeister behalf sich mit einem Kniff, den nur sieht, wer vor dem ganzen Hause steht und nicht nur auf die Tür starrt.“
-
-Der Erbdrostenhof (1753–1757) wurde von Johann Conrad Schlaun für den Erbdrosten Adolf Heidenreich Freiherr Droste zu Vischering diagonal auf ein kleines Eckgrundstück gestellt. Um trotzdem eine prächtige, repräsentative Schauseite zu bekommen, schwingt die Fassade hinter einem dreieckigen Ehrenhof in einer Kurve.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Tretet ein paar Schritte zurück und betrachtet die gesamte Fassade zur Salzstraße als Ganzes: Schwingt sie sich nach innen (wie eine Schale) oder nach außen (wie ein Bauch)?',
-      placeholder: 'nach innen / nach außen',
-      answerHashes: [
-        '4132600988b436c919c7869e00a66b42ed30738a977e7904347fdbec8e6b71a4',
-        '850dcd69d9020ae02acfe1bf33c31ba39236398a92944cd08f898013b97dbeb7',
-        'a658c22493b4378c2dc826af6c606c711a53ca2321635cba23c016aa41576bc5',
-        '760d80fd003ad247b2567750cb3b37f0b7a4ab6e6199b3fca5a737771d6076f2',
-        'a14d9671a502fc762f8c1b25cbd506d63bd49ea3cdf0cb55599f3736e5020517',
-        'b753d6644e0e6e11e5b6e11d2289c230cc90308b59864e9cd3c2333099c3db28',
-      ],
+    "id": "dom",
+    "label": "Station 6",
+    "name": "St.-Paulus-Dom – zwei Zahlen der Uhr",
+    "coords": {
+      "lat": 51.9627282,
+      "lng": 7.6255123
     },
-    hints: [
-      'Schaut auf das ganze Gebäude, nicht nur auf den Mitteleingang – geht dafür auf die andere Straßenseite.',
-      'Das Eckgrundstück war zu klein für eine gerade Fassade. Der Baumeister stellte das Haus schräg und ließ die Front in einem Bogen schwingen.',
-      'Stellt euch vor, die Fassade wäre eine Schüssel: Würde Regenwasser von ihrer Mitte weg- oder zu ihr hinlaufen? Das verrät euch die Wölbungsrichtung.',
+    "directions": "Geht vom Spiekerhof nach Süden über den Domplatz zum St.-Paulus-Dom. Betretet ihn über einen geöffneten Zugang; das Uhrenportal ist barrierefrei. Die astronomische Uhr steht im südlichen Chorumgang. Während Gottesdiensten bitte warten; bei geschlossenem Zugang gibt es Notfall-Auflösen.",
+    "story": "Blatt bei der Uhr, datiert 1542: „Zeit wird hier zum Bild. Wer die gewöhnliche Reihenfolge annimmt, liest den Schlüssel falsch.“ Eine spätere Hand ergänzte: „Auch die Plattform der beiden Gestalten rechts trägt eine Zahl.“\n\nDr. Cording: „Lest die Inschrift unter der rechten oberen Figurengruppe und den äußeren Stundenring. Andere Beschriftungen der Uhr sind für diesen Schlüssel nicht nötig.“",
+    "task": {
+      "kind": "quiz",
+      "question": "Lest die Jahreszahl nach POSITUM ANNO an der rechten oberen Plattform. Nehmt nur ihre letzten beiden Ziffern als Zahl. Geht dann auf dem Stundenring von der XII ganz oben genau eine Ziffer im Uhrzeigersinn weiter. Wandelt diese römische Stundenziffer in eine Zahl um und addiert sie zur Zahl aus der Inschrift.",
+      "placeholder": "Summe als Zahl",
+      "answerHashes": [
+        "3346f2bbf6c34bd2dbe28bd1bb657d0e9c37392a1d5ec9929e6a5df4763ddc2d"
+      ]
+    },
+    "hints": [
+      "Die Plattform rechts oben steht außerhalb des großen Zifferblatts. Vergrößert die Inschrift bei Bedarf mit eurer Kamera.",
+      "Gesucht ist der äußere Ring mit römischen Stundenziffern; beginnt ganz oben. Lasst euch nicht von der Reihenfolge einer gewöhnlichen Uhr täuschen.",
+      "Streicht die ersten beiden Ziffern der Jahreszahl. Addiert dazu den Wert der Ziffer unmittelbar rechts neben der obersten XII."
     ],
-    resolution: `Richtig: Die Fassade ist konkav gewölbt – nach innen, wie eine Schale. So gewann Schlaun trotz des winzigen Eckgrundstücks eine große, prächtige Schauseite. Die Bruderschaft schreibt weiter: „Nun zurück ins Herz der Stadt, zum Dom, wo die große Uhr steht.“`,
+    "resolution": "Ihr habt das Blatt der Uhr gelesen und seinen Siegelcode geborgen. Nun führt die Spur vom Domplatz zum Westportal von St. Lamberti.",
+    "fragment": "1542 · 17"
   },
   {
-    id: 'dom',
-    label: 'Station 7',
-    name: 'St.-Paulus-Dom – die astronomische Uhr',
-    coords: { lat: 51.9629, lng: 7.6257 },
-    directions:
-      'Die Salzstraße zurück nach Westen bis zur Lambertikirche, über den Prinzipalmarkt und durch eine der Gassen (z.B. über den Michaelisplatz) zum weiten Domplatz (ca. 10 Minuten). Betretet den Dom (Eintritt frei; bitte Gottesdienstzeiten respektieren). Die astronomische Uhr findet ihr im südlichen Chorumgang.',
-    story: `Aus dem Tagebuch: „Im Dome steht die große Uhr, die Sonne, Mond und Sterne weist. Als Knabe stand ich staunend davor. Der Meister, der sie schuf, versteckte darin eine Eigenheit, die nur sieht, wer wirklich schaut. Wer sie kennt, kennt die Richtung meiner Spur.“
-
-Die astronomische Uhr von 1540–1542 überstand Krieg und Zerstörung. Sie zeigt Planetenstände, Tierkreiszeichen und den Kalender bis weit in die Zukunft. Ihr großes Zifferblatt zählt 24 Stunden – und hat nur einen einzigen Zeiger, den Sonnenzeiger.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Der Sonnenzeiger bewegt sich viel zu langsam, um ihm zuzusehen – aber die Stundenziffern auf dem 24-Stunden-Zifferblatt verraten seinen Weg. Folgt ihnen in der Reihenfolge des Tages: In welche Richtung läuft der Sonnenzeiger?',
-      placeholder: 'z.B. „nach links“ / „nach rechts“',
-      answerHashes: [
-        'eef8b9fd5d437dd991ce2695fcce6c416ea3068e5b448963f0a7c3cbd9ad98eb',
-        '9b49d0e234e3808a7ed66866ac6b69eccbf6832d65a1d621a96c813cffececdb',
-        'fff15c41f88b721dbf0a6cb787c329336592f3152df8aa97ec890a9c4d9a7025',
-        'e02fd66f710eae4fbafd2ebaccda35a949477122a004994e2e819a4e899f860f',
-        'a3f69ef4e47cb868c83015514cce49c2da03c98ebbf44393d4890fe54638e33b',
-        '840984adbbfc1abdc160ab1ee4e2101da4bdb83657f0a0212d8bb41c72485455',
-        '2c375640af5fd08482a597b9e816776972b357eb7bea5076e074c68e70f2fcdc',
-        'dde05db7580bea632e00155ca4687121e752166fc40d571f535c22dd61ad1406',
-      ],
+    "id": "lamberti",
+    "label": "Station 7",
+    "name": "St. Lamberti – Himmel und Portal",
+    "coords": {
+      "lat": 51.9627845,
+      "lng": 7.6287341
     },
-    hints: [
-      'Sucht die römischen Ziffern: Mittag (XII) steht ganz oben, Mitternacht ganz unten. Die Stunden I–XII kommen zweimal vor.',
-      'Auf der einen Seite stehen die Vormittagsstunden, auf der anderen die Nachmittagsstunden. Findet heraus, auf welcher Seite die Vormittagsstunden stehen.',
-      'Fahrt mit dem Finger die Vormittagsstunden von unten (Nacht) nach oben (Mittag) entlang: Dreht sich euer Finger dabei wie ein gewöhnlicher Uhrzeiger oder andersherum?',
+    "directions": "Verlasst den Dom und geht über den Domplatz und den Roggenmarkt zum Westportal von St. Lamberti. Von außen könnt ihr sowohl den Turm als auch die stehenden Steinfiguren am Portal betrachten; die Kirche muss dafür nicht geöffnet sein.",
+    "story": "Vlemyncks Notiz: „Das sichtbare Gedächtnis der Stadt reicht weiter zurück als unser Streit. Oben hängen seine dunklen Zeichen; unten stehen die Zeugen aus Stein. Nur gemeinsam öffnen sie den Weg.“\n\nZählt die große Figurenreihe direkt am Westportal. Gemalte Personen in den Mosaiken, kleine Gesichter an Sockeln und weitere Verzierungen gehören nicht dazu.",
+    "task": {
+      "kind": "quiz",
+      "question": "Zählt die eisernen Körbe am Turm: C. Zählt alle großen stehenden Steinfiguren in der Reihe unmittelbar um die Türen des Westportals, einschließlich der Mittelfigur: P. Multipliziert C mit P.",
+      "placeholder": "Produkt als Zahl",
+      "answerHashes": [
+        "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894"
+      ]
+    },
+    "hints": [
+      "Schaut zuerst zum Turm und danach auf die Steinfiguren links, rechts und in der Mitte des Westportals.",
+      "Zählt pro Seite jede große stehende Figur einmal. Die gemalten Personen oberhalb der Türen sind keine Steinfiguren.",
+      "Addiert die Figuren beider Seiten und die Mittelfigur zu P. Multipliziert diese Summe mit eurer Korbzahl C."
     ],
-    image: {
-      file: 'Münster, St.-Paulus-Dom, Astronomische Uhr -- 2019 -- 3822.jpg',
-      alt: 'Die astronomische Uhr im St.-Paulus-Dom',
-      credit: RABICH,
-    },
-    resolution: `Genau: Der Sonnenzeiger läuft linksherum, gegen den Uhrzeigersinn – dem Lauf der Sonne am Himmel folgend! Unter dem Eintrag steht Vlemyncks zweites Wort, in Spiegelschrift geschrieben: **OPTIMA**. Und weiter: „Geh nun über das Wasser – zu Unserer Lieben Frau, deren Turm sein Haupt verlor.“`,
-    fragment: 'OPTIMA',
+    "resolution": "Die Zeichen passen zusammen. Folgt der Kirche bis hinter ihren Chor: Dort bewahrt das Haus der Krämer das nächste Blatt. Der kurze Weg um die Kirche gehört zur Spur."
   },
   {
-    id: 'ueberwasser',
-    label: 'Station 8',
-    name: 'Überwasserkirche – der Turm ohne Haupt',
-    coords: { lat: 51.9636, lng: 7.6231 },
-    directions:
-      'Verlasst den Dom, überquert den Domplatz nach Westen und geht über die kleine Aa-Brücke. Vor euch steht die Überwasserkirche (Liebfrauenkirche).',
-    story: `Aus dem Tagebuch: „Die Kirche über dem Wasser hat viel erlitten. Als die Wiedertäufer die Stadt hielten, brachen sie dem Turme sein Haupt ab, um Geschütze hinaufzuschaffen. Man hat ihm später ein neues Haupt gegeben – doch die Narbe jener Jahre vergisst die Stadt nicht.“
-
-Dazu ein Nachtrag der Bruderschaft aus dem Jahr 1705: „Der große Orkan des vergangenen Herbstes hat dem Turme das Haupt abermals genommen. Die Herren der Stadt wollen es nicht erneuern. So bleibe er, wie der Krieg und der Sturm ihn hinterließen – ein Mahnmal, wie kein Baumeister es hätte ersinnen können.“
-
-Vergleicht den Turm der Überwasserkirche mit dem Turm von St. Lamberti, den ihr vorhin gesehen habt. Was fällt auf?`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Was fehlt dem Turm der Überwasserkirche, das die meisten anderen Kirchtürme (z.B. St. Lamberti) haben?',
-      placeholder: 'Ein Wort',
-      answerHashes: [
-        '3333c82cc4d9b011e3802bc581c8ca3402400c4501add10bb2479f4ad53afdd3',
-        '4854c1c67f524cbef4fd3a30e699d00b8fe2df1fb6e42d7f00bbdd7c431bd450',
-        '58e9df4ded80af61265cebbe39869ec24701dab79ec3739e516c9fb855bef61e',
-        '2e66a3b84d7d9c71bbadece61f7f604cbe228f52ea70a1f222c5a09b0cd76fa0',
-        '292e7129df5d2282d799a9dc2e548cd7222b45c70352da0e2ddcb4af800ebf0a',
-        '731a3a59776c25a69c136b92c952443bdd75ee6f6056f48533a8149c0b5c4211',
-        'ab14d3faa25e917efe6e7135d4ecca197866738885a88b9b95d1a16d2bb5b323',
-        '487974f860e43195964d110c6da95e1068b14f6873423ceb7705c412bc29f335',
-        '69364142e40930ed64a9f3ee2570adf9e1971831f8d1d5f10046a66e1a71ba15',
-        '53d264a1ed1d8194062078f82859a56b782abe5f573007ad8175168a76e73878',
-      ],
+    "id": "krameramtshaus",
+    "label": "Station 8",
+    "name": "Krameramtshaus – die erneuerten Steine",
+    "coords": {
+      "lat": 51.962972,
+      "lng": 7.6298732
     },
-    hints: [
-      'Schaut ganz nach oben und vergleicht die Silhouette mit der von St. Lamberti.',
-      'Der Turm endet flach, wo andere Türme spitz zulaufen.',
-      'Vergleicht die Turmspitze mit einem angespitzten Bleistift gegenüber einem abgebrochenen – wie nennt man das fehlende Stück ganz oben an einem Kirchturm?',
+    "directions": "Geht an St. Lamberti vorbei zur Ostseite hinter dem Chor. Am Beginn des Alten Steinwegs steht das Krameramtshaus, Alter Steinweg 6/7. Betrachtet den Giebel vom öffentlichen Platz; Kamera-Zoom hilft bei den Inschriften.",
+    "story": "Blatt der Gesandten, Januar 1648: „Unser Friede beginnt mit einer Unterschrift. Die Hüter nach uns werden den Stein erneuern; ihre Abstände sind das Zeichen, das ihr lesen müsst.“\n\nAuf dem Giebel haben spätere Hände mehrfach RENOVATUM hinterlassen. Symmetrisch wiederholte Angaben gehören jeweils zur selben Erneuerung.",
+    "task": {
+      "kind": "quiz",
+      "question": "Lest alle unterschiedlichen Jahreszahlen hinter RENOVATUM am Giebel von oben nach unten. Gleiche Jahreszahlen zählen nur einmal. Berechnet den Abstand der obersten zur nächsten und anschließend den Abstand der nächsten zur untersten Jahreszahl. Gebt die beiden positiven Abstände in dieser Reihenfolge mit Bindestrich ein.",
+      "placeholder": "Zwei Abstände mit Bindestrich",
+      "answerHashes": [
+        "2f489e92d7b4b8c9c75493a8c9a8d44048fdb6f014ae262d9083bdff6e1af726"
+      ]
+    },
+    "hints": [
+      "Sucht die RENOVATUM-Felder in verschiedenen Höhen, nicht das Baujahr aus einem Geschichtstext.",
+      "Notiert die unterschiedlichen Jahreszahlen. Links und rechts wiederholte Zahlen schreibt ihr nur einmal auf.",
+      "Zieht von der Zahl des höchsten Feldes die nächste ab. Rechnet danach nächste minus unterste. Verbindet die Ergebnisse mit einem Bindestrich."
     ],
-    resolution: `Richtig – dem Turm fehlt die Spitze (der Turmhelm). Die Täufer nahmen sie 1534 ab, um Geschütze aufzustellen; der wiederaufgebaute Helm wurde 1704 von einem Orkan zerstört und nie erneuert. Vlemynck: „Von hier wandte ich mich gen Westen, hinaus aus der alten Stadt.“ – Dr. Cording ergänzt: Der nächste Hinweis der Bruderschaft stammt aus der Zeit um 1780 und führt zum Schloss des Fürstbischofs.`,
-    image: {
-      file: 'Münster 20210319 085322.jpg',
-      alt: 'Die Überwasserkirche mit ihrem flach endenden Turm',
-      credit: 'Foto: Wikimedia Commons (Lizenz siehe verlinkte Dateiseite)',
-    },
+    "resolution": "Der letzte Siegelcode ist geborgen. Die Datierung des Blattes unterscheidet sich von den späteren Erneuerungszahlen. Geht nun am Prinzipalmarkt nach Süden zum Stadtweinhaus.",
+    "fragment": "1648 · 08"
   },
   {
-    id: 'schloss',
-    label: 'Station 9',
-    name: 'Fürstbischöfliches Schloss',
-    coords: { lat: 51.9636, lng: 7.6134 },
-    directions:
-      'Folgt der Frauenstraße nach Westen, überquert die Promenade und geht weiter geradeaus – nach etwa 10–12 Minuten öffnet sich der weite Schlossplatz. Stellt euch vor die Mitte der Barockfassade.',
-    story: `Aus den Papieren der Bruderschaft (um 1780): „Der Baumeister Schlaun hat dem Fürstbischof ein Schloss aus rotem Ziegel und hellem Sandstein gesetzt. Wir haben das Versteck der Depesche erneuert und die Spur hierher verlängert. Wer wissen will, wem das Haus einst dienen wird, der lese, was an seinen Toren geschrieben steht.“
-
-Das Schloss wurde 1767–1787 nach Plänen von Johann Conrad Schlaun erbaut – der Fürstbischof zog nie richtig ein. Heute hat das Gebäude einen ganz anderen Hausherrn. Die Schilder am Eingang verraten ihn.`,
-    task: {
-      kind: 'quiz',
-      question:
-        'Lest die Beschilderung am Schloss: Welche Einrichtung hat hier heute ihren Sitz?',
-      placeholder: 'Einrichtung',
-      answerHashes: [
-        '59d8b2e5ddb8810f5a5ae058c45ba95433219b31ece18839bbb643109735110c',
-        '44d99bbbcf8712c6e266d4d7e6e6f4a14d0e9fe7e2e0a4a692e671ab2d094df5',
-        '8d9315fc224d877fa15d9322ef9d26e9f6bf233d9d2290fdab0c232494bc945c',
-        'c0911ed0bd0b58a1ae14a853a23af63534be14f223a85f34470fb67066e3c66b',
-        '4d1080b7fe5c4c631b9bcfa5686f3b27a9d96a9d60711c2cc0c18060a07eec92',
-        'cac4d9a125145d332b57b39ec561b12b3fc89ce06cefddbd8d6ae92ee2167db1',
-      ],
+    "id": "stadtweinhaus",
+    "label": "Station 9",
+    "name": "Stadtweinhaus – die Schrift des Rates",
+    "coords": {
+      "lat": 51.9617146,
+      "lng": 7.6282775
     },
-    hints: [
-      'Achtet auf die offiziellen Schilder neben den Eingängen.',
-      'Zehntausende junge Menschen gehören heute zu dieser Einrichtung – verteilt über die ganze Stadt.',
-      'Seit 2023 trägt die Einrichtung schlicht den Namen der Stadt im Titel: „… Münster“.',
+    "directions": "Geht am Prinzipalmarkt nach Süden zum Stadtweinhaus, dem nördlichen Nachbargebäude des Rathauses. Betrachtet seinen steinernen Balkon von der Marktseite aus, ohne unter Absperrungen zu treten.",
+    "story": "Vlemynck: „Was der Rat in offener Rede verkündet, halte ich im Brief verschlossen. Mein Schlüssel liegt vor den Augen aller, doch wer nur die Masken betrachtet, zählt das Falsche.“\n\nAuf dem Blatt steht **XZHMY IJS KWNJIJS**. Der Schlüssel ist die Anzahl der vollständigen menschlichen Figuren in der steinernen Balkonbrüstung. Gesichtsmasken unter dem Balkon zählen nicht.",
+    "task": {
+      "kind": "quiz",
+      "question": "Zählt die vollständigen menschlichen Figuren in der Balkonbrüstung. Verschiebt jeden Buchstaben der Geheimschrift um genau diese Anzahl rückwärts im Alphabet; nach A folgt rückwärts Z. Gebt den ganzen entschlüsselten Satz ein.",
+      "placeholder": "Entschlüsselter Satz",
+      "answerHashes": [
+        "e8a33196b9056fcf21acd39e80a264fac25392af754ff413c00f46c76fc9a448"
+      ]
+    },
+    "hints": [
+      "Schaut auf die Figuren in der Brüstung, nicht auf die Reliefköpfe unter ihr.",
+      "Schreibt A bis Z auf. Geht vom verschlüsselten Buchstaben so viele Schritte rückwärts, wie ihr Figuren gezählt habt.",
+      "Entschlüsselt zuerst das Anfangswort, danach die beiden weiteren Gruppen. Leerzeichen ändern den Schlüssel nicht."
     ],
-    resolution: `Richtig: die Universität Münster residiert heute im Schloss. Der letzte Eintrag der Bruderschaft lautet: „Hinter dem Schlosse liegt der Garten. Dort, wo unsere Zeichen dich hinführen, haben wir den toten Briefkasten angelegt. Kein Rätsel mehr – nun zählt allein der Ort.“ – Jetzt kommt euer GPS ins Spiel!`,
-    image: {
-      file: 'Münster, Fürstbischöfliches Schloss -- 2018 -- 1925-27-28.jpg',
-      alt: 'Das Fürstbischöfliche Schloss, heute Sitz der Universität',
-      credit: RABICH,
-    },
+    "resolution": "Die Schrift ist offen. Tragt die datierten Siegelcodes wenige Schritte weiter zum Historischen Rathaus. Dort liegt die letzte verschlossene Seite."
   },
   {
-    id: 'briefkasten',
-    label: 'Station 10',
-    name: 'Schlossgarten – der tote Briefkasten',
-    coords: { lat: 51.965, lng: 7.611 },
-    directions:
-      'Geht links oder rechts um das Schloss herum in den Schlossgarten. Aktiviert die Ortung eures Handys – die App zeigt euch, wie weit ihr vom toten Briefkasten entfernt seid.',
-    story: `Dr. Cording: „Die Bruderschaft nutzte im Schlossgarten einen toten Briefkasten – einen geheimen Übergabeort, den nur kannte, wer die Spur bis hierher gelesen hatte. Seine Lage haben wir aus den Papieren rekonstruiert. Findet den Punkt – euer Handy führt euch. Wenn ihr nah genug seid, öffnet sich der nächste Tagebucheintrag.“`,
-    task: {
-      kind: 'geo',
-      description:
-        'Findet den toten Briefkasten im Schlossgarten. Lauft los und beobachtet die Entfernungsanzeige – sie führt euch zum Ziel. Ihr müsst auf etwa 40 Meter herankommen.',
-      target: { lat: 51.965, lng: 7.611 },
-      radiusMeters: 40,
-      fallbackHashes: ['953a05696ba67a93f6c4da2e8ec1f3293de90bc6f4971072e1dbfa347b25550a'],
-      fallbackHint: 'Kein GPS? Fragt eure Spielleitung nach dem Codewort.',
+    "id": "finale",
+    "label": "Finale",
+    "name": "Historisches Rathaus – die Depesche",
+    "coords": {
+      "lat": 51.9616002,
+      "lng": 7.6281828
     },
-    hints: [
-      'Erlaubt der Seite den Zugriff auf euren Standort (Browser-Abfrage bestätigen).',
-      'Die Entfernung wird in Metern angezeigt – wird die Zahl kleiner, seid ihr richtig.',
-      'Der Punkt liegt im Schlossgarten hinter (westlich) dem Schloss, etwas nördlich der Mittelachse.',
+    "directions": "Geht die wenigen Schritte vom Stadtweinhaus zum Historischen Rathaus, Prinzipalmarkt 10. Das Finale lässt sich draußen unter den Arkaden lösen. Für einen anschließenden Besuch im Friedenssaal gelten dessen Öffnungszeiten und Eintrittspreise.",
+    "story": "Dr. Cording: „Die datierten Blätter gehören zu unterschiedlichen Schichten. Legt sie auf einer Zeitlinie ab: vom ältesten erhaltenen Blatt bis zur jüngsten Ergänzung. Erst dann tragen ihre Siegel die Schrift.“\n\nAuf der Depesche stehen die Gruppen **GRO WXBQUI MZMPH**. Jeder gesammelte Siegelcode gehört zu einer Gruppe der Depesche. Die Codes werden in der Reihenfolge eurer Zeitlinie benutzt; der Weg durch die Stadt ist dafür nicht entscheidend.",
+    "task": {
+      "kind": "quiz",
+      "question": "Entschlüsselt jede Gruppe mit dem passenden Siegelcode: verschiebt ihre Buchstaben um den Codewert rückwärts im Alphabet, mit Umlauf von A nach Z. Welche vollständige Losung ergibt sich?",
+      "placeholder": "Die vollständige Losung",
+      "answerHashes": [
+        "e3a810988017e402bc930a4b02bc6b2d3341e5c4d9dc2137a6518322780aeaeb"
+      ]
+    },
+    "hints": [
+      "Die Datierungen stehen zusammen mit euren Siegelcodes in der Fragmentleiste. Rekonstruiert zuerst die Zeitlinie.",
+      "Die ältere Aufzeichnung steht vor der jüngeren. Ordnet die Codewerte in dieser Reihenfolge den Gruppen von links nach rechts zu.",
+      "Nutzt pro Gruppe denselben Schritt zurück im Alphabet, bis alle Buchstaben übersetzt sind. Den Satz selbst müsst ihr entschlüsseln."
     ],
-    resolution: `Ihr habt den toten Briefkasten gefunden! Im (fiktiven) Versteck: Vlemyncks drittes Wort – **RERUM** – und sein vorletzter Eintrag: „Die Depesche selbst brachte ich ans Wasser. Die Bruderschaft hat ihr Versteck zuletzt dorthin verlegt, wo riesige Kugeln aus Beton am Ufer des Sees ruhen. Zähle sie, und du bist am Ziel.“`,
-    fragment: 'RERUM',
-  },
-  {
-    id: 'aasee',
-    label: 'Station 11',
-    name: 'Aasee – die Riesenkugeln',
-    coords: { lat: 51.95711, lng: 7.61819 },
-    directions:
-      'Verlasst den Schlossgarten nach Süden und folgt der Promenade bzw. den Wegen Richtung Aasee (ca. 15 Minuten). Haltet am Nordostufer Ausschau nach den riesigen Betonkugeln an der Wiese (Nähe Aaseeterrassen/Annette-Allee).',
-    story: `Dr. Cording: „Die ‚Giant Pool Balls‘ des Künstlers Claes Oldenburg stehen seit 1977 am Aasee – anfangs heftig umstritten, heute ein Wahrzeichen. Als die Bruderschaft ihr Versteck zum letzten Mal erneuerte, wählte sie diesen Ort: Kugeln wie überdimensionale Siegel, gut sichtbar und doch voller Geheimnis.“`,
-    task: {
-      kind: 'quiz',
-      question: 'Ihr steht davor: Wie viele Betonkugeln liegen hier am Ufer des Aasees?',
-      placeholder: 'Zahl',
-      answerHashes: [
-        '4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce',
-        '6b70e2d592dd17196b7940574ee89f31c354435338179245457ad54064ba7f77',
-      ],
-    },
-    hints: [
-      'Die Kugeln stehen als Gruppe auf der Wiese am Nordostufer.',
-      'Jede Kugel hat etwa 3,5 Meter Durchmesser – zu übersehen sind sie nicht.',
-      'Geht einmal um die Gruppe herum – aus manchen Blickwinkeln verdeckt eine Kugel eine andere.',
-    ],
-    resolution: `Drei Kugeln – wie drei Siegel, wie drei Körbe, wie drei Worte. Ihr habt alle Fragmente gesammelt. Setzt nun die Losung der verlorenen Depesche zusammen und sprecht sie aus!`,
-  },
-  {
-    id: 'finale',
-    label: 'Finale',
-    name: 'Die verlorene Depesche',
-    coords: { lat: 51.95711, lng: 7.61819 },
-    directions:
-      'Bleibt bei den Kugeln am Aasee – hier endet die Spur.',
-    story: `Dr. Cording nimmt euch beiseite: „Vlemyncks Depesche trug drei lateinische Worte – die Devise des Westfälischen Friedens. Ihr habt auf eurem Weg alle drei Fragmente gefunden. Setzt sie in der richtigen Reihenfolge zusammen: Das erste fandet ihr bei den Körben, das zweite bei der Uhr, das dritte im toten Briefkasten.“`,
-    task: {
-      kind: 'quiz',
-      question: 'Wie lautet die Losung der verlorenen Depesche? (drei Worte)',
-      placeholder: 'Drei Worte',
-      answerHashes: ['e3a810988017e402bc930a4b02bc6b2d3341e5c4d9dc2137a6518322780aeaeb'],
-    },
-    hints: [
-      'Die drei Fragmente wurden euch nach den Stationen 3, 7 und 10 angezeigt – ihr findet sie auch oben in der Fragmentleiste.',
-      'Es ist Latein und bedeutet: „Der Friede ist das beste der Dinge.“',
-      'PAX … – jetzt nur noch die richtige Reihenfolge.',
-    ],
-    resolution: finaleText,
-    image: {
-      file: 'Münster, Skulptur -Giant Pool Balls- -- 2016 -- 2379.jpg',
-      alt: 'Die Giant Pool Balls von Claes Oldenburg am Aasee',
-      credit: RABICH,
-    },
-  },
+    "resolution": "Dr. Cording öffnet die Kassette: „Ihr habt die Schichten der Bruderschaft gelesen und die Depesche entschlüsselt.“\n\n**PAX OPTIMA RERUM** – „Der Friede ist das beste der Dinge.“\n\nDie Losung erinnert an die Friedensdevise nach Silius Italicus. Hier am Rathaus wurde 1648 der spanisch-niederländische Friede beschworen. In unserer erfundenen Geschichte bewahrte Vlemynck die Worte vor den Männern mit den schwarzen Siegelringen. Ihr habt sie der Stadt zurückgebracht.\n\nDie Spur ist vollständig. Wenn ihr den Friedenssaal besuchen möchtet, prüft bitte seine heutigen Öffnungszeiten und den Eintritt. Eure Wertung folgt unten."
+  }
 ];
