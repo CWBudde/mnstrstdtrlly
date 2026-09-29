@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 
 # Prüft Builds auf main, dem Entwicklungsbranch und Pull Requests.
-# Veröffentlicht nur freigegebene main-Builds auf dem gh-pages-Branch.
+# Veröffentlicht technisch geprüfte main-Builds als Entwurf auf dem gh-pages-Branch.
 # In Settings → Pages einmalig „Deploy from a branch“, gh-pages / root auswählen.
 
 on:
@@ -32,9 +32,16 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
-      - name: Begehungsnachweise und Blindtest prüfen
+      - name: Feldfreigabe für die Entwurfsveröffentlichung prüfen
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        run: npm run verify:release
+        run: |
+          if npm run verify:release; then
+            echo '### Feldfreigabe: Nachweise vollständig' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo '::warning::Feldfreigabe fehlt. Die App wird als ungeprüfter Entwurf veröffentlicht.'
+            echo '### Feldfreigabe ausstehend: Veröffentlichung als Entwurf' >> "$GITHUB_STEP_SUMMARY"
+            echo 'Begehungen und unabhängiger Blindtest müssen vor dem regulären Einsatz nachgeholt werden.' >> "$GITHUB_STEP_SUMMARY"
+          fi
       - run: touch dist/.nojekyll
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
       - uses: peaceiris/actions-gh-pages@v4

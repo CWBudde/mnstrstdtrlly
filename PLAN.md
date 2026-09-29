@@ -275,6 +275,12 @@ und fotografiert werden. Hier wird nichts mehr am Schreibtisch erfunden.
 
 ## 3. Umsetzungsschritte
 
+**Deployment-Änderung vom 30.09.2026:** Technisch geprüfte main-Builds dürfen als ausdrücklich
+gekennzeichnete Vorschau auf [GitHub Pages](https://cwbudde.github.io/mnstrstdtrlly/) erscheinen.
+Fehlende Feldnachweise werden im Workflow als Warnung und in der Zusammenfassung gemeldet;
+`npm run verify:release` bleibt unverändert streng. Die unten dokumentierte Veröffentlichungssperre
+beschreibt den früheren Stand vom 29.09.2026. Feldfreigabe und regulärer Einsatz bleiben ausstehend.
+
 Stand der Umsetzung: **29.09.2026**. `[x]` bedeutet **behandelt**: entweder umgesetzt oder
 explizit **ZURÜCKGESTELLT** mit Grund. Zurückgestellte Feldprüfungen gelten nicht als erfolgreich
 durchgeführt. Die Freigabeprüfung blockiert Veröffentlichung, bis echte Nachweise vorliegen.

@@ -12,6 +12,10 @@ export default function StartScreen({ onStart }: Props) {
         <div className="start-seal">✉</div>
         <h1>{intro.title}</h1>
         <p className="subtitle">{intro.subtitle}</p>
+        <div className="practical" role="note" aria-label="Entwurfsstand">
+          <strong>Vorschau – noch nicht vor Ort geprüft</strong>
+          <p>Begehungen und unabhängiger Blindtest stehen aus. Rätseldetails, Zugänglichkeit und Spieldauer sind noch nicht bestätigt.</p>
+        </div>
         <StationImage image={intro.image} />
         {intro.text.split('\n\n').map((para, i) => (
           <p key={i}>{para}</p>

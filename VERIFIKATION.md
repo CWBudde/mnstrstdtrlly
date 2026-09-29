@@ -125,7 +125,7 @@ Das Finale liegt außen am Rathaus. Der [Friedenssaal](https://www.stadt-muenste
 
 ## Begehung und Blindtest: Freigabeprotokoll
 
-Diese Arbeiten sind in PLAN.md begründet zurückgestellt, bleiben für eine Veröffentlichung erforderlich:
+Diese Arbeiten sind in PLAN.md begründet zurückgestellt, bleiben für die Feldfreigabe und den regulären Einsatz erforderlich:
 
 - [ ] Begehung 1: je Station Detailfoto und Datum; Antwort, Koordinate, Zugang und GPS am Ziel bestätigen.
 - [ ] Begehung 2: gesamte Route ablaufen, sichere Querungen/Wegbeschreibungen prüfen, Gehzeit und Gesamtdauer messen.
@@ -138,7 +138,7 @@ Nachweise unter `docs/evidence/` ablegen und [field-verification.json](docs/evid
 
 Für die beiden Begehungen und den Blindtest sind drei unterschiedliche Berichtspfade erforderlich; jede Station benötigt einen eigenen Fotopfad. Gleichwertige URL-Schreibweisen desselben Pfads gelten ebenfalls als Wiederverwendung. Bilder müssen die Mindeststruktur ihres Formats enthalten: PNG-Kopf und Abschluss, JPEG-Scan und Abschluss oder passende WebP-Containerlänge. Die Prüfung ist keine vollständige Bilddecodierung.
 
-`npm run verify:release` prüft diese Einträge und die vorhandenen Nachweisdateien. Es attestiert keine Begehung: Die Spielleitung muss ihre Angaben verantworten. Mit dem aktuellen leeren Protokoll blockiert es die Veröffentlichung ausdrücklich. CI prüft technische Tests auch für den Entwicklungsbranch und Pull Requests; nur ein vollständig freigegebener main-Build wird publiziert. Merge auf main und Veröffentlichung sind bis zum erfolgreichen Feldtest zurückgestellt.
+`npm run verify:release` prüft diese Einträge und die vorhandenen Nachweisdateien. Es attestiert keine Begehung: Die Spielleitung muss ihre Angaben verantworten. Mit dem aktuellen leeren Protokoll endet es ausdrücklich mit Fehlerstatus. CI prüft technische Tests auch für den Entwicklungsbranch und Pull Requests. Technisch geprüfte main-Builds dürfen als gekennzeichneter Entwurf veröffentlicht werden; fehlende Feldnachweise erscheinen als Workflow-Warnung und in der Zusammenfassung. Die Startseite nennt den ungeprüften Entwurfsstand. Die Feldfreigabe und der reguläre Einsatz bleiben bis zum erfolgreichen Feldtest zurückgestellt.
 
 ## Bilder und Fiktion
 
