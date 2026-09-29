@@ -2,12 +2,15 @@
   "name": "mnstrstdtrlly",
   "private": true,
   "version": "1.0.0",
-  "description": "Stadtrallye Münster – Die verlorene Depesche (Westfälischer Frieden 1648)",
+  "description": "Stadtrallye M\u00fcnster \u2013 Die verlorene Depesche (Westf\u00e4lischer Frieden 1648)",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "verify:release": "node --experimental-strip-types scripts/verify-release.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
@@ -15,11 +18,14 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@types/leaflet": "^1.9.12",
+    "@types/node": "^22.20.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react": "^4.7.0",
     "typescript": "^5.5.3",
-    "vite": "^5.4.0"
+    "vite": "^6.4.3",
+    "vitest": "^5.0.2"
   }
 }

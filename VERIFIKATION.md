@@ -1,116 +1,143 @@
-# Spielleiter-Dokument & Vor-Ort-Verifikation
+# Spielleiter-Dokument und Vor-Ort-Verifikation
 
-**Achtung, Spoiler:** Dieses Dokument enthält alle Lösungen. Nicht an Teilnehmer weitergeben.
+**Spoiler: Nur für die Spielleitung.** Stand: 29. September 2026; Entwurf für die neue Route.
 
-Die Rallye ist so gebaut, dass Antworten vor Ort ablesbar oder aus der Story heraus lösbar sind.
-Die zentralen Fakten wurden per Webrecherche verifiziert (Quellen unten). Die als **[PRÜFEN]**
-markierten Punkte betreffen Dinge, die sich nur vor Ort abschließend prüfen lassen (Zugänglichkeit,
-Beschilderung, GPS-Empfang). Koordinaten sind Näherungswerte – bis auf die Aasee-Kugeln, deren
-Position von der Kunsthalle Münster übernommen wurde.
+Die Rätsel wurden anhand historischer Referenzfotos und schriftlicher Quellen vorbereitet. **Es hat keine Begehung stattgefunden.** Referenzfotos zeigen einen früheren Zustand; ihre Aufnahmedaten sind keine Begehungsdaten. Aktuelle Sichtbarkeit, Zugänglichkeit, Empfang, Schwierigkeit und Spieldauer sind noch nicht bestätigt.
 
-## Lösungen im Überblick
+Die Route führt Aasee → Promenade (GPS) → Schloss → Überwasser → Kiepenkerl → Dom → Lamberti → Krameramtshaus → Stadtweinhaus → Rathaus. Erbdrostenhof und Clemenskirche gehören nicht zur neuen Route.
 
-| # | Station | Frage | Lösung | Status |
-|---|---------|-------|--------|--------|
-| 1 | Historisches Rathaus | Jahreszahl des Friedens | **1648** | Fakt sicher; die frühere Behauptung einer zweiten „falschen“ Jahreszahl am Giebel war unbelegt und wurde entfernt; [PRÜFEN]: 1648 an Tafel/Zugang Friedenssaal von außen auffindbar? |
-| 2 | Stadtweinhaus | Chiffre „XFJO“ (jeder Buchstabe +1) | **WEIN** | sicher (reines Story-Rätsel, kein Vor-Ort-Fakt nötig) |
-| 3 | St. Lamberti | Anzahl eiserner Körbe am Turm | **3** | verifiziert (Stadtarchiv Münster, LWL) |
-| 4 | Kiepenkerl | Traggestell auf dem Rücken | **Kiepe** (auch: Korb, Tragekorb) | sicher |
-| 5 | Krameramtshaus | „Haus der …“ | **Niederlande** | verifiziert (Haus der Niederlande seit 1995); [PRÜFEN]: Beschilderung sichtbar? |
-| 6 | Erbdrostenhof | Wölbung der Fassade | **konkav / nach innen** | verifiziert (Schlaun baute auf winziges Eckgrundstück, konkav geschwungene Fassade); [PRÜFEN]: Von der Straße aus gut erkennbar? |
-| 7 | Dom, astronomische Uhr | Laufrichtung des (einzigen) Sonnenzeigers, abzulesen an der Anordnung der Stundenziffern des 24-h-Zifferblatts | **links / gegen den Uhrzeigersinn** | verifiziert (paulusdom.de, MünsterWiki); [PRÜFEN]: Vormittagsstunden rechts? Öffnungszeiten/Zugang südl. Chorumgang |
-| 8 | Überwasserkirche | Was fehlt dem Turm? | **(Turm-)Spitze / Turmhelm** | verifiziert (Täufer 1534; Orkan 1704, nie erneuert) |
-| 9 | Schloss | Heutige Einrichtung | **Universität (Münster)** (auch: Uni, WWU) | sicher (seit 01.10.2023 „Universität Münster“, vorher WWU); [PRÜFEN]: Beschilderung |
-| 10 | Schlossgarten | GPS-Punkt erreichen | 51.9650 N, 7.6110 O, Radius 40 m | **[PRÜFEN]** – Punkt ablaufen: frei zugänglich, nicht im Botanischen Garten (schließt 16/19 Uhr)? GPS-Empfang? |
-| 10 | – Fallback | Codewort ohne GPS | **SIEGELBRUCH** (nur von der Spielleitung auszugeben; steht nirgends im Spieltext) | – |
-| 11 | Aasee | Anzahl der Betonkugeln | **3** | verifiziert (Kunsthalle Münster, Skulptur Projekte 1977) |
-| F | Finale | Losung der Depesche | **PAX OPTIMA RERUM** | verifiziert (Devise des Westfälischen Friedens, Silius Italicus) |
+## Lösungen und Belege
 
-## Verifizierte Fakten und Quellen
+| Station / ID | Beobachtung und Umformung | Akzeptierte Antwort | Siegelcode |
+|---|---|---|---|
+| Aasee / `aasee` | B=3 Kugeln, F=1 umlaufende waagerechte Fuge; (B×F)²+B | **12** | 1977 · 21 |
+| Promenade / GPS / `briefkasten` | Zielradius 40 m um 51.9612679, 7.6146837 | **GPS oder SIEGELBRUCH** | – |
+| Schloss / `schloss` | C=4 kindliche Gesimsfiguren ohne Fama, A=5 Fensterachsen; 10C+A | **45** | – |
+| Überwasser / `ueberwasser` | M=6 runde Medaillons ohne Heiligenschein, W=2 seitliche Wappen; M²−W | **34** | – |
+| Kiepenkerl / `kiepenkerl` | Frontal: links STOCK, rechts PFEIFE; Endbuchstaben K/E → Alphabetpositionen | **11-05** | – |
+| Dom-Uhr / `dom` | Letzte Ziffern von POSITUM ANNO 1696 + XI rechts der oberen XII: 96+11 | **107** | 1542 · 17 |
+| Lamberti / `lamberti` | C=3 Körbe, P=11 große Steinfiguren am Westportal inklusive Mitte; C×P | **33** | – |
+| Krameramtshaus / `krameramtshaus` | Unterschiedliche RENOVATUM-Jahre von oben: 1896, 1865, 1668; benachbarte Differenzen | **31-197** | 1648 · 08 |
+| Stadtweinhaus / `stadtweinhaus` | 5 ganze Figuren in der Balkonbrüstung: XZHMY IJS KWNJIJS um 5 zurück | **SUCHT DEN FRIEDEN** | – |
+| Rathaus / Finale / `finale` | Zeitlinie 1542→1648→1977 liefert Schlüssel 17/8/21. GRO / WXBQUI / MZMPH rückwärts entschlüsseln. | **PAX OPTIMA RERUM** | – |
 
-- **Friedenssaal:** Am 15. Mai 1648 wurde dort der spanisch-niederländische Friede beschworen;
-  unterzeichnet wurde er bereits am 30. Januar 1648 **im Krameramtshaus** (muenster.de,
-  Kongreßstadt Münster 1648). Der Westfälische Friede wurde am 24. Oktober 1648 in Münster
-  unterzeichnet.
-- **Täuferkörbe:** Drei Körbe für Jan van Leiden, Bernd Knipperdolling und Bernd Krechting,
-  hingerichtet am 22. Januar 1536 vor dem Rathaus (stadt-muenster.de/Stadtarchiv, LWL).
-- **Krameramtshaus:** Erbaut 1589, ältestes Gildehaus, 1646–1648 Quartier der niederländischen
-  Gesandtschaft, seit 1995 „Haus der Niederlande“ (stadt-muenster.de, uni-muenster.de).
-- **Erbdrostenhof:** 1753–1757 von Johann Conrad Schlaun für den Erbdrosten Adolf Heidenreich
-  Freiherr Droste zu Vischering auf einem kleinen, spitz zulaufenden Eckgrundstück an der
-  Salzstraße 38 errichtet; die Fassade wurde deshalb konkav (nach innen gewölbt) ausgeführt, um
-  trotzdem eine repräsentative Schauseite zu erhalten (denkmalschutz.de, muensterwiki.de,
-  stadt-muenster.de). Im Zweiten Weltkrieg bis auf die Fassade zerstört, 1953–1970 vom LWL
-  wiederaufgebaut.
-- **Clemenskirche:** als Station entfernt – die Quellen widersprechen sich zur Form des Außenbaus
-  (zwölfeckig vs. unregelmäßiges Sechseck), und ein Umrunden ist fraglich (siehe PLAN.md).
-- **Krameramtshaus-Lage:** Alter Steinweg 6/7, direkt am Chor von St. Lamberti,
-  51°57′46.6″N 7°37′47.4″E. Die Salzstraße beginnt am Nordende des Prinzipalmarkts an
-  der Lambertikirche und führt nach Osten zum Erbdrostenhof.
-- **Astronomische Uhr:** 1540–1542, südlicher Chorumgang; 24-Stunden-Zifferblatt mit nur einem
-  Zeiger (Sonnenzeiger, kein Minutenzeiger), XII Mittag oben; der Zeiger läuft **gegen** den
-  Uhrzeigersinn, dem Sonnenlauf folgend (paulusdom.de, MünsterWiki).
-- **Überwasserkirche:** Täufer nahmen 1534/35 den Turmhelm ab (Geschützplattform); der
-  wiederaufgebaute Helm wurde 1704 durch einen Orkan zerstört und nie erneuert
-  (uni-muenster.de, dewiki). *Der Story-Anachronismus der ersten Fassung (fehlende Spitze
-  schon 1648) wurde korrigiert – jetzt erzählt ein Bruderschafts-Nachtrag von 1705 davon.*
-- **Schloss:** 1767–1787 nach Plänen von Johann Conrad Schlaun, heute Sitz der Universität.
-- **Giant Pool Balls:** Claes Oldenburg, 1977 (Skulptur Projekte), drei Betonkugeln mit 3,5 m
-  Durchmesser; Standort 51°57′25.6″N 7°37′05.5″E (kunsthallemuenster.de) – als Koordinate
-  der Stationen 11/Finale übernommen.
-- **Pax optima rerum:** Devise des Westfälischen Friedens nach Silius Italicus, u.a. auf
-  Friedensmünzen und dem Stich nach Gerard ter Borchs Friedensbild (Wikipedia/LWL).
+Leerzeichen, Bindestriche, Groß-/Kleinschreibung und Akzente werden normalisiert. Die Wortliste beim Kiepenkerl macht die Bezeichnungen eindeutig. Ausgeschriebene Zahlwörter werden bei diesen neuen Rätseln nicht akzeptiert. Antwort-Hashes liegen in `src/data/stations.ts`; die Testlösungen stehen außerhalb des App-Bundles in `tests/solutions.ts`.
 
-## Vor-Ort-Checkliste
+Der GPS-Fallback **SIEGELBRUCH** wird nur von der Spielleitung ausgegeben. Ein richtiges Codewort zählt als Notfall-Auflösung (100 Punkte). Es steht nicht im Spieltext. Nach jeweils drei falschen Eingaben gilt eine Denkpause von 30, 60, 120, 240 und höchstens 300 Sekunden; sie überlebt das Neuladen.
 
-- [ ] **Station 1, Rathaus:** Ist „1648“ an einer Tafel/Beschriftung am oder neben dem Eingang
-      zum Friedenssaal ablesbar? Falls nicht: Fragetext in `src/data/stations.ts` anpassen.
-      (Hinweis 2 führt notfalls zur Lösung.)
-- [ ] **Station 4, Kiepenkerl:** Steht die Statue frei zugänglich (kein Umbau/Markt)?
-- [ ] **Station 6, Erbdrostenhof:** Ist die konkave Fassadenwölbung von der Salzstraße aus gut
-      erkennbar (genug Abstand zum Gebäude möglich, keine Baustelle/Zaun im Weg)? Wegbeschreibung
-      vom Krameramtshaus ablaufen und Gehzeit prüfen.
-- [ ] **Station 7, Dom:** Stehen die Vormittagsstunden rechts (Hinweise 2/3 bauen darauf auf)? Öffnungszeiten prüfen; astronomische Uhr im südlichen Chorumgang
-      zugänglich? Gottesdienstzeiten in die Tourplanung einbeziehen.
-- [ ] **Station 10, Schlossgarten:** Zielpunkt (51.9650, 7.6110) ablaufen – liegt er auf einem
-      frei zugänglichen Weg/einer Wiese? Ggf. Koordinate in `src/data/stations.ts` anpassen.
-      GPS-Genauigkeit unter Bäumen testen; notfalls `radiusMeters` erhöhen.
-- [ ] **Alle Stationen:** Marker-Positionen auf der Karte stichprobenartig mit der Realität
-      vergleichen (`coords` in `src/data/stations.ts`).
-- [ ] **Bilder:** Die Stationsfotos werden zur Laufzeit von Wikimedia Commons geladen
-      (`Special:FilePath`). Einmal in der deployten App durchklicken: Laden alle Fotos?
-      (Nicht ladbare Bilder werden automatisch ausgeblendet, die Rallye funktioniert auch ohne.)
-- [ ] **Gesamtroute einmal ablaufen:** Wegbeschreibungen (`directions`) auf Verständlichkeit
-      und Baustellen prüfen; Gesamtdauer stoppen.
+## Referenzfotos, Quellen und ausstehende Begehung
 
-## Bildnachweise
+### Aasee (`aasee`)
 
-Die Fotos werden direkt von Wikimedia Commons eingebunden; jede Abbildung verlinkt in der
-Bildunterschrift auf ihre Dateibeschreibungsseite mit Autor und Lizenz. Die meisten Aufnahmen
-stammen von **Dietmar Rabich** (CC BY-SA 4.0). Wer die App forkt und Bilder austauscht:
-Dateinamen (ohne `File:`-Präfix) in `src/data/stations.ts` im Feld `image.file` eintragen.
+Schriftliche Quelle: [Originalquelle](https://www.kunsthallemuenster.de/en/collection/giant-pool-balls/).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_Skulptur_-Giant_Pool_Balls-_--_2016_--_2379.jpg), aufgenommen **2016-05-06**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Durchgehende waagerechte Fugen heute eindeutig zählbar? Kurze senkrechte Fugen nicht mitzählen.
 
-## Antwort-Hashes neu erzeugen
+**Bekannte Schwäche / Freigabeblocker:** Die Fugenzahl steht nun nicht mehr im Spieltext, ist aber bereits auf leicht auffindbaren Fotos erkennbar. Die Ortsbindung und Schwierigkeit dieses Kandidaten sind deshalb nicht bestätigt. Im Blindtest gezielt einfache Bildrecherche versuchen; bleibt er damit leicht lösbar, muss er vor Freigabe durch ein vor Ort geprüftes, weniger exponiertes Detailrätsel ersetzt werden. Eine solche Beobachtung kann ohne Begehung nicht belastbar ausgewählt werden.
 
-Antworten werden normalisiert (Kleinbuchstaben; ä→ae, ö→oe, ü→ue, ß→ss; alles außer a–z/0–9
-entfernt) und als SHA-256-Hex-Hash in `src/data/stations.ts` hinterlegt. Neuen Hash erzeugen:
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
 
-```bash
-node -e "
-const { createHash } = require('node:crypto');
-const normalize = (s) => s.toLowerCase()
-  .replaceAll('ä','ae').replaceAll('ö','oe').replaceAll('ü','ue').replaceAll('ß','ss')
-  .replace(/[^a-z0-9]/g,'');
-console.log(createHash('sha256').update(normalize(process.argv[1])).digest('hex'));
-" "Neue Antwort"
-```
+### Promenade / GPS (`briefkasten`)
 
-Den ausgegebenen Hash in das `answerHashes`-Array der Station eintragen (mehrere Varianten
-= mehrere Hashes).
+Schriftliche Quelle: [Originalquelle](https://www.openstreetmap.org/way/732886826).
+Referenz: OSM-Weg und Zielpunkt beim GPS; städtische Rathausinformationen beim Finale. Für das Meta-Rätsel ist keine Beobachtung im kostenpflichtigen Saal nötig.
+Vor Ort zu prüfen: Öffentlicher Fußweg; Empfang, Baustellen und Querungen vor Ort prüfen.
 
-## Hinweise zur Story
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
 
-Die Rahmenhandlung (Schreiber Johann Vlemynck, „Bruderschaft der Friedensboten“,
-Dr. Lene Cording) ist frei erfunden. Alle im Abschnitt „Verifizierte Fakten“ genannten
-historischen Angaben sind belegt. Die App weist die Fiktion im Finale nicht gesondert aus –
-wer mag, kann das in der Nachbesprechung auflösen.
+### Schloss (`schloss`)
+
+Schriftliche Quelle: [Originalquelle](https://www.uni-muenster.de/imperia/md/content/wwu/kuk/projekte/240927_infoblatt_schloss_unims_fin.pdf).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_F%C3%BCrstbisch%C3%B6fliches_Schloss_--_2018_--_1930-31.jpg), aufgenommen **2018-04-06**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Mittelrisalit klar abgrenzen; Figuren an Flügelenden ausschließen.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+### Überwasser (`ueberwasser`)
+
+Schriftliche Quelle: [Originalquelle](https://klosterlandschaft-westfalen-lippe.lwl.org/de/kloster-und-klosterorte/muenster-pfarrkirche-liebfrauen-ueberwasser-ehem-stiftskirche/).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_%C3%9Cberwasserkirche%2C_Portal_--_2022_--_0419.jpg), aufgenommen **2022-03-10**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Südliches Seitenportal nahe Westende, nicht Westzugang. Sichtbarkeit prüfen.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+### Kiepenkerl (`kiepenkerl`)
+
+Schriftliche Quelle: [Originalquelle](https://magazin.stadtmuseum-muenster.de/ereignisse/1953-das-kiepenkerldenkmal).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_Kiepenkerl%2C_Statue_--_2018_--_3648.jpg), aufgenommen **2018-07-27**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Links/rechts aus Sicht der Spielenden; Handobjekte prüfen, keine Korbinhalte erfinden.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+### Dom-Uhr (`dom`)
+
+Schriftliche Quelle: [Originalquelle](https://www.paulusdom.de/gotteshaus/kunstwerke/kunstwerke-des-st-paulus-domes/die-astronomische-uhr).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_St.-Paulus-Dom%2C_Astronomische_Uhr_--_2019_--_3824.jpg), aufgenommen **2019-03-08**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Inschrift von unten lesbar? Zoom zulässig; Zugang und Gottesdienstzeiten prüfen.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+### Lamberti (`lamberti`)
+
+Schriftliche Quelle: [Originalquelle](https://www.sanktlamberti.de/sankt-lamberti/kirchen-2/st-lamberti/das-westportal/).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_St.-Lamberti-Kirche%2C_Westportal_--_2021_--_9082.jpg), aufgenommen **2021-11-18**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Mosaikpersonen, Sockelgesichter und Ornament nicht mitzählen; Gerüste prüfen.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+### Krameramtshaus (`krameramtshaus`)
+
+Schriftliche Quelle: [Originalquelle](https://www.uni-muenster.de/HausDerNiederlande/Allgemeines/korn/).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_Krameramtshaus_%28Haus_der_Niederlande%29_--_2014_--_6865.jpg), aufgenommen **2014-03-14**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Symmetrische Wiederholungen einmal zählen; Zoom und heutige Lesbarkeit prüfen.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+### Stadtweinhaus (`stadtweinhaus`)
+
+Schriftliche Quelle: [Originalquelle](https://www.stadt-muenster.de/tourismus/sehenswertes/altstadt/rathaus-stadtweinhaus).
+Referenzfoto: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_Stadtweinhaus%2C_Giebel_und_Balkon_--_2020_--_4099.jpg), aufgenommen **2020-12-17**. Die konkrete Zählung/Inschrift wurde am Foto geprüft; die schriftliche Quelle belegt je nach Station nur den historischen Kontext.
+Vor Ort zu prüfen: Gesichtsmasken unter dem Balkon nicht mitzählen; Blumenschmuck kann Figuren verdecken.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+### Rathaus / Finale (`finale`)
+
+Schriftliche Quelle: [Originalquelle](https://www.stadt-muenster.de/tourismus/sehenswertes/altstadt/rathaus-stadtweinhaus).
+Referenz: OSM-Weg und Zielpunkt beim GPS; städtische Rathausinformationen beim Finale. Für das Meta-Rätsel ist keine Beobachtung im kostenpflichtigen Saal nötig.
+Vor Ort zu prüfen: Außenfinale ohne Eintritt; Friedenssaal optional. Treffpunkt und Arkaden prüfen.
+
+**Begehungsfoto / Datum:** ausstehend; keine Vor-Ort-Bestätigung vorhanden.
+
+## Koordinaten und Gehweg
+
+Alle Marker stammen aus dem [OSM-Auszug](docs/evidence/osm-stations.json), abgerufen am **29.09.2026** über die öffentliche OSM-API. Knotenkoordinaten wurden unverändert übernommen; der Aasee-Marker ist der Mittelwert der äußeren Knoten der drei zur Kunstwerk-Relation gehörenden Kugeln (ohne doppelte Schlusspunkte). Objekte und Lizenzen stehen im Auszug. © OpenStreetMap-Mitwirkende, [ODbL](https://www.openstreetmap.org/copyright).
+
+Die [Routenskizze](docs/evidence/route.svg) verbindet Marker schematisch. Die automatischen Tests belegen keine Kreuzung der Markerlinie und keine näher liegende übernächste Station. Die Markerlinie ist **keine Gehwegnavigation**; reale Gehwege, Querungen und Baustellen müssen abgelaufen werden. Die Luftlinien summieren sich auf rund 2,4 km; eine tatsächliche Weglänge oder Dauer wird erst bei der Begehung gemessen.
+
+GPS-Ziel: [OSM-Knoten 2472513808](https://www.openstreetmap.org/node/2472513808) auf [Fußweg 732886826](https://www.openstreetmap.org/way/732886826), als Promenade/footway mit bicycle=no kartiert. Er liegt südlich der Gerichtsstraße und außerhalb des Botanischen Gartens. Das Fehlen einer Zugangsbeschränkung in OSM ist kein Vor-Ort-Nachweis für den aktuellen Zugang.
+
+## Zugang und Öffnungszeiten
+
+Recherche am 29.09.2026: Der [Dom](https://www.paulusdom.de/aktuelles/besucherinfos/) nennt täglich 6:30–19:00 Uhr und das barrierefreie Uhrenportal. Besichtigung während Gottesdiensten vermeiden; [aktuelle Gottesdienstordnung](https://www.paulusdom.de/aktuelles/gottesdienstordnung/) und örtliche Aushänge vor der Tour prüfen. Ist die Uhr unzugänglich, ausdrücklich Notfall-Auflösen nutzen; Hinweis 3 ersetzt keine Beobachtung.
+
+Das Finale liegt außen am Rathaus. Der [Friedenssaal](https://www.stadt-muenster.de/tourismus/service-und-informationen) ist ein optionaler Besuch mit eigenen Zeiten und Eintritt. Für die Rallye ist keine Innenraumfrage nötig. Der [Botanische Garten](https://www.uni-muenster.de/BotanischerGarten/besucher-info/index.html) öffnet saisonabhängig; die Route und der GPS-Punkt erfordern keinen Eintritt in ihn.
+
+## Begehung und Blindtest: Freigabeprotokoll
+
+Diese Arbeiten sind in PLAN.md begründet zurückgestellt, bleiben für eine Veröffentlichung erforderlich:
+
+- [ ] Begehung 1: je Station Detailfoto und Datum; Antwort, Koordinate, Zugang und GPS am Ziel bestätigen.
+- [ ] Begehung 2: gesamte Route ablaufen, sichere Querungen/Wegbeschreibungen prüfen, Gehzeit und Gesamtdauer messen.
+- [ ] Blindtest mit einem unabhängigen Team: 120–180 Minuten, höchstens zwei Notfall-Auflösungen, keine Station allein aus dem Spieltext oder einfacher Recherche lösbar.
+- [ ] Aasee-Kandidat auf leichte Bildrecherche prüfen; bei bestätigter Fernlösbarkeit durch ein vor Ort belegtes Detail ersetzen.
+- [ ] Insbesondere Lesbarkeit Dom/Krameramtshaus und Figurenabgrenzung Schloss/Lamberti mit unvorbereiteten Spielenden prüfen.
+- [ ] Bei missverständlichen oder nicht lesbaren Details das Rätsel ersetzen; Fotos und Lösungen gemeinsam aktualisieren.
+
+Nachweise unter `docs/evidence/` ablegen und [field-verification.json](docs/evidence/field-verification.json) ergänzen. Pro `stations.<id>` werden `date` (YYYY-MM-DD), `photo` (relativer PNG/JPEG/WebP-Pfad) und `answerVerified`, `coordsVerified`, `accessVerified` (je `true`) benötigt; für `briefkasten` zusätzlich `gpsTested: true`. `firstWalk` und `secondWalk` enthalten `date` und `report` (relativer Berichtspfad). `blindTest` enthält `date`, `report`, `durationMinutes`, `emergencySolves` und `remotelySolvableStations` (nach erfolgreichem Test `[]`). `version` bleibt `rally-v3`.
+
+`npm run verify:release` prüft diese Einträge und die vorhandenen Nachweisdateien. Es attestiert keine Begehung: Die Spielleitung muss ihre Angaben verantworten. Mit dem aktuellen leeren Protokoll blockiert es die Veröffentlichung ausdrücklich. CI prüft technische Tests auch für den Entwicklungsbranch und Pull Requests; nur ein vollständig freigegebener main-Build wird publiziert. Merge auf main und Veröffentlichung sind bis zum erfolgreichen Feldtest zurückgestellt.
+
+## Bilder und Fiktion
+
+Detailfotos sind in der App ausgeblendet, damit sie die Vor-Ort-Beobachtung nicht schon am Bildschirm liefern. Nur das einleitende Stadtbild bleibt, mit Autor, Lizenz und Link in der App. Referenzbilder werden hier ausschließlich verlinkt, nicht als Begehungsfotos ausgegeben. Die Bruderschaft, Vlemynck und Dr. Cording sind erfundene Spielfiguren; die App kennzeichnet die Rahmenhandlung als Fiktion.

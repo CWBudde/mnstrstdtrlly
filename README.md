@@ -1,60 +1,39 @@
 # Die verlorene Depesche – Stadtrallye Münster
 
-Eine interaktive Stadtrallye durch Münster (Westfalen) für Erwachsene, als mobile Web-App.
+Eine mobile Web-App für eine Stadtrallye durch Münster, mit einer erfundenen Geschichte um den Westfälischen Frieden.
 
-**Story:** Oktober 1648 – kurz vor der Verkündung des Westfälischen Friedens verschwindet eine
-Depesche aus der Kanzlei der Gesandten. Der Kanzleischreiber Johann Vlemynck hat sie vor
-Kriegsgewinnlern in Sicherheit gebracht und eine Spur aus Rätseln durch die Stadt gelegt.
-370 Jahre später folgt ihr dieser Spur.
+**Entwurfsstand:** Die Überarbeitung ist technisch umgesetzt und anhand schriftlicher Quellen und historischer Fotos vorbereitet. Begehung und unabhängiger Blindtest stehen aus. Die Veröffentlichung der neuen Route bleibt bis zu diesen Nachweisen gesperrt; [PLAN.md](PLAN.md) unterscheidet umgesetzte und begründet zurückgestellte Aufgaben.
 
-## Eckdaten
+Die Spur beginnt bei den Giant Pool Balls am **Aasee** und führt über einen GPS-Punkt auf der Promenade, Schloss, Überwasserkirche, Kiepenkerl, Dom, St. Lamberti, Krameramtshaus und Stadtweinhaus zum **Historischen Rathaus**. Das Finale funktioniert außen; ein Besuch im Friedenssaal ist optional und eintrittspflichtig. Die [Routenskizze](docs/evidence/route.svg) zeigt die Markerfolge, keine Gehwegnavigation. Plant vorläufig 2–3 Stunden mit Rätselpausen ein; die tatsächliche Dauer muss der Feldtest bestätigen.
 
-- **Dauer:** ca. 2–3 Stunden, ca. 5 km zu Fuß
-- **Route:** Historisches Rathaus → Stadtweinhaus → St. Lamberti → Kiepenkerl →
-  Krameramtshaus → Erbdrostenhof → St.-Paulus-Dom → Überwasserkirche →
-  Schloss → Schlossgarten (GPS-Suche) → Aasee-Kugeln (Finale)
-- **Rätsel:** 9 Vor-Ort-Rätsel + 1 Chiffre + 1 GPS-Suche + Finalrätsel; die Antworten sind
-  direkt an den Stationen ablesbar (Inschriften, Zählaufgaben, Beobachtung) oder aus der
-  Story heraus lösbar
-- **Bilder:** Stationsfotos werden zur Laufzeit von Wikimedia Commons geladen (überwiegend
-  Dietmar Rabich, CC BY-SA 4.0; Bildnachweis in der App verlinkt)
-- **Mechanik:** richtige Antwort schaltet die nächste Station frei; je Rätsel bis zu 3 gestaffelte
-  Hinweise; Fortschritt wird im Browser gespeichert (localStorage) und bleibt auch nach einem
-  Neuladen der Seite erhalten; Karte (OpenStreetMap) zeigt nur bereits erreichte Stationen, den
-  bisher zurückgelegten Weg als Linie sowie den eigenen Live-Standort
-- **Überarbeitung geplant:** Route, Schwierigkeit und Faktenlage werden gemäß
-  [PLAN.md](PLAN.md) überarbeitet.
-- **Öffnungszeiten beachten:** Station 7 führt in den Dom (astronomische Uhr im Chorumgang,
-  Eintritt frei). Außerhalb der Öffnungszeiten bzw. während Gottesdiensten hilft Hinweis 3
-  quasi zur Lösung.
+Die Rätsel kombinieren beobachtbare Details mit einer Rechnung, Buchstabenentnahme oder Chiffre. Datierte Siegelcodes öffnen ein Meta-Rätsel am Rathaus. Detailbilder erscheinen in der App nicht, damit sie die Beobachtungen nicht vorwegnehmen. Das einleitende Stadtbild verlinkt seinen Wikimedia-Bildnachweis.
 
-## Entwicklung
+Ihr startet mit 1000 Punkten. Hinweise kosten 25 Punkte, falsche Antworten 10, Notfall-Auflösen und ein erfolgreicher GPS-Fallback jeweils 100. Nach je drei Fehlversuchen wird die Eingabe für 30, 60, 120, 240 und höchstens 300 Sekunden gesperrt. Kosten und Wartezeit bleiben beim Neuladen erhalten. Das Finale zeigt Punkte, Dauer und Notfall-Stationen. Fortschritt wird unter `mnstrstdtrlly:progress:v3` gespeichert; alte Spielstände gelten für die geänderte Route nicht mehr.
 
-React + TypeScript + Vite, Karte mit Leaflet/OpenStreetMap.
+Der Dom nennt aktuell täglich 6:30–19:00 Uhr; Gottesdienste und örtliche Einschränkungen haben Vorrang. Quellen, Lösungen, Referenzfotos und die vorbereitete Begehungscheckliste stehen im [Spielleiter-Dokument](VERIFIKATION.md). Dieses enthält Spoiler und gehört nicht in Teilnehmerhände.
+
+## Entwicklung und Prüfungen
+
+React + TypeScript + Vite; Leaflet mit OpenStreetMap. Node.js 22.18 oder neuer verwenden.
 
 ```bash
-npm install
-npm run dev       # Entwicklungsserver
-npm run build     # Produktions-Build nach dist/
-npm run preview   # Build lokal testen
+npm ci
+npm run dev
+npm test
+npm run build
+npx playwright install --with-deps chromium
+npm run test:e2e
+npm run preview
 ```
 
-Die Lösungen liegen nicht im Klartext im Bundle, sondern als SHA-256-Hashes der normalisierten
-Antworten (`src/lib/answers.ts`). Alle Lösungen im Klartext stehen im Spielleiter-Dokument
-[VERIFIKATION.md](VERIFIKATION.md).
+Playwright testet den Produktionsbuild über `vite preview` auf Port 4173. Vor `test:e2e` muss `npm run build` laufen. Bei einer vorhandenen Chrome-/Chromium-Installation kann ihr Pfad über `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` gesetzt werden. Tests laufen mit einem Browser-Worker. Browserartefakte landen unter `output/playwright/`.
 
-## Deployment (GitHub Pages)
+Vitest prüft Spielzustand, Speicherung, Sperrzeiten, Punkte, asynchrone Eingaben, Feldnachweise, Routeninvarianten, Chiffre und Spoiler. Playwright spielt die Rallye vollständig durch und prüft Reload, GPS-Ankunft/Fallback, Notfall-Bestätigung und den Wechsel zur Karte während einer Antwortprüfung. Die Testlösungen liegen außerhalb des App-Bundles in `tests/solutions.ts`; im App-Datensatz stehen ausschließlich normalisierte SHA-256-Antwort-Hashes. Das ist eine Spielmechanik, kein Schutz vor manipulierten Browsern.
 
-Der Workflow [.github/workflows/deploy.yml](.github/workflows/deploy.yml) baut die App bei jedem
-Push auf `main` und veröffentlicht sie auf GitHub Pages:
-<https://cwbudde.github.io/mnstrstdtrlly/>
+## Freigabe und Deployment
 
-Einmalig nötig: In den Repository-Einstellungen unter **Settings → Pages** als Source
-**„GitHub Actions“** auswählen.
+Der [GitHub-Workflow](.github/workflows/deploy.yml) führt Unit-Tests, Build und Browser-Tests vor dem Deploy aus. Pull Requests und der Entwicklungsbranch werden geprüft. Nur `main` darf veröffentlichen; zusätzlich muss `npm run verify:release` die Feldnachweise und den Blindtest aus [field-verification.json](docs/evidence/field-verification.json) bestätigen. Mit dem aktuellen leeren Protokoll beendet dieser Befehl sich absichtlich mit Fehlerstatus und nennt die fehlenden Nachweise.
 
-## Vor dem ersten Einsatz
+Die Nachweise müssen echte Begehungsfotos mit Datum sowie zwei Begehungsberichte und einen unabhängigen Blindtest enthalten. Das Schema und die Zielwerte sind in [VERIFIKATION.md](VERIFIKATION.md) erklärt. Historische Referenzfotos ersetzen diese Nachweise nicht. Merge und Veröffentlichung bleiben bis zur Feldfreigabe zurückgestellt.
 
-Die Rallye setzt bewusst auf Details, die nur vor Ort ablesbar sind. Einige Fakten und alle
-Koordinaten sollten einmal vor Ort geprüft werden – die Checkliste dafür steht in
-[VERIFIKATION.md](VERIFIKATION.md). Antworten/Koordinaten lassen sich zentral in
-`src/data/stations.ts` anpassen (neue Antwort-Hashes: siehe Anleitung in VERIFIKATION.md).
+Der freigegebene Build wird auf den `gh-pages`-Branch geschrieben. In den GitHub-Pages-Einstellungen ist dieser Branch als Quelle einzustellen. Die veröffentlichte App liegt unter <https://cwbudde.github.io/mnstrstdtrlly/>; der aktuelle lokale Entwurf wurde nicht veröffentlicht.

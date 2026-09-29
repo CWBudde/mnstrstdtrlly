@@ -1,0 +1,1383 @@
+{
+  "retrievedAt": "2026-09-29",
+  "source": "https://api.openstreetmap.org/api/0.6/map.json?bbox=7.607,51.956,7.633,51.966",
+  "license": "https://www.openstreetmap.org/copyright",
+  "stations": {
+    "aasee": {
+      "type": "relation",
+      "id": 4595141,
+      "coords": {
+        "lat": 51.9570094,
+        "lng": 7.6182738
+      }
+    },
+    "briefkasten": {
+      "type": "node",
+      "id": 2472513808,
+      "coords": {
+        "lat": 51.9612679,
+        "lng": 7.6146837
+      }
+    },
+    "schloss": {
+      "type": "node",
+      "id": 13159776574,
+      "coords": {
+        "lat": 51.9634388,
+        "lng": 7.6132424
+      }
+    },
+    "ueberwasser": {
+      "type": "node",
+      "id": 12257924859,
+      "coords": {
+        "lat": 51.964029,
+        "lng": 7.6229834
+      }
+    },
+    "dom": {
+      "type": "node",
+      "id": 12194332893,
+      "coords": {
+        "lat": 51.9627282,
+        "lng": 7.6255123
+      }
+    },
+    "kiepenkerl": {
+      "type": "node",
+      "id": 273815451,
+      "coords": {
+        "lat": 51.964143,
+        "lng": 7.6261908
+      }
+    },
+    "lamberti": {
+      "type": "node",
+      "id": 12237714229,
+      "coords": {
+        "lat": 51.9627845,
+        "lng": 7.6287341
+      }
+    },
+    "krameramtshaus": {
+      "type": "node",
+      "id": 12257924860,
+      "coords": {
+        "lat": 51.962972,
+        "lng": 7.6298732
+      }
+    },
+    "stadtweinhaus": {
+      "type": "node",
+      "id": 5745314921,
+      "coords": {
+        "lat": 51.9617146,
+        "lng": 7.6282775
+      }
+    },
+    "finale": {
+      "type": "node",
+      "id": 5154999921,
+      "coords": {
+        "lat": 51.9616002,
+        "lng": 7.6281828
+      }
+    }
+  },
+  "elements": [
+    {
+      "type": "relation",
+      "id": 4595141,
+      "timestamp": "2022-04-09T12:56:17Z",
+      "version": 3,
+      "changeset": 119503180,
+      "user": "nurdafur",
+      "uid": 3172019,
+      "members": [
+        {
+          "type": "way",
+          "ref": 297142650,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 297142652,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 297142651,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "artist_name": "Claes Oldenburg",
+        "artwork_type": "sculpture",
+        "loc_name": "Aaseekugeln",
+        "name": "Giant Pool Balls",
+        "start_date": "1977",
+        "tourism": "artwork",
+        "type": "site",
+        "wikidata": "Q99527574"
+      }
+    },
+    {
+      "type": "way",
+      "id": 297142650,
+      "timestamp": "2025-05-04T21:11:22Z",
+      "version": 5,
+      "changeset": 165819556,
+      "user": "PatrickKnopf",
+      "uid": 28044,
+      "nodes": [
+        3009935422,
+        3009935418,
+        3009935414,
+        3009935407,
+        3009935405,
+        3009935409,
+        3009935416,
+        3009935420,
+        3009935424,
+        3009935428,
+        3009935432,
+        3009937936,
+        3009937938,
+        3009937934,
+        3009935430,
+        3009935426,
+        3009935422
+      ],
+      "tags": {
+        "artwork_type": "sculpture",
+        "colour": "white",
+        "material": "concrete",
+        "tourism": "artwork",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3009935422,
+      "lat": 51.957021,
+      "lon": 7.6185309,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935418,
+      "lat": 51.9570145,
+      "lon": 7.6185335,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935414,
+      "lat": 51.9570091,
+      "lon": 7.6185401,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935407,
+      "lat": 51.9570056,
+      "lon": 7.6185494,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935405,
+      "lat": 51.9570047,
+      "lon": 7.6185602,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935409,
+      "lat": 51.9570063,
+      "lon": 7.6185707,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935416,
+      "lat": 51.9570103,
+      "lon": 7.6185794,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935420,
+      "lat": 51.9570161,
+      "lon": 7.618585,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935424,
+      "lat": 51.9570227,
+      "lon": 7.6185866,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935428,
+      "lat": 51.9570292,
+      "lon": 7.6185839,
+      "timestamp": "2014-08-11T08:11:17Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935432,
+      "lat": 51.9570346,
+      "lon": 7.6185774,
+      "timestamp": "2014-08-11T08:11:17Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009937936,
+      "lat": 51.957038,
+      "lon": 7.6185681,
+      "timestamp": "2014-08-11T08:11:17Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009937938,
+      "lat": 51.957039,
+      "lon": 7.6185573,
+      "timestamp": "2014-08-11T08:11:17Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009937934,
+      "lat": 51.9570374,
+      "lon": 7.6185467,
+      "timestamp": "2014-08-11T08:11:17Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935430,
+      "lat": 51.9570334,
+      "lon": 7.618538,
+      "timestamp": "2014-08-11T08:11:17Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 3009935426,
+      "lat": 51.9570276,
+      "lon": 7.6185324,
+      "timestamp": "2014-08-11T08:11:16Z",
+      "version": 1,
+      "changeset": 24672016,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "way",
+      "id": 297142652,
+      "timestamp": "2025-05-04T21:11:22Z",
+      "version": 5,
+      "changeset": 165819556,
+      "user": "PatrickKnopf",
+      "uid": 28044,
+      "nodes": [
+        10065270327,
+        10065270328,
+        3009935421,
+        3009935417,
+        3009935413,
+        3009935406,
+        3009935404,
+        3009935408,
+        3009935415,
+        3009935419,
+        10065270326,
+        3009935423,
+        3009935427,
+        3009935431,
+        3009937935,
+        3009937937,
+        3009937933,
+        3009935429,
+        3009935425,
+        10065270327
+      ],
+      "tags": {
+        "artwork_type": "sculpture",
+        "colour": "white",
+        "material": "concrete",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10065270327,
+      "lat": 51.9570272,
+      "lon": 7.618151,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 1,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 10065270328,
+      "lat": 51.9570223,
+      "lon": 7.6181474,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 1,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935421,
+      "lat": 51.957017,
+      "lon": 7.6181465,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935417,
+      "lat": 51.9570112,
+      "lon": 7.6181486,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935413,
+      "lat": 51.9570061,
+      "lon": 7.6181539,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935406,
+      "lat": 51.9570025,
+      "lon": 7.6181616,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935404,
+      "lat": 51.9570008,
+      "lon": 7.6181708,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935408,
+      "lat": 51.9570011,
+      "lon": 7.6181805,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935415,
+      "lat": 51.9570034,
+      "lon": 7.6181894,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935419,
+      "lat": 51.9570074,
+      "lon": 7.6181966,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 10065270326,
+      "lat": 51.9570128,
+      "lon": 7.618201,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 1,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935423,
+      "lat": 51.9570187,
+      "lon": 7.6182022,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935427,
+      "lat": 51.9570239,
+      "lon": 7.6182004,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935431,
+      "lat": 51.9570286,
+      "lon": 7.6181961,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009937935,
+      "lat": 51.9570322,
+      "lon": 7.6181896,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009937937,
+      "lat": 51.9570344,
+      "lon": 7.6181816,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009937933,
+      "lat": 51.957035,
+      "lon": 7.6181729,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935429,
+      "lat": 51.9570339,
+      "lon": 7.6181644,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935425,
+      "lat": 51.9570312,
+      "lon": 7.6181568,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "way",
+      "id": 297142651,
+      "timestamp": "2025-05-04T21:11:22Z",
+      "version": 6,
+      "changeset": 165819556,
+      "user": "PatrickKnopf",
+      "uid": 28044,
+      "nodes": [
+        10065270324,
+        10065270325,
+        3009935398,
+        3009935396,
+        3009935394,
+        3009935392,
+        3009935391,
+        3009935393,
+        3009935395,
+        3009935397,
+        10065270323,
+        3009935399,
+        3009935401,
+        3009935403,
+        3009935411,
+        3009935412,
+        3009935410,
+        3009935402,
+        3009935400,
+        10065270324
+      ],
+      "tags": {
+        "artwork_type": "sculpture",
+        "colour": "white",
+        "material": "concrete",
+        "panoramax": "9435e8df-a13f-4276-b320-880a8e1b7585",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10065270324,
+      "lat": 51.9569986,
+      "lon": 7.6181102,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 1,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 10065270325,
+      "lat": 51.9569937,
+      "lon": 7.6181066,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 1,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935398,
+      "lat": 51.9569884,
+      "lon": 7.6181057,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935396,
+      "lat": 51.9569825,
+      "lon": 7.6181078,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935394,
+      "lat": 51.9569775,
+      "lon": 7.6181131,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935392,
+      "lat": 51.9569739,
+      "lon": 7.6181208,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935391,
+      "lat": 51.9569722,
+      "lon": 7.6181301,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935393,
+      "lat": 51.9569725,
+      "lon": 7.6181398,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935395,
+      "lat": 51.9569748,
+      "lon": 7.6181487,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935397,
+      "lat": 51.9569788,
+      "lon": 7.6181558,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 10065270323,
+      "lat": 51.9569841,
+      "lon": 7.6181602,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 1,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935399,
+      "lat": 51.9569901,
+      "lon": 7.6181614,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935401,
+      "lat": 51.9569953,
+      "lon": 7.6181597,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935403,
+      "lat": 51.957,
+      "lon": 7.6181553,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935411,
+      "lat": 51.9570036,
+      "lon": 7.6181488,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935412,
+      "lat": 51.9570058,
+      "lon": 7.6181409,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935410,
+      "lat": 51.9570064,
+      "lon": 7.6181322,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935402,
+      "lat": 51.9570053,
+      "lon": 7.6181236,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 3009935400,
+      "lat": 51.9570026,
+      "lon": 7.618116,
+      "timestamp": "2022-09-30T20:08:32Z",
+      "version": 2,
+      "changeset": 126839001,
+      "user": "SuperMarkus",
+      "uid": 26958
+    },
+    {
+      "type": "node",
+      "id": 2472513808,
+      "lat": 51.9612679,
+      "lon": 7.6146837,
+      "timestamp": "2018-12-26T19:41:45Z",
+      "version": 3,
+      "changeset": 65793778,
+      "user": "NGL-engel",
+      "uid": 1957590
+    },
+    {
+      "type": "node",
+      "id": 13159776574,
+      "lat": 51.9634388,
+      "lon": 7.6132424,
+      "timestamp": "2025-09-21T14:16:44Z",
+      "version": 1,
+      "changeset": 172248531,
+      "user": "nurdafur",
+      "uid": 3172019,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "Das Schloss in Münster",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12257924859,
+      "lat": 51.964029,
+      "lon": 7.6229834,
+      "timestamp": "2024-10-17T07:59:01Z",
+      "version": 1,
+      "changeset": 157995839,
+      "user": "nurdafur",
+      "uid": 3172019,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "Liebfrauen-Überwasserkirche",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12194332893,
+      "lat": 51.9627282,
+      "lon": 7.6255123,
+      "timestamp": "2024-09-23T11:17:13Z",
+      "version": 1,
+      "changeset": 156990332,
+      "user": "nurdafur",
+      "uid": 3172019,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "Sankt Paulus-Dom",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "id": 273815451,
+      "lat": 51.964143,
+      "lon": 7.6261908,
+      "timestamp": "2022-07-20T19:01:40Z",
+      "version": 7,
+      "changeset": 123863708,
+      "user": "Brummelwuff",
+      "uid": 15070986,
+      "tags": {
+        "amenity": "fountain",
+        "name": "Kiepenkerl",
+        "start_date": "1953-09-20",
+        "wikidata": "Q15116588"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12237714229,
+      "lat": 51.9627845,
+      "lon": 7.6287341,
+      "timestamp": "2024-10-09T11:14:45Z",
+      "version": 1,
+      "changeset": 157667056,
+      "user": "nurdafur",
+      "uid": 3172019,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "Stadt- und Marktkirche St. Lamberti",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12257924860,
+      "lat": 51.962972,
+      "lon": 7.6298732,
+      "timestamp": "2024-10-17T07:59:01Z",
+      "version": 1,
+      "changeset": 157995839,
+      "user": "nurdafur",
+      "uid": 3172019,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "Krameramtshaus",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5745314921,
+      "lat": 51.9617146,
+      "lon": 7.6282775,
+      "timestamp": "2023-01-22T15:39:15Z",
+      "version": 4,
+      "changeset": 131570719,
+      "user": "Sam Mumm",
+      "uid": 13805289,
+      "tags": {
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "9",
+        "addr:postcode": "48143",
+        "addr:street": "Prinzipalmarkt",
+        "name": "Stadtweinhaus",
+        "office": "government",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wheelchair:description": "barrierefreie Seiteneingang Aufzug Rollstuhlgerechte Toiletten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5154999921,
+      "lat": 51.9616002,
+      "lon": 7.6281828,
+      "timestamp": "2026-05-26T06:39:58Z",
+      "version": 14,
+      "changeset": 183189461,
+      "user": "raelianer",
+      "uid": 64073,
+      "tags": {
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "10",
+        "addr:postcode": "48143",
+        "addr:street": "Prinzipalmarkt",
+        "check_date:opening_hours": "2026-05-26",
+        "fee": "yes",
+        "name": "Historisches Rathaus Münster",
+        "opening_hours": "Tu-Fr 10:00-17:00; Sa,Su,PH 10:00-16:00; Mo off",
+        "phone": "+49 251 492 2724",
+        "toilets": "no",
+        "toilets:wheelchair": "no",
+        "tourism": "museum",
+        "website": "https://www.stadt-muenster.de/tourismus/sehenswertes/altstadt/rathaus-stadtweinhaus",
+        "wheelchair": "yes",
+        "wheelchair:description": "Klingel mit Sprechanlage links neben der Treppe (kleine Säule) Zwei Infotafeln für blinde Menschen: in Blindenschrift die Geschichte des gotischen Rathauses und Giebel zum Ertasten am Haus Prinzipalmarkt 27 Hublift linker Seiteneingang"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732886826,
+      "timestamp": "2024-09-01T08:47:35Z",
+      "version": 7,
+      "changeset": 156044150,
+      "user": "1998alexkane",
+      "uid": 6107419,
+      "nodes": [
+        127288917,
+        6164453614,
+        6164453613,
+        8463203385,
+        2472513832,
+        8463203384,
+        2472513848,
+        2472513808
+      ],
+      "tags": {
+        "bicycle": "no",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Promenade",
+        "smoothness": "good",
+        "surface": "asphalt",
+        "tree_lined": "both",
+        "wikidata": "Q530282",
+        "wikipedia": "de:Promenade (Münster)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 127288917,
+      "lat": 51.9604491,
+      "lon": 7.614744,
+      "timestamp": "2019-09-18T12:25:21Z",
+      "version": 5,
+      "changeset": 74623872,
+      "user": "nurdafur",
+      "uid": 3172019
+    },
+    {
+      "type": "node",
+      "id": 6164453614,
+      "lat": 51.9605339,
+      "lon": 7.6146583,
+      "timestamp": "2018-12-26T19:41:44Z",
+      "version": 1,
+      "changeset": 65793778,
+      "user": "NGL-engel",
+      "uid": 1957590
+    },
+    {
+      "type": "node",
+      "id": 6164453613,
+      "lat": 51.9605755,
+      "lon": 7.6146462,
+      "timestamp": "2018-12-26T19:41:44Z",
+      "version": 1,
+      "changeset": 65793778,
+      "user": "NGL-engel",
+      "uid": 1957590
+    },
+    {
+      "type": "node",
+      "id": 8463203385,
+      "lat": 51.960633,
+      "lon": 7.6146377,
+      "timestamp": "2021-02-27T10:05:28Z",
+      "version": 1,
+      "changeset": 100090098,
+      "user": "DeBukkIt",
+      "uid": 2183419
+    },
+    {
+      "type": "node",
+      "id": 2472513832,
+      "lat": 51.9607081,
+      "lon": 7.6146388,
+      "timestamp": "2018-12-26T19:41:44Z",
+      "version": 2,
+      "changeset": 65793778,
+      "user": "NGL-engel",
+      "uid": 1957590
+    },
+    {
+      "type": "node",
+      "id": 8463203384,
+      "lat": 51.9607443,
+      "lon": 7.6146418,
+      "timestamp": "2021-02-27T10:05:28Z",
+      "version": 1,
+      "changeset": 100090098,
+      "user": "DeBukkIt",
+      "uid": 2183419
+    },
+    {
+      "type": "node",
+      "id": 2472513848,
+      "lat": 51.9608232,
+      "lon": 7.6146482,
+      "timestamp": "2018-12-26T19:41:44Z",
+      "version": 2,
+      "changeset": 65793778,
+      "user": "NGL-engel",
+      "uid": 1957590
+    },
+    {
+      "type": "way",
+      "id": 28529406,
+      "timestamp": "2023-05-23T09:11:53Z",
+      "version": 11,
+      "changeset": 136445959,
+      "user": "OpenGreenStreet",
+      "uid": 9450933,
+      "nodes": [
+        43599461,
+        313382243,
+        316841411,
+        5082500232,
+        5082500233,
+        5082500234,
+        5082500235,
+        5082500236,
+        313382294,
+        5082500237,
+        316841272,
+        3014961665,
+        2619632604,
+        3014961668,
+        3014961669,
+        313382316,
+        3014961670,
+        316841427,
+        4200757729,
+        4200757733,
+        316841371,
+        316841250
+      ],
+      "tags": {
+        "highway": "footway",
+        "lit": "no",
+        "name": "Kastellstraße",
+        "smoothness": "good",
+        "surface": "compacted"
+      }
+    },
+    {
+      "type": "node",
+      "id": 43599461,
+      "lat": 51.9612693,
+      "lon": 7.6146007,
+      "timestamp": "2018-12-26T19:41:44Z",
+      "version": 4,
+      "changeset": 65793778,
+      "user": "NGL-engel",
+      "uid": 1957590
+    },
+    {
+      "type": "node",
+      "id": 313382243,
+      "lat": 51.9612734,
+      "lon": 7.6145473,
+      "timestamp": "2017-09-05T20:47:48Z",
+      "version": 2,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 316841411,
+      "lat": 51.9612862,
+      "lon": 7.6144759,
+      "timestamp": "2017-09-05T20:47:48Z",
+      "version": 2,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 5082500232,
+      "lat": 51.9612709,
+      "lon": 7.6144628,
+      "timestamp": "2017-09-05T20:47:45Z",
+      "version": 1,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 5082500233,
+      "lat": 51.961256,
+      "lon": 7.6144491,
+      "timestamp": "2017-09-05T20:47:45Z",
+      "version": 1,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 5082500234,
+      "lat": 51.9612368,
+      "lon": 7.6144216,
+      "timestamp": "2017-09-05T20:47:45Z",
+      "version": 1,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 5082500235,
+      "lat": 51.9612205,
+      "lon": 7.6143881,
+      "timestamp": "2017-09-05T20:47:45Z",
+      "version": 1,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 5082500236,
+      "lat": 51.9612089,
+      "lon": 7.6143562,
+      "timestamp": "2017-09-05T20:47:45Z",
+      "version": 1,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 313382294,
+      "lat": 51.9612015,
+      "lon": 7.614325,
+      "timestamp": "2017-09-05T20:47:48Z",
+      "version": 5,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 5082500237,
+      "lat": 51.9611986,
+      "lon": 7.6142838,
+      "timestamp": "2017-09-05T20:47:45Z",
+      "version": 1,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 316841272,
+      "lat": 51.9611988,
+      "lon": 7.6142171,
+      "timestamp": "2017-09-05T20:47:48Z",
+      "version": 4,
+      "changeset": 51763058,
+      "user": "descilla",
+      "uid": 1737607
+    },
+    {
+      "type": "node",
+      "id": 3014961665,
+      "lat": 51.9612185,
+      "lon": 7.613871,
+      "timestamp": "2016-05-22T19:59:54Z",
+      "version": 2,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 2619632604,
+      "lat": 51.9612422,
+      "lon": 7.6135065,
+      "timestamp": "2016-05-22T19:59:54Z",
+      "version": 3,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 3014961668,
+      "lat": 51.961252,
+      "lon": 7.6133043,
+      "timestamp": "2016-05-22T19:59:54Z",
+      "version": 2,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 3014961669,
+      "lat": 51.9612598,
+      "lon": 7.6131499,
+      "timestamp": "2016-05-22T19:59:54Z",
+      "version": 2,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 313382316,
+      "lat": 51.9612886,
+      "lon": 7.6126294,
+      "timestamp": "2016-05-22T19:59:54Z",
+      "version": 3,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 3014961670,
+      "lat": 51.9612863,
+      "lon": 7.6123543,
+      "timestamp": "2014-08-13T19:00:23Z",
+      "version": 1,
+      "changeset": 24730158,
+      "user": "toc-rox",
+      "uid": 468914
+    },
+    {
+      "type": "node",
+      "id": 316841427,
+      "lat": 51.9613639,
+      "lon": 7.6118593,
+      "timestamp": "2016-05-22T19:59:54Z",
+      "version": 2,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 4200757729,
+      "lat": 51.9613852,
+      "lon": 7.6117929,
+      "timestamp": "2016-05-22T19:59:51Z",
+      "version": 1,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 4200757733,
+      "lat": 51.9614185,
+      "lon": 7.6117429,
+      "timestamp": "2016-05-22T19:59:51Z",
+      "version": 1,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 316841371,
+      "lat": 51.9614325,
+      "lon": 7.611694,
+      "timestamp": "2016-05-22T19:59:54Z",
+      "version": 2,
+      "changeset": 39495109,
+      "user": "madmaxms",
+      "uid": 557597
+    },
+    {
+      "type": "node",
+      "id": 316841250,
+      "lat": 51.9614323,
+      "lon": 7.6115439,
+      "timestamp": "2008-12-05T20:36:33Z",
+      "version": 1,
+      "changeset": 131337,
+      "user": "SaschaR",
+      "uid": 8103
+    }
+  ]
+}
