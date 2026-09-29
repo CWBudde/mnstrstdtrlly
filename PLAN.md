@@ -343,6 +343,9 @@ durchgeführt. Die Freigabeprüfung blockiert Veröffentlichung, bis echte Nachw
   - [x] Unit-Tests, Build und Browser-Tests vor dem Deploy in CI; Fehler verhindern Veröffentlichung.
   - [x] Zusätzliche Feldfreigabe durch `npm run verify:release`; Entwicklungsbranch/PRs publizieren
     keine ungeprüfte Rallye. Leere Feldnachweise blockieren den main-Deploy ausdrücklich.
+  - [x] PR #4, Review vom 30.09.2026: wiederverwendete Berichts-/Fotopfade und
+    reine Dateiköpfe bzw. abgebrochene Bilddateien in der Feldfreigabe abgewiesen;
+    gezielte Regressionstests mit vollständigen PNG-/JPEG-/WebP-Testbildern ergänzt.
 - [x] **`VERIFIKATION.md`** für die neue Route neu geschrieben.
   - [x] Lösungen, Normalisierung, schriftliche Quellen und Referenzfotos je Station dokumentiert.
   - [x] **ZURÜCKGESTELLT:** Begehungsfotos und zugehörige Daten fehlen; getrennt von historischen

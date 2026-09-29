@@ -136,6 +136,8 @@ Diese Arbeiten sind in PLAN.md begründet zurückgestellt, bleiben für eine Ver
 
 Nachweise unter `docs/evidence/` ablegen und [field-verification.json](docs/evidence/field-verification.json) ergänzen. Pro `stations.<id>` werden `date` (YYYY-MM-DD), `photo` (relativer PNG/JPEG/WebP-Pfad) und `answerVerified`, `coordsVerified`, `accessVerified` (je `true`) benötigt; für `briefkasten` zusätzlich `gpsTested: true`. `firstWalk` und `secondWalk` enthalten `date` und `report` (relativer Berichtspfad). `blindTest` enthält `date`, `report`, `durationMinutes`, `emergencySolves` und `remotelySolvableStations` (nach erfolgreichem Test `[]`). `version` bleibt `rally-v3`.
 
+Für die beiden Begehungen und den Blindtest sind drei unterschiedliche Berichtspfade erforderlich; jede Station benötigt einen eigenen Fotopfad. Gleichwertige URL-Schreibweisen desselben Pfads gelten ebenfalls als Wiederverwendung. Bilder müssen die Mindeststruktur ihres Formats enthalten: PNG-Kopf und Abschluss, JPEG-Scan und Abschluss oder passende WebP-Containerlänge. Die Prüfung ist keine vollständige Bilddecodierung.
+
 `npm run verify:release` prüft diese Einträge und die vorhandenen Nachweisdateien. Es attestiert keine Begehung: Die Spielleitung muss ihre Angaben verantworten. Mit dem aktuellen leeren Protokoll blockiert es die Veröffentlichung ausdrücklich. CI prüft technische Tests auch für den Entwicklungsbranch und Pull Requests; nur ein vollständig freigegebener main-Build wird publiziert. Merge auf main und Veröffentlichung sind bis zum erfolgreichen Feldtest zurückgestellt.
 
 ## Bilder und Fiktion
